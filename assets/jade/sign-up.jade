@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+html(lang="en")
+	head
+		meta(http-equiv="X-UA-Compatible" content="IE=edge")
+		meta(charset="UTF-8")
+		link(rel="stylesheet", href="https://necolas.github.io/normalize.css/3.0.2/normalize.css")
+		link(rel="stylesheet", href="style.css")
+		title My Physio Dashboard | Sign Up
+	body.sign-up
+		section.auth
+			.logo
+				a(href="#")
+					img(src="assets/images/main-logo.svg", alt="")
+			h1 Sign up
+			p.
+				Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+			form(action="#").signup-form
+				.form-field
+					label(for="name") Name <i>*</i>
+					input(type="text" id="name" required)
+				.form-field
+					label(for="pref-name") Preferred name <i>*</i>
+					input(type="text" id="pref-name" required)
+				.form-field
+					label(for="email") Email <i>*</i>
+					input(type="email" id="email" required)
+				.form-field
+					label(for="password") Password <i>*</i>
+					input(type="password" id="password" required)
+				.form-field
+					label(for="password-confirm") Password Confirm <i>*</i>
+					input(type="password" id="password-confirm" required)
+				.form-field
+					label(for="photo" class="file-upload")
+						span Upload photo
+						input(type="file" id="photo" required)
+						.inputed-file
+							#filename
+							.preview.avatar
+								img(src="http://pipsum.com/150x150", alt="")
+				.form-field
+					input(type="submit" value="Sign up")
+
+		script(src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous")
+		script(src="assets/js/main.js")

@@ -1,0 +1,183 @@
+/*SIGN UP*/
+.auth {
+	width: 588px;
+	margin: 0 auto;
+	text-align: center;
+	padding-bottom: 40px;
+
+	.logo {
+		margin: 40px auto 16px auto;
+
+		a {
+			display: inline-block;
+			margin: 0 auto;
+		}
+
+		img {
+			display: block;
+			width: 58px;
+			height: 58px;
+		}
+	}
+
+	h1 {
+		font-size: 24px;
+	  font-weight: bold;
+	  letter-spacing: 2.3px;
+	  color: #72cfa5;
+	  font-family: "ProximaNovaBold";
+	  margin-bottom: 50px;
+	  text-transform: uppercase;
+
+	  &+p {
+	  	font-size: 16px;
+		  letter-spacing: 1.5px;
+		  text-align: center;
+		  padding: 0 20px;
+		  color: #90a4ae;
+		  margin-bottom: 19px;
+	  }
+	}
+
+	.signup-form {
+		border-radius: 4px;
+	  background-color: #ffffff;
+	  padding: 10% 13.95%;
+	  box-shadow: 0 12px 140px 0 rgba(144, 164, 174, 0.1);
+
+	  .form-field {
+	  	position: relative;
+
+	  	&:not(:last-child) {
+	  		margin-bottom: 32px;
+	  	}
+	  }
+
+	  label {
+	  	display: block;
+	  	font-size: 16px;
+			color: #66758b;
+			margin-bottom: 10px;
+			text-align: left;
+			position: relative;
+			z-index: 1;
+
+			i {
+				font-style: normal;
+				color: #72cfa5;
+			}
+
+			span {
+				margin-bottom: 10px;
+				display: block;
+			}
+	  }
+
+	  input {
+	  	display: block;
+	  	background: transparent;
+	  	width: 100%;
+
+	  	&:not([type="submit"]):not([type="file"]) {
+	  		height: 48px;
+	  		padding: 0 24px;
+			  border-radius: 3px;
+			  border: solid 1px #e6ebf1;
+			  font-size: 16px;
+  			color: #2f4366;
+	  	}
+
+	  	&[type="password"] {
+	  		font-size: 22px;
+	  		font-weight: 700;
+	  		letter-spacing: 7px;
+	  		color: #cad3de;
+	  	}
+
+	  	&[type="file"] {
+	  		display: none;
+	  	}
+
+	  	&[type="submit"] {
+	  		font-size: 16px;
+			  font-weight: bold;
+			  color: #ffffff;
+			  font-family: "ProximaNovaBold";
+			  text-transform: uppercase;
+			  border-radius: 3px;
+			  margin: auto 0;
+			  padding: 15px;
+			  overflow: hidden;
+			  text-overflow: ellipsis;
+			  max-width: 258px;
+			  margin: 0 auto;
+			  z-index: 1;
+			  position: relative;
+	  	  transition: 0.5s;
+	  	  overflow: hidden;
+	  	  background-image: linear-gradient(45deg, #00adf2, #ffff7e);
+	  	  background-size: 300% 300%;
+	  	  animation: gradient  10s ease infinite;
+
+	  	  &:hover {
+	  	  	box-shadow: 0 0 10px rgba(10,125,224,.3);
+	  	  }
+	  	}
+	  }
+	}
+
+	.inputed-file {
+  	display: flex;
+  	align-items: center;
+  	justify-content: space-between;
+
+  	#filename {
+  		width: calc(100% - 70px);
+  		height: 48px;
+  		padding: 0 50px 0 24px;
+		  border-radius: 3px;
+		  border: solid 1px #e6ebf1;
+		  font-size: 16px;
+		  line-height: 48px;
+			color: #2f4366;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			position: relative;
+
+			&:after {
+				display: block;
+				content: '';
+				width: 22px;
+				height: 22px;
+				position: absolute;
+				top: 12px;
+				right: 10px;
+				cursor: pointer;
+				z-index: 1;
+				background: url("assets/images/icons.png") no-repeat 0px -456px;
+			}
+  	}
+
+  	.preview {
+			width: 48px;
+		  height: 48px;
+		  box-shadow: 0 2px 14px 0 #cad3de;
+		  border: solid 3px #cad3de;
+		  padding: 3px;
+  	}
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 10% 14%;
+  }
+
+  50% {
+    background-position: 50% 37%;
+  }
+
+  100% {
+    background-position: 0% 14%;
+  }
+}

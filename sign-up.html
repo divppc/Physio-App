@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/3.0.2/normalize.css"/>
+    <link rel="stylesheet" href="style.css"/>
+    <title>My Physio Dashboard | Sign Up</title>
+  </head>
+  <body class="sign-up">
+    <section class="auth">
+      <div class="logo"><a href="#"><img src="assets/images/main-logo.svg" alt=""/></a></div>
+      <h1>Sign up</h1>
+      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
+      <form action="#" class="signup-form">
+        <div class="form-field">
+          <label for="name">Name <i>*</i></label>
+          <input type="text" id="name" required="required"/>
+        </div>
+        <div class="form-field">
+          <label for="pref-name">Preferred name <i>*</i></label>
+          <input type="text" id="pref-name" required="required"/>
+        </div>
+        <div class="form-field">
+          <label for="email">Email <i>*</i></label>
+          <input type="email" id="email" required="required"/>
+        </div>
+        <div class="form-field">
+          <label for="password">Password <i>*</i></label>
+          <input type="password" id="password" required="required"/>
+        </div>
+        <div class="form-field">
+          <label for="password-confirm">Password Confirm <i>*</i></label>
+          <input type="password" id="password-confirm" required="required"/>
+        </div>
+        <div class="form-field">
+          <label for="photo" class="file-upload"><span>Upload photo</span>
+            <input type="file" id="photo" required="required"/>
+            <div class="inputed-file">
+              <div id="filename"></div>
+              <div class="preview avatar"><img src="http://pipsum.com/150x150" alt=""/></div>
+            </div>
+          </label>
+        </div>
+        <div class="form-field">
+          <input type="submit" value="Sign up"/>
+        </div>
+      </form>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
