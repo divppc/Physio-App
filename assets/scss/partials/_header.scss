@@ -1,0 +1,138 @@
+/*HEADER*/
+header {
+	border-bottom: solid 2px #dadee3;
+
+	.main-line {
+		background-image: linear-gradient(56deg, #00adf2, #c5ec98);
+		min-height: 73px;
+		line-height: 73px;
+
+		.container {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+		}
+	}
+
+	.header-panel {
+		display: flex;
+		align-items: center;
+
+		div {
+
+			a {
+				display: flex;
+				align-items: center;
+				font-family: "ProximaNovaBold";
+				color: #ffffff;
+
+				&:before {
+					display: block;
+					content: '';
+					background: url("assets/images/icons.png") no-repeat 0px 0px;
+				}
+			}
+
+			&:not(.logo) {
+
+				a {
+					opacity: .7;
+					border-bottom: 2px solid transparent;
+
+					&:hover,
+					&.active {
+						border-bottom: 2px solid #fff;
+						opacity: 1;
+					}
+				}
+			}
+		}
+
+		.logo {
+			margin-right: 52px;	  
+
+		  a {
+				font-size: 16px;
+			  letter-spacing: -0.1px;	  	
+
+		  	&:before {
+			  	width: 33px;
+			  	height: 33px;
+			  	margin-right: 15px;
+			  	background-position: 0px -561px;
+			  }
+		  }
+		}
+
+		.patient {
+			margin-right: 38px;
+
+			a {
+				letter-spacing: 0.3px;
+				font-size: 14px;
+
+				&:before {
+					width: 24px;
+					height: 24px;
+					background-position: 0 -494px;
+					margin-right: 16px;
+				}
+			}
+		}
+
+		.settings {
+
+			a {
+				font-size: 14px;
+				letter-spacing: 0.3px;
+
+				&:before {
+					width: 24px;
+					height: 24px;
+					background-position: 0 -390px;
+					margin-right: 16px;
+				}
+			}
+		}
+	}
+
+	.user-panel {
+		display: flex;
+		align-items: center;
+
+		.user {
+			display: flex;
+			align-items: center;
+			cursor: pointer;
+		}
+
+		.user-avatar {
+			width: 42px;
+			height: 42px;
+			box-shadow: 0 12px 24px 0 rgba(38, 80, 61, 0.2);
+  		border: solid 3px #ffffff;
+
+  		img {
+  			border: 3px solid #72cfa5;
+  		}
+		}
+
+		.user-name {
+			font-size: 16px;
+		  letter-spacing: -0.1px;
+		  color: #ffffff;
+		  font-family: "ProximaNovaBold";
+		  margin: 0 20px 0 24px;
+		}
+	}
+
+	.logout {
+
+		a {
+			display: block;
+			width: 19px;
+			height: 15px;
+			background: url("assets/images/icons.png") no-repeat 0px -141px;
+		}
+	}
+}

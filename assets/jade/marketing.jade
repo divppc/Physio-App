@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+html(lang="en")
+	head
+		meta(http-equiv="X-UA-Compatible" content="IE=edge")
+		meta(charset="UTF-8")
+		link(rel="stylesheet", href="https://necolas.github.io/normalize.css/3.0.2/normalize.css")
+		link(rel="stylesheet", href="style.css")
+		title My Physio Dashboard | Marketing Automation
+	body
+		header
+			.main-line
+				.container
+					.header-panel
+						.logo
+							a(href="/") MyPhysio
+						.patient
+							a(href="#") Patients
+						.settings
+							a(href="#" class="active") General Settings
+					.user-panel
+						.user
+							.user-avatar.avatar
+								img(src="http://pipsum.com/100x100", alt="")
+							.user-name Henry Wagner
+						.logout
+							a(href="#" title="Log Out")
+			nav
+				.container
+					ul
+						li
+							a(href="#" class="active") General
+						li
+							a(href="#") Team Members
+						li
+							a(href="#") My Exercises
+						li
+							a(href="#") My Templates
+						li
+							a(href="#") My Articles
+						li
+							a(href="#") Integrations 
+						li
+							a(href="#") Marketing Automation
+		section.marketing
+			.container
+				.section-panel
+					h1 Marketing Automation
+					.control-panel
+						form(action="#")
+							.form-field.search-box
+								input(type="text" placeholder="Search Message" required)
+							.form-field
+								button(type="submit") Add Message
+				table.marketing-automation
+					thead
+						tr
+							td Title
+							td Show After
+							td(colspan=2) Preview
+					tbody
+						tr
+							td Great Choice
+							td 1 days
+							td
+								a(href="#" class="preview") preview
+							td
+								a(href="#" class="remove") +
+						tr
+							td Have You Done Your Exercises Today?
+							td 2 days
+							td
+								a(href="#" class="preview") preview
+							td
+								a(href="#" class="remove") +
+						tr
+							td It’s Your Turn To Help Edicate 
+							td 8 days
+							td
+								a(href="#" class="preview") preview
+							td
+								a(href="#" class="remove") +
+						tr
+							td Massage and Acupuncture at Active Bodies Physiotherapy
+							td 14 days
+							td
+								a(href="#" class="preview") preview
+							td
+								a(href="#" class="remove") +
+						tr
+							td Your Antibiotic One Day To 10 Day Options
+							td 1 days
+							td
+								a(href="#" class="preview") preview
+							td
+								a(href="#" class="remove") +
+						tr
+							td Selecting The Right Apnea Treatment
+							td 2 days
+							td
+								a(href="#" class="preview") preview
+							td
+								a(href="#" class="remove") +
+						tr
+							td What Can Happen If High Blood Pressure Is Left Untreated
+							td 8 days
+							td
+								a(href="#" class="preview") preview
+							td
+								a(href="#" class="remove") +
+						tr
+							td A Sure Way To Get Rid Of Your Back Ache Problem
+							td 14 days
+							td
+								a(href="#" class="preview") preview
+							td
+								a(href="#" class="remove") +
+						tr
+							td Selecting The Right Apnea Treatment
+							td 1 days
+							td
+								a(href="#" class="preview") preview
+							td
+								a(href="#" class="remove") +
+
+		script(src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous")
+		script(src="assets/js/main.js")

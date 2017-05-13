@@ -1,0 +1,109 @@
+/*MARKETING*/
+section.marketing {
+	padding-bottom: 120px;
+}
+
+.marketing-automation {
+	width: 100%;
+	border-collapse: separate;
+  border-spacing: 0 10px;
+
+	thead {
+
+		td {
+			padding: 20px 0;
+			font-size: 16px;
+		  font-family: "ProximaNovaBold";
+		  letter-spacing: -0.1px;
+		  color: rgb(72, 84, 101);
+		}
+	}
+
+	a {
+		display: inline-block;
+
+		&.preview {
+			font-size: 16px;
+			font-family: "ProximaNovaBold";
+		  letter-spacing: -0.1px;
+		  border-radius: 3px;
+		  color: rgb(114, 207, 165);
+		  border: solid 1px rgb(114, 207, 165);
+		  padding: 6px 23px;
+		}
+
+		&.remove {
+			width: 20px;
+			height: 20px;
+			border-radius: 50%;
+			text-align: center;
+			line-height: 20px;
+			font-size: 18px;
+			transform: rotate(45deg);
+			color: #fff;
+			background: rgb(240, 76, 94);
+
+			&:hover {
+				background: darken(rgb(240, 76, 94), 5%);
+			}
+		}
+	}
+
+	tbody {
+
+		tr {
+			background: rgb(255,255,255);
+			transition: 0.3s;
+			border: solid 0.5px rgb(202, 211, 222);
+
+			&:hover {
+				box-shadow: 0 12px 24px 0 rgba(201, 211, 220, 0.3), 0 0 6px 0 rgba(139, 147, 153, 0.12);
+				background-color: rgb(255, 255, 255);
+
+				a.preview {
+					color: rgb(255, 255, 255);
+					background-image: linear-gradient(30deg, #00adf2, #b1e6a2);
+				}
+
+				&>td {
+					border-color: #fff;
+				}
+			}
+		}
+
+		td {
+			padding: 12px 0;
+		  font-size: 16px;
+		  letter-spacing: -0.1px;
+		  color: rgb(72, 84, 101);
+		  transition: 0.3s;
+		  border-top: solid 0.5px rgb(202, 211, 222);
+		  border-bottom: solid 0.5px rgb(202, 211, 222);
+
+		  &:first-child {
+		  	padding: 0 24px;
+		  	overflow: hidden;
+		  	text-overflow: ellipsis;
+		  	width: 73.685%;
+		  	border-radius: 3px 0 0 3px;
+		  	white-space: nowrap;
+		  	max-width: 840px;
+		  	border-left: solid 0.5px rgb(202, 211, 222);
+		  }
+
+		  &:nth-child(2) {
+		  	width: 11.14%;
+		  }
+
+		  &:nth-child(3) {
+		  	width: 11.31%;
+		  }
+
+		  &:last-child {
+		  	padding-right: 24px;
+		  	border-radius: 0 3px 3px 0;
+		  	border-right: solid 0.5px rgb(202, 211, 222);
+		  }
+		}
+	}
+}

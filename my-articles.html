@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/3.0.2/normalize.css"/>
+    <link rel="stylesheet" href="style.css"/>
+    <title>My Physio Dashboard | My articles</title>
+  </head>
+  <body>
+    <header>
+      <div class="main-line">
+        <div class="container">
+          <div class="header-panel">
+            <div class="logo"><a href="/">MyPhysio</a></div>
+            <div class="patient"><a href="#">Patients</a></div>
+            <div class="settings"><a href="#" class="active">General Settings</a></div>
+          </div>
+          <div class="user-panel">
+            <div class="user">
+              <div class="user-avatar avatar"><img src="http://pipsum.com/100x100" alt=""/></div>
+              <div class="user-name">Henry Wagner</div>
+            </div>
+            <div class="logout"><a href="#" title="Log Out"></a></div>
+          </div>
+        </div>
+      </div>
+      <nav>
+        <div class="container">
+          <ul>
+            <li><a href="#" class="active">General</a></li>
+            <li><a href="#">Team Members</a></li>
+            <li><a href="#">My Exercises</a></li>
+            <li><a href="#">My Templates</a></li>
+            <li><a href="#">My Articles</a></li>
+            <li><a href="#">Integrations </a></li>
+            <li><a href="#">Marketing Automation</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <section class="articles">
+      <div class="container">
+        <div class="section-panel">
+          <h1>My Articles</h1>
+          <div class="control-panel">
+            <form action="#">
+              <div class="form-field checkbox">
+                <input type="checkbox" id="only-my-articles"/>
+                <label for="only-my-articles">show only my articles</label>
+              </div>
+              <div class="form-field search-box">
+                <input type="text" placeholder="Search Articles" required="required"/>
+              </div>
+              <div class="form-field">
+                <button type="submit">Add Articles</button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="articles-container">
+          <article><a href="#"><img src="http://pipsum.com/400x200" alt=""/>
+              <h2>Hot-Cold Treatment</h2></a></article>
+          <article><a href="#"><img src="http://pipsum.com/400x200" alt=""/>
+              <h2>Injury Healing Process</h2></a></article>
+          <article><a href="#"><img src="http://pipsum.com/400x200" alt=""/>
+              <h2>Managing Inflammation</h2></a></article>
+          <article><a href="#"><img src="http://pipsum.com/400x200" alt=""/>
+              <h2>Office Ergonomics</h2></a></article>
+          <article><a href="#"><img src="http://pipsum.com/400x200" alt=""/>
+              <h2>Pain 1: What is Pain?</h2></a></article>
+          <article><a href="#"><img src="http://pipsum.com/400x200" alt=""/>
+              <h2>Pain 2: The Homunculus</h2></a></article>
+          <article><a href="#"><img src="http://pipsum.com/400x200" alt=""/>
+              <h2>Pain 3: The Neuromatrix</h2></a></article>
+          <article><a href="#"><img src="http://pipsum.com/400x200" alt=""/>
+              <h2>Pain 4: Why some people feel more pain</h2></a></article>
+          <article><a href="#"><img src="http://pipsum.com/400x200" alt=""/>
+              <h2>Pain 5: Your brain influencing your pain</h2></a></article>
+          <article><a href="#"><img src="http://pipsum.com/400x200" alt=""/>
+              <h2>What Is Whiplash?</h2></a></article>
+        </div>
+      </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

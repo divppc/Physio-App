@@ -1,0 +1,35 @@
+/*MENU*/
+nav {
+
+	ul {
+		display: flex;
+		align-items: center;
+
+		li {
+			display: block;
+
+			&:not(:last-child) {
+				margin-right: 60px;
+			}
+		}
+
+		a {
+			font-size: 14px;
+		  letter-spacing: 0.3px;
+		  color: #485465;
+		  display: block;
+		  margin-bottom: -1px;
+		  padding: 20px 3px;
+		  border-bottom: 3px solid transparent;
+
+		  &:hover {
+		  	border-bottom: 3px solid #55c8cb;
+		  }
+
+		  &.active {
+		  	border-bottom: 3px solid #55c8cb;
+		  	font-family: "ProximaNovaBold";
+		  }
+		}
+	}
+}

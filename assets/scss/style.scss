@@ -13,6 +13,7 @@
 html {
 	min-height: 100%;
 }
+
 * {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -29,7 +30,6 @@ body {
 	width: 100%;
 	min-height: 100%;
 	background-color: #f1f4f8;
-	padding: 0;
 
 	&.sign-up {
 		background-image: linear-gradient(to bottom, #ffffff, #e6ebf1);
@@ -39,6 +39,7 @@ body {
 .container {
 	width: $container-width;
 	margin: 0 auto;
+	min-width: 1140px;
 }
 
 a {
@@ -70,6 +71,7 @@ ul {
 
 h1,h2,h3,h4,h5,h6,p {
 	margin: 0;
+	font-weight: normal;
 }
 
 input {
@@ -88,6 +90,11 @@ input {
 	  letter-spacing: -0.1px;
 	  color: #90a4ae;
 	}
+}
+
+button {
+	border: 0;
+	transition: 0.3s;
 }
 
 .avatar {
@@ -110,3 +117,5 @@ input {
 /* PAGES */
 @import 'pages/main';
 @import 'pages/sign-up';
+@import 'pages/my_articles';
+@import 'pages/marketing';
