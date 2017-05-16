@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+html(lang="en")
+	head
+		meta(http-equiv="X-UA-Compatible" content="IE=edge")
+		meta(charset="UTF-8")
+		link(rel="stylesheet", href="https://necolas.github.io/normalize.css/3.0.2/normalize.css")
+		link(rel="stylesheet", href="style.css")
+		title My Physio Dashboard | Sign Up
+	body.sign-up
+		section.invite
+			h1 Send Invitations
+			p.
+				Invite a new member to the practice.
+			form(action="#").signup-form
+				.form-field
+					label(for="name") Name
+					input(type="text" id="name" required)
+				.form-field
+					label(for="email") Email
+					input(type="email" id="email" required)
+				.form-field
+					label(for="confirm-email") Confirm Email
+					input(type="email" id="confirm-email" required)
+				.form-field.roles
+					.field-subtitle Roles:
+					.member-role
+						.role
+							input(type="checkbox" id="role1")
+							label(for="role1") Patient
+						.role
+							input(type="checkbox" id="role2")
+							label(for="role2") Practic Manager
+						.role
+							input(type="checkbox" id="role3")
+							label(for="role3") Lead Physio
+						.role
+							input(type="checkbox" id="role4")
+							label(for="role4") Physio
+						.role
+							input(type="checkbox" id="role5")
+							label(for="role5") Admin
+						.role
+							input(type="checkbox" id="role6" checked)
+							label(for="role6") Team Member
+						.role
+							input(type="checkbox" id="role7")
+							label(for="role7") System Admin
+						span Select all the roles this user will perform
+				.form-field
+					input(type="submit" class="btn-gradient" value="Send invitation")
+		script(src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous")
+		script(src="assets/js/main.js")

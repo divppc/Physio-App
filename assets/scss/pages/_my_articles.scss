@@ -21,7 +21,7 @@ section.articles {
 				&:hover {
 
 					&>img {
-						box-shadow: 0 0 10px rgba(24, 95, 92, 0.7)
+						box-shadow: 0 0 10px rgba(24, 95, 92, 0.7);
 					}
 
 					span {
@@ -36,6 +36,7 @@ section.articles {
 			transition: 0.3s;
 			width: 100%;
 			// width: 200.4px;
+			border-radius: 3px;
 			height: 131.8px;
 			margin-bottom: 25px;
 		}

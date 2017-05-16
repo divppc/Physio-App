@@ -1,0 +1,358 @@
+/*CREATE PROGRAM*/
+.user-side {
+	width: 261px;
+	border-radius: 1px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 2px 50px 0 rgba(205, 213, 218, 0.5);
+  padding-top: 30px;
+  min-height: 100%;
+  min-height: 100vh;
+
+  .top-panel {
+  	margin-bottom: 50px;
+  	padding-left: 28px;
+
+  	ul {
+  		display: flex;
+  		align-items: center;
+  	}
+
+  	li {
+
+  		&:not(:last-child) {
+  			margin-right: 24px;
+  		}
+  	}
+
+  	.back {
+  		width: 9px;
+  		height: 16px;
+  		display: block;
+  		background: url("assets/images/icons.png") no-repeat 0px -615px;
+  	}
+
+  	span {
+  		font-size: 16px;
+		  font-weight: bold;
+		  letter-spacing: -0.3px;
+		  font-family: "ProximaNovaBold";
+		  color: rgb(114, 207, 165);
+  	}
+
+  	img {
+  		width: 20px;
+  		display: block;
+  		transition: 0.3s;
+
+  		&:hover {
+  			transform: rotate(-45deg);
+  		}
+  	}
+  }
+
+  .user {
+  	text-align: center;
+
+  	.user-photo {
+  		width: 68px;
+  		height: 68px;
+  		box-shadow: 0 2px 14px 0 rgb(202, 211, 222);
+  		border: solid 3px rgb(202, 211, 222);
+  		margin: 0 auto 22px;
+  		padding: 3px;
+  		background: #fff;
+  	}
+
+  	.user-name {
+  		font-size: 18px;
+  		font-family: "ProximaNovaBold";
+  		margin-bottom: 4px;
+		  letter-spacing: -0.3px;
+		  color: rgb(72, 84, 101);
+  	}
+
+  	.user-mail {
+  		font-size: 16px;
+		  letter-spacing: -0.3px;
+		  color: rgb(72, 84, 101);
+		  margin-bottom: 105px;
+  	}
+  }
+
+  .nav-panel {
+  	display: block;
+  	text-align: left;
+
+  	li {
+  		display: block;
+  	}
+
+  	a {
+  		font-size: 14px;
+		  letter-spacing: -0.2px;
+		  color: rgb(144, 164, 174);
+		  position: relative;
+		  display: block;
+		  padding: 16px 30px 16px 78px;
+		  white-space: nowrap;
+		  text-overflow: ellipsis;
+			overflow: hidden;
+			border-left: 2px solid transparent;
+
+			&:before {
+				display: block;
+				content: '';
+				position: absolute;
+				background: url("assets/images/icons.png") no-repeat;
+			}
+
+			&:hover,
+			&.active {
+				color: rgb(114, 207, 165);
+				background-color: rgba(114, 207, 165, .15);
+				border-color: rgb(114, 207, 165);
+			}
+  	}
+
+  	.programs {
+
+  		&:before {
+  			width: 26px;
+  			height: 27px;
+  			top: 10px;
+  			left: 28px;
+  			background-position: -26px -113px;
+  		}
+
+  		&:hover,
+  		&.active {
+
+  			&:before {
+  				background-position: 0 -113px;
+  			}  			
+  		}
+  	}
+
+  	.chat {
+
+  		&:before {
+  			width: 23px;
+  			height: 21px;
+  			left: 30px;
+  			top: 13px;
+  			background-position: 0 0;
+  		}
+
+  		&:hover,
+  		&.active {
+
+  			&:before {
+  				background-position: -24px 0px;
+  			}  			
+  		}
+  	}
+
+  	.insights {
+
+  		&:before {
+  			width: 16px;
+  			height: 21px;
+  			left: 33px;
+  			top: 14px;
+  			background-position: 0 -540px;
+  		}
+
+  		&:hover,
+  		&.active {
+
+  			&:before {
+  				background-position: -17px -540px;
+  			}  			
+  		}
+  	}
+  }
+}
+
+section.create-program {
+	display: flex;
+	min-height: 100%;
+	position: relative;
+
+	.back-link {
+		position: absolute;
+		top: 21px;
+		left: 300px;
+	}
+
+	.program-container {
+		padding-top: 51px;
+		text-align: center;
+		width: calc(100% - 261px);
+
+		h1 {
+			font-size: 24px;
+		  letter-spacing: -0.1px;
+		  font-family: "ProximaNovaBold";
+		  color: rgb(72, 84, 101);
+		  margin-bottom: 3px;
+
+		  &+span {
+		  	font-size: 16px;
+			  letter-spacing: -0.1px;
+			  color: rgb(144, 164, 174);
+		  }
+		}
+	}
+
+	.section-heading {
+		margin-left: 229px;
+		width: 584px;
+	}
+}
+
+.program-form {
+	margin-top: 45px;
+	padding-top: 50px;
+	border-top: solid 1px rgb(202, 211, 222);
+
+	form {
+		width: 584px;
+		margin-left: 229px;
+	}
+
+	.form-field {
+
+		&:first-of-type {
+			margin-bottom: 24px;
+		}
+
+		label {
+			margin-bottom: 10px;
+		}
+	}
+
+	input[type="text"],
+	select {
+		display: block;
+		height: 50px;
+	  border-radius: 3px;
+	  background: #fff;
+	  background-color: rgb(255, 255, 255);
+	  width: 100%;
+
+	  &::-webkit-input-placeholder {
+	  	font-size: 16px;
+	  }
+	}
+
+	input[type="text"] {
+		padding: 0 24px;
+	}
+
+	label {
+		position: relative;
+		display: flex;
+		align-items: center;
+		font-size: 16px;
+	  letter-spacing: -0.1px;
+	  color: rgb(72, 84, 101);
+	}
+
+	.selects {
+		display: flex;
+
+		.select {
+
+			&:first-child {
+				width: 106px;
+				margin-right: 10px;
+			}
+
+			&:last-child {
+				width: calc(100% - 116px);
+			}
+ 		}
+
+ 		select {
+ 			padding: 0 24px;
+ 			border: none;
+ 			font-size: 16px;
+		  letter-spacing: -0.1px;
+		  cursor: pointer;
+		  color: #90a4ae;
+		  appearance: none;
+		  background: url("assets/images/select-arrow.png") no-repeat 96% center, #fff;
+		  background: url("assets/images/select-arrow.png") no-repeat calc(100% - 20px) center, #fff;
+
+ 			&:focus {
+	    	box-shadow: 0 0 3px rgba(10,125,224,.5);
+			}
+ 		}
+	}
+
+	.btn-gradient {
+		display: block;
+		height: 50px;
+		border-radius: 3px;
+		font-size: 14px;
+	  font-weight: bold;
+	  letter-spacing: -0.1px;
+	  font-family: "ProximaNovaBold";
+	  padding: 0 10px;
+	  min-width: 96px;
+	  color: rgb(255, 255, 255);
+	}	
+
+	.checkbox-holder {
+		margin: 19px 0 24px 0;
+		
+		input {
+			display: none;
+
+			&+label {
+
+				&:before {
+					display: block;
+					content: '';
+					border-radius: 50%;
+					margin-right: 16px;
+					width: 16px;
+				  height: 16px;
+				  cursor: pointer;
+		      border: solid 3px #9ba9bc;
+		      background: #fff;
+		      box-sizing: border-box;
+				}
+			}
+
+			&:checked {
+
+				&+label {
+					cursor: pointer;
+
+					&:before {
+						background: linear-gradient(to bottom, #52C7CC, #95DDAE);
+			    	background-size: 172%;
+			    	border-color: transparent;
+			    	background-position: 0 -21px;
+					}
+
+					&:after {
+						width: 6px;
+				    height: 6px;
+				    display: block;
+				    content: '';
+				    border: 2px solid #fff;
+				    position: absolute;
+				    top: 50%;
+				    transform: translateY(-50%);
+				    cursor: pointer;
+				    border-radius: 50%;
+				    left: 3px;
+				    background: transparent;
+					}
+				}
+			}
+		}
+	}
+}

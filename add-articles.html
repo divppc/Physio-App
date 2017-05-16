@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/3.0.2/normalize.css"/>
+    <link rel="stylesheet" href="style.css"/>
+    <title>My Physio Dashboard | Add articles</title>
+  </head>
+  <body>
+    <header>
+      <div class="main-line">
+        <div class="container">
+          <div class="header-panel">
+            <div class="logo"><a href="/">MyPhysio</a></div>
+            <div class="patient"><a href="#">Patients</a></div>
+            <div class="settings"><a href="#" class="active">General Settings</a></div>
+          </div>
+          <div class="user-panel">
+            <div class="user">
+              <div class="user-avatar avatar"><img src="http://pipsum.com/100x100" alt=""/></div>
+              <div class="user-name">Henry Wagner</div>
+            </div>
+            <div class="logout"><a href="#" title="Log Out"></a></div>
+          </div>
+        </div>
+      </div>
+      <nav>
+        <div class="container">
+          <ul>
+            <li><a href="#" class="active">General</a></li>
+            <li><a href="#">Team Members</a></li>
+            <li><a href="#">My Exercises</a></li>
+            <li><a href="#">My Templates</a></li>
+            <li><a href="#">My Articles</a></li>
+            <li><a href="#">Integrations </a></li>
+            <li><a href="#">Marketing Automation</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <div class="breadcrumbs">
+      <div class="container">
+        <ul>
+          <li class="back"><a href="#" class="back-link">Back</a></li>
+          <li><a href="#">My Articles</a></li>
+          <li><span>Add Article</span></li>
+        </ul>
+      </div>
+    </div>
+    <section class="add-articles">
+      <form action="#">
+        <div class="article-picture">
+          <div class="picture-preview"></div>
+          <div class="edit-picture">
+            <div id="filename">Choose File</div>
+            <label for="edit-picture">
+              <input type="file" id="edit-picture"/>
+            </label>
+          </div>
+          <div class="hint">
+            <p>Add Picture</p><span>The Proposed  size is 512x512px no bigger than 2.5 mb</span>
+          </div>
+        </div>
+        <div class="article-data">
+          <div class="form-field">
+            <label for="headline">Headline</label>
+            <input type="text" id="headline" placeholder="Type Name" required="required"/>
+          </div>
+          <div class="form-field article-body">
+            <label for="body">Body</label>
+            <textarea id="body" name="article-body" placeholder="Type Description"></textarea>
+            <div class="length-counter">
+              <div class="inputed">0</div>
+              <div class="total">2000</div>
+            </div>
+          </div>
+          <div class="form-field">
+            <label for="link">Extra link</label>
+            <input type="text" id="link" placeholder="http://"/>
+          </div>
+          <div class="form-field">
+            <button type="submit" class="btn-gradient">Save</button>
+            <button type="reset">Cancel</button>
+          </div>
+        </div>
+      </form>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

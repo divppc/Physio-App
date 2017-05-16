@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/3.0.2/normalize.css"/>
+    <link rel="stylesheet" href="style.css"/>
+    <title>My Physio Dashboard | General Settings</title>
+  </head>
+  <body>
+    <header>
+      <div class="main-line">
+        <div class="container">
+          <div class="header-panel">
+            <div class="logo"><a href="/">MyPhysio</a></div>
+            <div class="patient"><a href="#">Patients</a></div>
+            <div class="settings"><a href="#" class="active">General Settings</a></div>
+          </div>
+          <div class="user-panel">
+            <div class="user">
+              <div class="user-avatar avatar"><img src="http://pipsum.com/100x100" alt=""/></div>
+              <div class="user-name">Henry Wagner</div>
+            </div>
+            <div class="logout"><a href="#" title="Log Out"></a></div>
+          </div>
+        </div>
+      </div>
+      <nav>
+        <div class="container">
+          <ul>
+            <li><a href="#" class="active">General</a></li>
+            <li><a href="#">Team Members</a></li>
+            <li><a href="#">My Exercises</a></li>
+            <li><a href="#">My Templates</a></li>
+            <li><a href="#">My Articles</a></li>
+            <li><a href="#">Integrations </a></li>
+            <li><a href="#">Marketing Automation</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <section class="settings">
+      <div class="container">
+        <div class="section-panel">
+          <h1>General</h1>
+        </div>
+        <div class="settings-data"><a href="#" class="edit-btn">Edit</a>
+          <div class="company">
+            <h2>Your Logo Company:</h2>
+            <div class="company-logo"><img src="assets/images/company-logo.png" alt=""/></div>
+            <div class="edit-logo">
+              <div id="filename"></div>
+              <label for="edit-logo">Edit
+                <input type="file" id="edit-logo"/>
+              </label>
+            </div>
+            <p>Upload the logo you wish to display in the app. Must be a .jpg or .png file. We recommended 640x320 pixels for the best result.</p>
+          </div>
+          <div class="details">
+            <h2>Basic Details</h2>
+            <div class="details-item email">
+              <p>E-mail</p><span>wilton.heidenreich@beth.biz</span>
+            </div>
+            <div class="details-item phone">
+              <p>Telephone</p><span>+38096 046 97 91</span>
+            </div>
+            <div class="details-item name">
+              <p>Name</p><span>Active Bodies Physiotherapy and Health</span>
+            </div>
+            <div class="details-item address">
+              <p>Practice Address</p><span>Level 1, 60 Halifax Street</span><span>Adelaide SA 5000</span><span>Australia</span>
+            </div>
+            <div class="details-item timezone">
+              <p>Timezone</p><span>Australia Central Standard Time (South Australia)</span>
+            </div>
+          </div>
+        </div>
+        <div class="settings-data"><a href="#" class="edit-btn">Edit</a>
+          <div class="information">
+            <h2>Practice information</h2>
+            <p>
+              You practice’s opening hours, contact details 
+              and programmed messages to appear on the 
+              info pages of the app.
+            </p>
+          </div>
+          <div class="worktime">
+            <h2>Opening Hours</h2>
+            <table>
+              <tr>
+                <td>Monday:</td>
+                <td>8am - 7pm.</td>
+              </tr>
+              <tr>
+                <td>Tuesday:</td>
+                <td>8am - 6pm.</td>
+              </tr>
+              <tr>
+                <td>Wednesday:</td>
+                <td>8am - 6pm.</td>
+              </tr>
+              <tr>
+                <td>Thursday:</td>
+                <td>8am - 4.30pm.</td>
+              </tr>
+              <tr>
+                <td>Friday:</td>
+                <td>8am - 4.30pm.</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

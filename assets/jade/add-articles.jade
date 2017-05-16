@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+html(lang="en")
+	head
+		meta(http-equiv="X-UA-Compatible" content="IE=edge")
+		meta(charset="UTF-8")
+		link(rel="stylesheet", href="https://necolas.github.io/normalize.css/3.0.2/normalize.css")
+		link(rel="stylesheet", href="style.css")
+		title My Physio Dashboard | Add articles
+	body
+		header
+			.main-line
+				.container
+					.header-panel
+						.logo
+							a(href="/") MyPhysio
+						.patient
+							a(href="#") Patients
+						.settings
+							a(href="#" class="active") General Settings
+					.user-panel
+						.user
+							.user-avatar.avatar
+								img(src="http://pipsum.com/100x100", alt="")
+							.user-name Henry Wagner
+						.logout
+							a(href="#" title="Log Out")
+			nav
+				.container
+					ul
+						li
+							a(href="#" class="active") General
+						li
+							a(href="#") Team Members
+						li
+							a(href="#") My Exercises
+						li
+							a(href="#") My Templates
+						li
+							a(href="#") My Articles
+						li
+							a(href="#") Integrations 
+						li
+							a(href="#") Marketing Automation
+		.breadcrumbs
+			.container
+				ul
+					li.back
+						a(href="#" class="back-link") Back
+					li
+						a(href="#") My Articles
+					li
+						span Add Article
+		section.add-articles
+			form(action="#")
+				.article-picture
+					.picture-preview
+					.edit-picture
+						#filename Choose File
+						label(for="edit-picture")
+							input(type="file" id="edit-picture")
+					.hint
+						p Add Picture
+						span.
+							The Proposed  size is 512x512px no bigger than 2.5 mb
+				.article-data
+					.form-field
+						label(for="headline") Headline
+						input(type="text" id="headline" placeholder="Type Name" required)
+					.form-field.article-body
+						label(for="body") Body
+						textarea(id="body" name="article-body" placeholder="Type Description")
+						.length-counter
+							.inputed 0
+							.total 2000
+					.form-field
+						label(for="link") Extra link
+						input(type="text" id="link" placeholder="http://")
+					.form-field
+						button(type="submit" class="btn-gradient") Save
+						button(type="reset") Cancel
+		script(src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous")
+		script(src="assets/js/main.js")

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+html(lang="en")
+	head
+		meta(http-equiv="X-UA-Compatible" content="IE=edge")
+		meta(charset="UTF-8")
+		link(rel="stylesheet", href="https://necolas.github.io/normalize.css/3.0.2/normalize.css")
+		link(rel="stylesheet", href="style.css")
+		title My Physio Dashboard | Create program
+	body
+		section.create-program
+			.user-side
+				.top-panel
+					ul
+						li
+							a(href="#" class="back" title="Back")
+						li
+							a(href="#" title="Home")
+								img(src="assets/images/main-logo.svg", alt="")
+						li
+							span My Physio
+				.user
+					.user-photo.avatar
+						img(src="http://pipsum.com/100x100", alt="")
+					.user-name Serhii Hubarenko
+					.user-mail lelaquin@gmail.com					
+					ul.nav-panel
+						li
+							a(href="#" class="programs active") Programs
+						li
+							a(href="#" class="chat") Chat
+						li
+							a(href="#" class="insights") Insights
+			a(href="#" class="back-link") Back
+			.program-container
+				.section-heading
+					h1 Create Program
+					span Template
+				.program-form
+					form(action="#" class="")
+						.form-field
+							label(for="name") Name
+							input(type="text" id="name" placeholder="Type your program name" required)
+						.form-field
+							label(for="freaquency") Freaquency
+							.selects
+								.select
+									select(id="freaquency")
+										option(value="1") 1
+										option(value="2") 2
+										option(value="3") 3
+										option(value="4") 4
+								.select
+									select
+										option(value="" selected disabled) (Number) Timer per Day
+										option(value="2") 2
+										option(value="3") 3
+										option(value="4") 4
+						.checkbox-holder
+							input(type="checkbox" id="checkbox")
+							label(for="checkbox") Share across locations
+						input(type="submit" class="btn-gradient" value="Save")
+
+		script(src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous")
+		script(src="assets/js/main.js")
