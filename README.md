@@ -8,3 +8,5 @@ Physio Dashboard
 6) Team members http://physio.div.agency/team-members.html<br />
 7) General settings http://physio.div.agency/general-settings.html<br />
 8) Create program http://physio.div.agency/create-program.html<br />
+9) Add articles http://physio.div.agency/add-articles.html<br />
+10) My exercises http://physio.div.agency/my-exercise.html<br />

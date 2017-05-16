@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+html(lang="en")
+	head
+		meta(http-equiv="X-UA-Compatible" content="IE=edge")
+		meta(charset="UTF-8")
+		link(rel="stylesheet", href="https://necolas.github.io/normalize.css/3.0.2/normalize.css")
+		link(rel="stylesheet", href="style.css")
+		title My Physio Dashboard | Create program
+	body
+		section.chat
+			.user-side
+				.top-panel
+					ul
+						li
+							a(href="#" class="back" title="Back")
+						li
+							a(href="#" title="Home")
+								img(src="assets/images/main-logo.svg", alt="")
+						li
+							span My Physio
+				.user
+					.user-photo.avatar
+						img(src="http://pipsum.com/100x100", alt="")
+					.user-name Serhii Hubarenko
+					.user-mail lelaquin@gmail.com					
+					ul.nav-panel
+						li
+							a(href="#" class="programs active") Programs
+						li
+							a(href="#" class="chat") Chat
+						li
+							a(href="#" class="insights") Insights
+			.chat-container
+				.chat-window
+					.search-bar
+						input(type="text" placeholder="Search")
+					.messages
+						.message.sent
+							.user.avatar
+								img(src="http://pipsum.com/100x100", alt="")
+							.msg-container
+								.msg-body
+									p.
+										Hey Henry !
+										It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using
+								.message-time 12:00 AM
+						.message.inbox
+							.user.avatar
+								img(src="http://pipsum.com/100x100", alt="")
+							.msg-container
+								.msg-body
+									p.
+										Hey Lela Quinn !
+										It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 
+								.message-time 12:15 AM
+						.message.sent
+							.user.avatar
+								img(src="http://pipsum.com/100x100", alt="")
+							.msg-container
+								.msg-body
+									p.
+										Hey Henry !
+										It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using
+								.message-time 12:00 AM
+						.message.sent
+							.user.avatar
+								img(src="http://pipsum.com/100x100", alt="")
+							.typing
+								i.dot-icon
+								i.dot-icon
+								i.dot-icon
+				form.new-message(action="#")
+					.input-text
+						input(type="text" placeholder="Input something" required)
+					.input-file
+						input(type="file" id="file")
+						label(for="file")
+					.input-send
+						input(type="submit" value="" id="send-msg")
+						label(for="send-msg")
+
+
+					
+		script(src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous")
+		script(src="assets/js/main.js")

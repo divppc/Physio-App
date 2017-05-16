@@ -69,9 +69,17 @@ section.add-articles {
 				background: darken(#7599fd, 5%);
 			}
 
-			// &:after {
-
-			// }
+			&:after {
+				display: block;
+				content: '';
+				width: 16px;
+				height: 17px;
+				margin: 0 auto;
+				position: relative;
+				top: 50%;
+				transform: translateY(-50%);
+				background: url("assets/images/icons.png") no-repeat 0px -633px;
+			}
 		}
 
 		#filename {

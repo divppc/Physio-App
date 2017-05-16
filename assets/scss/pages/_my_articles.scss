@@ -7,12 +7,22 @@ section.articles {
 		flex-wrap: wrap;
 
 		article {
-			width: 17.6%;
-			min-width: 200.4px;
+			width: 200.4px;
 			margin-bottom: 60px;
 
 			&:not(:nth-child(5n+5)) {
-				margin-right: 3%;
+				margin-right: 34px;
+			}
+
+			@media (min-width: 1735px) {
+				
+				&:not(:nth-child(5n+5)) {
+					margin-right: 0px;
+				}
+
+				&:not(:nth-child(6n+6)) {
+					margin-right: 34px;
+				}
 			}
 
 			a {
@@ -35,7 +45,6 @@ section.articles {
 			display: block;
 			transition: 0.3s;
 			width: 100%;
-			// width: 200.4px;
 			border-radius: 3px;
 			height: 131.8px;
 			margin-bottom: 25px;
