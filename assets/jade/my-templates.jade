@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+html(lang="en")
+	head
+		meta(http-equiv="X-UA-Compatible" content="IE=edge")
+		meta(charset="UTF-8")
+		link(rel="stylesheet", href="https://necolas.github.io/normalize.css/3.0.2/normalize.css")
+		link(rel="stylesheet", href="style.css")
+		title My Physio Dashboard | My templates
+	body
+		header
+			.main-line
+				.container
+					.header-panel
+						.logo
+							a(href="/") MyPhysio
+						.patient
+							a(href="#") Patients
+						.settings
+							a(href="#" class="active") General Settings
+					.user-panel
+						.user
+							.user-avatar.avatar
+								img(src="http://pipsum.com/100x100", alt="")
+							.user-name Henry Wagner
+						.logout
+							a(href="#" title="Log Out")
+			nav
+				.container
+					ul
+						li
+							a(href="#" class="active") General
+						li
+							a(href="#") Team Members
+						li
+							a(href="#") My Exercises
+						li
+							a(href="#") My Templates
+						li
+							a(href="#") My Articles
+						li
+							a(href="#") Integrations 
+						li
+							a(href="#") Marketing Automation
+		section.templates
+			.container
+				.section-panel
+					h1 My Templates
+					.control-panel
+						form(action="#")
+							.form-field.search-box
+								input(type="text" placeholder="Search Template" required)
+							.form-field
+								button(type="submit") Add Template
+				.page
+					.sidebar
+						p Select program:
+						ul.select-program
+							li
+								a(href="#" class="active") Program for Junior
+							li
+								a(href="#") Program test Triton
+							li
+								a(href="#") Program test fun
+							li
+								a(href="#") Program Strong Hard
+					.content
+						.template
+							.template-head
+								.template-data
+									.current-status
+										div 50%
+									.template-name
+										.name Program for Junior
+										.rate
+											ul
+												li.active
+												li.active
+												li.active
+												li.active
+												li
+									.frequency 1 Timer per Day
+								.edit-template
+									a(href="#" title="Edit template")
+							.template-exercises
+								ol
+									li
+										a(href="#")
+											img(src="assets/images/ex2.png" alt="")
+											span Side Lying Hip Internal Rotation
+									li
+										a(href="#")
+											img(src="assets/images/ex3.png" alt="")
+											span Point Kneel With Arm Lift
+									li
+										a(href="#")
+											img(src="assets/images/ex1.png" alt="")
+											span Point Leg Abduction
+									li
+										a(href="#")
+											img(src="assets/images/ex6.png" alt="")
+											span Thomas Stetch
+									li
+										a(href="#")
+											img(src="assets/images/ex5.png" alt="")
+											span Bent Over Rows With 2 Dumbbells
+									li
+										a(href="#")
+											img(src="assets/images/ex4.png" alt="")
+											span Foot Lifts from Sitting on Swissball
+									li
+										a(href="#")
+											img(src="assets/images/ex7.png" alt="")
+											span Downward Facing Dog Stretch
+									li
+										a(href="#")
+											img(src="assets/images/ex12.png" alt="")
+											span Single Leg Dips
+		script(src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous")
+		script(src="assets/js/main.js")

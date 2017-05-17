@@ -10,3 +10,5 @@ Physio Dashboard
 8) Create program http://physio.div.agency/create-program.html<br />
 9) Add articles http://physio.div.agency/add-articles.html<br />
 10) My exercises http://physio.div.agency/my-exercise.html<br />
+11) Chat_v2 http://physio.div.agency/chat_v2.html<br />
+12) My templates http://physio.div.agency/my-templates.html<br />

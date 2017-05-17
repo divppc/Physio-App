@@ -1,0 +1,247 @@
+/*MY TEMPLATES*/
+section.templates {
+	padding-bottom: 150px;
+}
+
+.page {
+
+	.sidebar {
+
+		&>p {
+			font-size: 14px;
+		  font-weight: 600;
+		  letter-spacing: -0.2px;
+		  color: rgb(72, 84, 101);
+		  text-transform: uppercase;
+		  margin-bottom: 16px;
+		}
+	}
+
+	.select-program {
+		
+		li {
+
+			&:not(:last-child) {
+				margin-bottom: 8px;
+			}
+		}
+
+		a {
+			font-size: 14px;
+		  font-weight: 600;
+		  letter-spacing: -0.2px;
+		  color: rgb(72, 84, 101);
+		  text-align: center;
+		  display: block;
+		  border-radius: 3px;
+  		background-color: rgb(224, 230, 237);
+  		width: 100%;
+  		padding: 10px;
+
+  		&:hover,
+  		&.active {
+  			color: rgb(255, 255, 255);
+  			background-image: linear-gradient(43deg, #50C7CD, #B8E99F);
+  		}
+		}
+	}
+
+	.template {
+		border-radius: 3px;
+  	border: solid 1px rgb(218, 222, 227);
+	}
+
+	.template-head {
+		padding: 25px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		border-bottom: solid 1px rgb(218, 222, 227);
+	}
+
+	.edit-template {
+
+		a {
+			display: block;
+			width: 36px;
+		  height: 36px;
+		  background-color: rgb(212, 240, 228);
+		  border: solid 1px rgb(114, 207, 165);
+		  border-radius: 50%;
+
+		  &:after {
+		  	display: block;
+		  	content: '';
+		  	width: 16px;
+		  	height: 17px;
+		  	background: url("assets/images/icons.png") no-repeat 0px -71px;
+		  	margin: 0 auto;
+		  	position: relative;
+		  	top: 50%;
+		  	transform: translateY(-50%);
+		  }
+
+		  &:hover {
+		  	transform: rotate(-45deg);
+		  }
+		}
+	}
+
+	.template-data {
+		display: flex;
+	}
+
+	.current-status {
+		width: 44px;
+		height: 44px;
+	  margin-right: 24px;
+	  border-radius: 50%;
+	  box-shadow: 0 2px 18px 0 rgba(202, 211, 222, 0.5);
+	  background-image: linear-gradient(to bottom, #45BFB1, #BAE791);
+
+  	&>div {
+			font-size: 12px;
+		  font-weight: bold;
+		  letter-spacing: -0.2px;
+		  text-align: center;
+		  color: rgb(72, 84, 101);
+		  text-align: center;
+		  border-radius: 50%;
+		  line-height: 35px;
+		  width: 34px;
+		  height: 34px;
+		  background: #fff;
+		  border-radius: 50%;
+		  position: relative;
+		  margin: 0 auto;
+		  top: 50%;
+		  transform: translateY(-50%);
+		  font-family: "ProximaNovaBold";
+  	}
+	}
+
+	.template-name {
+		margin-right: 24px;
+
+		.name {
+			font-size: 18px;
+			font-family: "ProximaNovaBold";
+		  letter-spacing: -0.3px;
+		  color: rgb(72, 84, 101);
+		  margin-bottom: 8px;
+		}
+
+		.rate {
+
+			ul {
+				display: flex;
+				align-items: center;
+			}
+
+			li {
+				display: block;
+				width: 12.5px;
+				height: 12px;
+				background: url("assets/images/icons.png") no-repeat 0px -443px;
+
+				&:not(:last-child) {
+					margin-right: 8.5px;
+				}
+
+				&.active {
+					background-position: 0 -430px;
+				}
+			}
+		}
+	}
+
+	.frequency {
+		padding-top: 3px;
+		font-size: 14px;
+	  letter-spacing: -0.1px;
+	  color: rgb(102, 117, 139);
+	}
+
+	.template-exercises {
+		padding: 24px;
+
+		ol {
+			list-style-type: none;
+			counter-reset: item;
+			display: flex;
+			flex-wrap: wrap;
+		}
+
+		li {
+			display: block;
+			width: 146px;
+			margin-bottom: 37px;
+			position: relative;
+
+			&:before {
+				content: counter(item);
+    		counter-increment: item;
+    		display: block;
+    		width: 22px;
+    		height: 22px;
+    		position: absolute;
+    		top: 0;
+    		background: #fff;
+    		left: 0;
+    		border: solid 1px rgb(230, 235, 241);
+    		border-radius: 3px;
+    		font-size: 12px;
+			  font-weight: bold;
+			  letter-spacing: -0.1px;
+			  color: rgb(107, 124, 147);
+			  text-align: center;
+			  line-height: 23px;
+			}
+
+			&:not(:nth-child(4n+4)) {
+				margin-right: 75px;
+			}
+
+			@media (min-width: 1717px) {
+				
+				&:not(:nth-child(4n+4)) {
+					margin-right: 0;
+				}
+
+				&:not(:nth-child(5n+5)) {
+					margin-right: 75px;
+				}
+			}
+		}
+
+		a {
+			display: block;
+
+			&:hover {
+
+				img {
+			    box-shadow: 0 0 3px rgba(24, 95, 92, 0.3);
+				}
+
+				span {
+					color: #000;
+				}
+			}
+		}
+
+		img {
+			display: block;
+			width: 100%;
+			height: 96px;
+			margin-bottom: 14px;
+			transition: 0.3s;
+		}
+
+		span {
+			font-size: 14px;
+			transition: 0.3s;
+		  letter-spacing: -0.2px;
+		  color: rgb(72, 84, 101);
+		}
+	}
+}
