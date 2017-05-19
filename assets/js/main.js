@@ -1,15 +1,17 @@
-$(document).ready(function () {
-
-	// custom input[type="file"]
-
-	$("input[type=file]").change(function(){
-    var filename = $(this).val().replace(/.*\\/, "");
-    $("#filename").html(filename);
-  });
-
-});
 
 window.onload = function () {
+
+	//custom input[type="file"]
+
+	var input = document.getElementById("input-file"),
+			outPut = document.getElementById("filename");
+
+	input.addEventListener("change", function () {
+		var filename = this.value.replace(/.*\\/, "");
+		outPut.innerHTML = filename;
+	});
+
+	//custom range slider
 
 	var range1 = document.getElementById('range1'),
 			range2 = document.getElementById('range2'),
