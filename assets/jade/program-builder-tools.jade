@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+html(lang="en")
+	head
+		meta(http-equiv="X-UA-Compatible" content="IE=edge")
+		meta(charset="UTF-8")
+		link(rel="stylesheet", href="https://necolas.github.io/normalize.css/3.0.2/normalize.css")
+		link(rel="stylesheet", href="style.css")
+		link(rel="stylesheet", href="assets/css/nouislider.css")
+		title My Physio Dashboard | Program builder tools
+	body
+		section.program
+			.user-side
+				.top-panel
+					ul
+						li
+							a(href="#" class="back" title="Back")
+						li
+							a(href="#" title="Home")
+								img(src="assets/images/main-logo.svg", alt="")
+						li
+							span My Physio
+				.user
+					.user-photo.avatar
+						img(src="http://pipsum.com/100x100", alt="")
+					.user-name Serhii Hubarenko
+					.user-mail lelaquin@gmail.com					
+					ul.nav-panel
+						li
+							a(href="#" class="programs active") Programs
+						li
+							a(href="#" class="chat") Chat
+						li
+							a(href="#" class="insights") Insights
+			.program-container
+				.program-head
+					.select-program
+						label(for="select-program") Select Program:
+						.select-holder
+							select#select-program
+								option(value="program1") Program for Junior
+								option(value="program2") Program for Junior
+								option(value="program3") Program for Junior
+					.buttons
+						a(href="#" class="save") Save in Pdf
+						a(href="#" class="send") Send programm
+				.template-head
+					.template-data
+						.current-status
+							div 50%
+						.template-name
+							.name Program for Junior
+							.rate
+								ul
+									li.active
+									li.active
+									li.active
+									li.active
+									li
+						.frequency 1 Timer per Day
+						.tags
+							a(href="#" class="tag") Pain Scale
+				.program-main
+					.program-title
+						.preview
+							a(href="#" class="play-btn")
+							img(src="http://pipsum.com/237x186", alt="")
+						.program-name
+							h1 Side Lying Hip Internal Rotation
+							a(href="#" title="Edit" class="edit-name")
+					.program-setting
+						.range-holder
+							span Reps
+							.range-line#range1
+							span 3
+						.range-holder
+							span Time
+							.range-line#range2
+							span 30S
+						.radio-holder
+							.radio
+								input(type="radio" name="program-type" id="type1" checked)
+								label(for="type1") Left Side
+							.radio
+								input(type="radio" name="program-type" id="type2")
+								label(for="type2") Alternating
+							.radio
+								input(type="radio" name="program-type" id="type3")
+								label(for="type3") Right Side
+							.radio
+								input(type="radio" name="program-type" id="type4")
+								label(for="type4") Both
+						.range-holder
+							span Sets
+							.range-line#range3
+							span 3
+						.range-holder
+							span Rest
+							.range-line#range4
+							span 3
+					.program-note
+						.note
+							.note-head
+								.note-name Important note
+								a(href="#").note-detais
+									i
+									i
+									i
+							.note-body
+								p.
+									When I was just starting 6th grade I got my first job. Paperboy! Boy, was I excited. At that time I had spent a lot of time actually playing
+				.template-exercises
+					ol
+						li
+							.action-buttons
+								a(href="#" class="move" title="Move")
+								a(href="#" class="delete" title="Delete")
+							a(href="#")
+								img(src="assets/images/ex2.png" alt="")
+								span Side Lying Hip Internal Rotation
+						li
+							.action-buttons
+								a(href="#" class="move" title="Move")
+								a(href="#" class="delete" title="Delete")
+							a(href="#")
+								img(src="assets/images/ex3.png" alt="")
+								span Point Kneel With Arm Lift
+						li
+							.action-buttons
+								a(href="#" class="move" title="Move")
+								a(href="#" class="delete" title="Delete")
+							a(href="#")
+								img(src="assets/images/ex1.png" alt="")
+								span Point Leg Abduction
+						li
+							.action-buttons
+								a(href="#" class="move" title="Move")
+								a(href="#" class="delete" title="Delete")
+							a(href="#")
+								img(src="assets/images/ex6.png" alt="")
+								span Thomas Stetch
+						li
+							.action-buttons
+								a(href="#" class="move" title="Move")
+								a(href="#" class="delete" title="Delete")
+							a(href="#")
+								img(src="assets/images/ex5.png" alt="")
+								span Bent Over Rows With 2 Dumbbells
+						li
+							.action-buttons
+								a(href="#" class="move" title="Move")
+								a(href="#" class="delete" title="Delete")
+							a(href="#")
+								img(src="assets/images/ex4.png" alt="")
+								span Foot Lifts from Sitting on Swissball
+						li
+							.action-buttons
+								a(href="#" class="move" title="Move")
+								a(href="#" class="delete" title="Delete")
+							a(href="#")
+								img(src="assets/images/ex7.png" alt="")
+								span Downward Facing Dog Stretch
+						li
+							.action-buttons
+								a(href="#" class="move" title="Move")
+								a(href="#" class="delete" title="Delete")
+							a(href="#")
+								img(src="assets/images/ex12.png" alt="")
+								span Single Leg Dips
+				.articles
+					h2 Articles
+					.articles-container
+						article
+							a(href="#")
+								img(src="assets/images/ex11.png", alt="")
+								h3 Hot-Cold Treatment
+						article
+							a(href="#")
+								img(src="assets/images/ex8.png", alt="")
+								h3 Injury Healing Process
+						article
+							a(href="#")
+								img(src="assets/images/ex9.png", alt="")
+								h3 Managing Inflammation
+						article
+							a(href="#")
+								img(src="assets/images/ex10.png", alt="")
+								h3 Office Ergonomics
+						article
+							a(href="#")
+								img(src="assets/images/ex11.png", alt="")
+								h3 Hot-Cold Treatment
+						article
+							a(href="#")
+								img(src="assets/images/ex8.png", alt="")
+								h3 Injury Healing Process
+				.buttons-panel
+					a(href="#" class="create btn-gradient") Create as a template
+					a(href="#" class="remove") Remove program
+			.side-panel
+				ul.tabs-navigation
+					li
+						a(href="#") Exercises 
+					li
+						a(href="#" class="active") Tools
+					li
+						a(href="#") Articles
+				.tab
+					h4 Tools
+					form.search-form
+						input(type="text" placeholder="Search" required)
+						button(type="submit" title="Submit")
+					.add-tools
+						.tool.pain-scale
+							.tool-name Add Pain Scale
+							a(href="#" class="add-tool" title="Add")
+						.tool.note
+							.tool-name Add Note
+							a(href="#" class="add-tool" title="Add")
+						.tool.note
+							.tool-name Motivational Quotes
+							a(href="#" class="add-tool" title="Add")
+		script(src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous")
+		script(src="assets/js/nouislider.min.js")
+		script(src="assets/js/main.js")

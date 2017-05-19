@@ -24,7 +24,7 @@ html {
 body {
 	font-family: "ProximaNovaRegular";
 	max-width: 1920px;
-	min-width: 1200px;
+	min-width: 1260px;
 	margin: 0;
 	padding: 0;
 	width: 100%;
@@ -132,3 +132,4 @@ button {
 @import 'pages/chat';
 @import 'pages/my-exercise';
 @import 'pages/my-templates';
+@import 'pages/program-builder';
