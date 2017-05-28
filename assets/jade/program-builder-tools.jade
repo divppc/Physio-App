@@ -37,9 +37,19 @@ html(lang="en")
 						label(for="select-program") Select Program:
 						.select-holder
 							select#select-program
-								option(value="program1") Program for Junior
-								option(value="program2") Program for Junior
-								option(value="program3") Program for Junior
+								option(selected disabled value="") Add new
+								optgroup(label="Group 1")
+									option(value="program1") Program for Junior
+									option(value="program2") Program for Junior
+									option(value="program3") Program for Junior
+								optgroup(label="Group 1")
+									option(value="program1") Program for Junior
+									option(value="program2") Program for Junior
+									option(value="program3") Program for Junior
+								optgroup(label="Group 1")
+									option(value="program1") Program for Junior
+									option(value="program2") Program for Junior
+									option(value="program3") Program for Junior
 					.buttons
 						a(href="#" class="save") Save in Pdf
 						a(href="#" class="send") Send programm

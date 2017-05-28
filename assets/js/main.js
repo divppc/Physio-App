@@ -1,6 +1,16 @@
 
 window.onload = function () {
 
+	//delete program item
+	var deleteBtn = document.querySelectorAll(".delete");
+
+	for (var i = 0; i < deleteBtn.length; i++) {
+		deleteBtn[i].addEventListener("click", function(e) {
+			e.preventDefault();
+			this.closest("li").remove();
+		});
+	};
+
 	//custom input[type="file"]
 
 	var input = document.getElementById("input-file"),
@@ -52,5 +62,5 @@ window.onload = function () {
 			'min': [  1 ],
 			'max': [ 7 ]
 		}
-	});
+	});	
 };
