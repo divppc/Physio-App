@@ -1,0 +1,106 @@
+/*LOGIN*/
+
+section.login {
+	width: 100%;
+	min-height: 100%;
+	display: flex;
+	min-height: 100vh;
+	background: url("assets/images/back.png") no-repeat center / cover;
+
+	.login-form {
+		width: 697px;
+	  height: 384px;
+	  border-radius: 5px;
+	  background-color: rgb(255, 255, 255);
+	  margin: 15vh auto 0;
+	  text-align: center;
+	  padding: 68px 108px 42px 108px;
+	}
+
+	h1 {
+	  font-size: 18px;
+	  letter-spacing: -0.4px;
+	  text-align: left;
+	  color: rgb(8, 121, 107);
+	  text-transform: uppercase;
+	  text-align: center;
+	  margin-bottom: 30px;
+	}
+
+	.form-field {
+		margin-bottom: 15px;
+		position: relative;
+
+		&:before {
+			display: block;
+			content: '';
+			left: 5px;
+			top: 17px;
+			background: url("assets/images/icons.png") no-repeat;
+			position: absolute;
+		}
+
+		input {
+			background: transparent;
+			display: block;
+			width: 100%;
+			font-size: 15px;
+		  letter-spacing: -0.4px;
+		  color: rgb(8, 121, 107);
+		  transition: 0.3s;
+		  font-weight: 500;
+		  padding: 17px 17px 17px 31px;
+			border-bottom: solid 2px rgb(209, 220, 228);
+
+			&:focus {
+				outline: none;
+				box-shadow: none;
+				border-color: rgb(8, 121, 107);
+			}
+
+			&::-webkit-input-placeholder {
+				font-size: 15px;
+			  letter-spacing: -0.4px;
+			  color: rgb(8, 121, 107);
+			}
+		}
+	}
+
+	input[type="submit"] {
+		min-width: 172px;
+	  height: 46px;
+	  display: block;
+	  margin: 40px auto 0;
+	  border-radius: 3px;
+	  font-size: 15px;
+	  letter-spacing: -0.4px;
+	  text-align: left;
+	  color: rgb(255, 255, 255);
+	  font-weight: 500;
+	  text-align: center;
+	  background-color: rgb(8, 121, 107);
+	  transition: 0.3s;
+
+	  &:hover {
+	  	background-color: darken(rgb(8, 121, 107), 5%);
+	  }
+	}
+
+	.login {
+
+		&:before {
+			width: 14px;
+			height: 16px;
+			background-position: 0 -737px;
+		}
+	}
+
+	.pass {
+
+		&:before {
+			width: 14px;
+			height: 16px;
+			background-position: 0 -754px;
+		}
+	}
+}
