@@ -11,16 +11,6 @@ window.onload = function () {
 		});
 	};
 
-	//custom input[type="file"]
-
-	var input = document.getElementById("input-file"),
-			outPut = document.getElementById("filename");
-
-	input.addEventListener("change", function () {
-		var filename = this.value.replace(/.*\\/, "");
-		outPut.innerHTML = filename;
-	});
-
 	//custom range slider
 
 	var range1 = document.getElementById('range1'),
@@ -62,5 +52,21 @@ window.onload = function () {
 			'min': [  1 ],
 			'max': [ 7 ]
 		}
-	});	
+	});
+
+	//costom select
+	$(".js-example-basic-single").select2();
+
+	//tabs
+	$("#tabs").tabs();
+
+	//custom input[type="file"]
+
+	var input = document.getElementById("input-file"),
+			outPut = document.getElementById("filename");
+
+	input.addEventListener("change", function () {
+		var filename = this.value.replace(/.*\\/, "");
+		outPut.innerHTML = filename;
+	});
 };

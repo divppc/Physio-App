@@ -4,6 +4,7 @@ html(lang="en")
 		meta(http-equiv="X-UA-Compatible" content="IE=edge")
 		meta(charset="UTF-8")
 		link(rel="stylesheet", href="https://necolas.github.io/normalize.css/3.0.2/normalize.css")
+		link(rel="stylesheet", href="https://cdn.jsdelivr.net/select2/4.0.3/css/select2.min.css")
 		link(rel="stylesheet", href="style.css")
 		link(rel="stylesheet", href="assets/css/nouislider.css")
 		title My Physio Dashboard | Program builder tools
@@ -36,7 +37,7 @@ html(lang="en")
 					.select-program
 						label(for="select-program") Select Program:
 						.select-holder
-							select#select-program
+							select#select-program.js-example-basic-single
 								option(selected disabled value="") Add new
 								optgroup(label="Group 1")
 									option(value="program1") Program for Junior
@@ -76,8 +77,8 @@ html(lang="en")
 							img(src="http://pipsum.com/237x186", alt="")
 						.program-name
 							h1 Side Lying Hip Internal Rotation
-							a(href="#" title="Edit" class="edit-name")
 					.program-setting
+						a(href="#" title="Edit" class="edit-name")
 						.range-holder
 							span Reps
 							.range-line#range1
@@ -206,15 +207,105 @@ html(lang="en")
 				.buttons-panel
 					a(href="#" class="create btn-gradient") Create as a template
 					a(href="#" class="remove") Remove program
-			.side-panel
+			.side-panel#tabs
 				ul.tabs-navigation
 					li
-						a(href="#") Exercises 
+						a(href="#tabs-1") Exercises 
 					li
-						a(href="#" class="active") Tools
+						a(href="#tabs-2") Tools
 					li
-						a(href="#") Articles
-				.tab
+						a(href="#tabs-3") Articles
+				.tab#tabs-1
+					h4 Exercises Library
+					form.search-form
+						input(type="text" placeholder="Search" required)
+						button(type="submit" title="Submit")
+					ul.exercises-tags
+						li
+							a(href="#" class="active") All
+						li
+							a(href="#") Realese
+						li
+							a(href="#") Stretch
+						li
+							a(href="#") Posture.
+						li
+							a(href="#") Self Mob.
+						li
+							a(href="#") Post Op.
+						li
+							a(href="#") Proproception.
+						li
+							a(href="#") Neutral Mob.
+						li
+							a(href="#") Assessment Tools
+					.select-holder
+						select#select-exercise
+							option(value="exercise1") All parts
+							option(value="exercise2") All parts
+							option(value="exercise3") All parts
+					ul.exercise-list
+						li.item
+							a(href="#")
+								.img-holder
+									img(src="assets/images/ex1.png", alt="" class="img-responsive")
+								span Side Lying Hip Internal Rotation
+						li.item
+							a(href="#")
+								.img-holder
+									img(src="assets/images/ex7.png", alt="" class="img-responsive")
+								span Side Lying Hip Internal Rotation
+						li.item
+							a(href="#")
+								.img-holder
+									img(src="assets/images/ex6.png", alt="" class="img-responsive")
+								span Side Lying Hip Internal Rotation
+						li.item
+							a(href="#")
+								.img-holder
+									img(src="assets/images/ex12.png", alt="" class="img-responsive")
+								span Side Lying Hip Internal Rotation
+						li.item
+							a(href="#")
+								.img-holder
+									img(src="assets/images/ex1.png", alt="" class="img-responsive")
+								span Side Lying Hip Internal Rotation
+						li.item
+							a(href="#")
+								.img-holder
+									img(src="assets/images/ex7.png", alt="" class="img-responsive")
+								span Side Lying Hip Internal Rotation
+						li.item
+							a(href="#")
+								.img-holder
+									img(src="assets/images/ex1.png", alt="" class="img-responsive")
+								span Side Lying Hip Internal Rotation
+						li.item
+							a(href="#")
+								.img-holder
+									img(src="assets/images/ex7.png", alt="" class="img-responsive")
+								span Side Lying Hip Internal Rotation
+						li.item
+							a(href="#")
+								.img-holder
+									img(src="assets/images/ex6.png", alt="" class="img-responsive")
+								span Side Lying Hip Internal Rotation
+						li.item
+							a(href="#")
+								.img-holder
+									img(src="assets/images/ex12.png", alt="" class="img-responsive")
+								span Side Lying Hip Internal Rotation
+						li.item
+							a(href="#")
+								.img-holder
+									img(src="assets/images/ex1.png", alt="" class="img-responsive")
+								span Side Lying Hip Internal Rotation
+						li.item
+							a(href="#")
+								.img-holder
+									img(src="assets/images/ex7.png", alt="" class="img-responsive")
+								span Side Lying Hip Internal Rotation
+				.tab#tabs-2
 					h4 Tools
 					form.search-form
 						input(type="text" placeholder="Search" required)
@@ -229,6 +320,34 @@ html(lang="en")
 						.tool.note
 							.tool-name Motivational Quotes
 							a(href="#" class="add-tool" title="Add")
+				.tab#tabs-3
+					h4 Articles
+					form.search-form
+						input(type="text" placeholder="Search" required)
+						button(type="submit" title="Submit")
+					ul.article-list
+						li.item
+							a(href="#")
+								.img-holder
+									img(src="assets/images/ex11.png", alt="" class="img-responsive")
+								span Hot-Cold Treatment
+						li.item
+							a(href="#")
+								.img-holder
+									img(src="assets/images/ex8.png", alt="" class="img-responsive")
+								span Injury Healing Process
+						li.item
+							a(href="#")
+								.img-holder
+									img(src="assets/images/ex9.png", alt="" class="img-responsive")
+								span Managing Inflammation
+						li.item
+							a(href="#")
+								.img-holder
+									img(src="assets/images/ex10.png", alt="" class="img-responsive")
+								span Office Ergonomics
 		script(src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous")
 		script(src="assets/js/nouislider.min.js")
+		script(src="assets/js/jquery-ui.min.js")
+		script(src="https://cdn.jsdelivr.net/select2/4.0.3/js/select2.full.min.js")
 		script(src="assets/js/main.js")

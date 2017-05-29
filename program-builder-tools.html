@@ -4,6 +4,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta charset="UTF-8"/>
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/3.0.2/normalize.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/select2/4.0.3/css/select2.min.css"/>
     <link rel="stylesheet" href="style.css"/>
     <link rel="stylesheet" href="assets/css/nouislider.css"/>
     <title>My Physio Dashboard | Program builder tools</title>
@@ -34,7 +35,7 @@
           <div class="select-program">
             <label for="select-program">Select Program:</label>
             <div class="select-holder">
-              <select id="select-program">
+              <select id="select-program" class="js-example-basic-single">
                 <option selected="selected" disabled="disabled" value="">Add new</option>
                 <optgroup label="Group 1">
                   <option value="program1">Program for Junior</option>
@@ -81,10 +82,10 @@
           <div class="program-title">
             <div class="preview"><a href="#" class="play-btn"></a><img src="http://pipsum.com/237x186" alt=""/></div>
             <div class="program-name">
-              <h1>Side Lying Hip Internal Rotation</h1><a href="#" title="Edit" class="edit-name"></a>
+              <h1>Side Lying Hip Internal Rotation</h1>
             </div>
           </div>
-          <div class="program-setting">
+          <div class="program-setting"><a href="#" title="Edit" class="edit-name"></a>
             <div class="range-holder"><span>Reps</span>
               <div id="range1" class="range-line"></div><span>3</span>
             </div>
@@ -174,13 +175,64 @@
         </div>
         <div class="buttons-panel"><a href="#" class="create btn-gradient">Create as a template</a><a href="#" class="remove">Remove program</a></div>
       </div>
-      <div class="side-panel">
+      <div id="tabs" class="side-panel">
         <ul class="tabs-navigation">
-          <li><a href="#">Exercises </a></li>
-          <li><a href="#" class="active">Tools</a></li>
-          <li><a href="#">Articles</a></li>
+          <li><a href="#tabs-1">Exercises </a></li>
+          <li><a href="#tabs-2">Tools</a></li>
+          <li><a href="#tabs-3">Articles</a></li>
         </ul>
-        <div class="tab">
+        <div id="tabs-1" class="tab">
+          <h4>Exercises Library</h4>
+          <form class="search-form">
+            <input type="text" placeholder="Search" required="required"/>
+            <button type="submit" title="Submit"></button>
+          </form>
+          <ul class="exercises-tags">
+            <li><a href="#" class="active">All</a></li>
+            <li><a href="#">Realese</a></li>
+            <li><a href="#">Stretch</a></li>
+            <li><a href="#">Posture.</a></li>
+            <li><a href="#">Self Mob.</a></li>
+            <li><a href="#">Post Op.</a></li>
+            <li><a href="#">Proproception.</a></li>
+            <li><a href="#">Neutral Mob.</a></li>
+            <li><a href="#">Assessment Tools</a></li>
+          </ul>
+          <div class="select-holder">
+            <select id="select-exercise">
+              <option value="exercise1">All parts</option>
+              <option value="exercise2">All parts</option>
+              <option value="exercise3">All parts</option>
+            </select>
+          </div>
+          <ul class="exercise-list">
+            <li class="item"><a href="#">
+                <div class="img-holder"><img src="assets/images/ex1.png" alt="" class="img-responsive"/></div><span>Side Lying Hip Internal Rotation</span></a></li>
+            <li class="item"><a href="#">
+                <div class="img-holder"><img src="assets/images/ex7.png" alt="" class="img-responsive"/></div><span>Side Lying Hip Internal Rotation</span></a></li>
+            <li class="item"><a href="#">
+                <div class="img-holder"><img src="assets/images/ex6.png" alt="" class="img-responsive"/></div><span>Side Lying Hip Internal Rotation</span></a></li>
+            <li class="item"><a href="#">
+                <div class="img-holder"><img src="assets/images/ex12.png" alt="" class="img-responsive"/></div><span>Side Lying Hip Internal Rotation</span></a></li>
+            <li class="item"><a href="#">
+                <div class="img-holder"><img src="assets/images/ex1.png" alt="" class="img-responsive"/></div><span>Side Lying Hip Internal Rotation</span></a></li>
+            <li class="item"><a href="#">
+                <div class="img-holder"><img src="assets/images/ex7.png" alt="" class="img-responsive"/></div><span>Side Lying Hip Internal Rotation</span></a></li>
+            <li class="item"><a href="#">
+                <div class="img-holder"><img src="assets/images/ex1.png" alt="" class="img-responsive"/></div><span>Side Lying Hip Internal Rotation</span></a></li>
+            <li class="item"><a href="#">
+                <div class="img-holder"><img src="assets/images/ex7.png" alt="" class="img-responsive"/></div><span>Side Lying Hip Internal Rotation</span></a></li>
+            <li class="item"><a href="#">
+                <div class="img-holder"><img src="assets/images/ex6.png" alt="" class="img-responsive"/></div><span>Side Lying Hip Internal Rotation</span></a></li>
+            <li class="item"><a href="#">
+                <div class="img-holder"><img src="assets/images/ex12.png" alt="" class="img-responsive"/></div><span>Side Lying Hip Internal Rotation</span></a></li>
+            <li class="item"><a href="#">
+                <div class="img-holder"><img src="assets/images/ex1.png" alt="" class="img-responsive"/></div><span>Side Lying Hip Internal Rotation</span></a></li>
+            <li class="item"><a href="#">
+                <div class="img-holder"><img src="assets/images/ex7.png" alt="" class="img-responsive"/></div><span>Side Lying Hip Internal Rotation</span></a></li>
+          </ul>
+        </div>
+        <div id="tabs-2" class="tab">
           <h4>Tools</h4>
           <form class="search-form">
             <input type="text" placeholder="Search" required="required"/>
@@ -198,10 +250,29 @@
             </div>
           </div>
         </div>
+        <div id="tabs-3" class="tab">
+          <h4>Articles</h4>
+          <form class="search-form">
+            <input type="text" placeholder="Search" required="required"/>
+            <button type="submit" title="Submit"></button>
+          </form>
+          <ul class="article-list">
+            <li class="item"><a href="#">
+                <div class="img-holder"><img src="assets/images/ex11.png" alt="" class="img-responsive"/></div><span>Hot-Cold Treatment</span></a></li>
+            <li class="item"><a href="#">
+                <div class="img-holder"><img src="assets/images/ex8.png" alt="" class="img-responsive"/></div><span>Injury Healing Process</span></a></li>
+            <li class="item"><a href="#">
+                <div class="img-holder"><img src="assets/images/ex9.png" alt="" class="img-responsive"/></div><span>Managing Inflammation</span></a></li>
+            <li class="item"><a href="#">
+                <div class="img-holder"><img src="assets/images/ex10.png" alt="" class="img-responsive"/></div><span>Office Ergonomics</span></a></li>
+          </ul>
+        </div>
       </div>
     </section>
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
     <script src="assets/js/nouislider.min.js"></script>
+    <script src="assets/js/jquery-ui.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/select2/4.0.3/js/select2.full.min.js"></script>
     <script src="assets/js/main.js"></script>
   </body>
 </html>

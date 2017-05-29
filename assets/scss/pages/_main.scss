@@ -220,5 +220,15 @@ i {
 				background-position: -17px -540px;
 			}
 		}
+
+		&.icon-settings {
+			width: 24px;
+			height: 24px;
+			background-position: 0 -712px;
+
+			&:hover {
+				background-position: -25px -712px;
+			}
+		}
 	}
 }
