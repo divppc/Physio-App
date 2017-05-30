@@ -26,8 +26,12 @@
   position: relative;
   z-index: 1;
   border-radius: 2.5px;
-  background-image: linear-gradient(to right, #5CCBC8, #A1DCB8);
+  background: rgb(221, 228, 238);
   /* Fix 401 */
+}
+
+.active .noUi-base {
+  background-image: linear-gradient(to right, #5CCBC8, #A1DCB8);
 }
 .noUi-connect {
   position: absolute;
@@ -88,9 +92,13 @@
 }
 .noUi-connect {
   border-radius: 2.5px;
-  background-color: rgb(221, 228, 238);
+  background-color: #fff;
   -webkit-transition: background 450ms;
   transition: background 450ms;
+}
+
+.active .noUi-connect {
+  background-color: rgb(221, 228, 238);
 }
 /* Handles and cursors;
  */

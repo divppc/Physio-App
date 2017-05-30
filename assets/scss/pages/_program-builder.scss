@@ -190,6 +190,7 @@ section.program {
   		position: absolute;
   		top: 30px;
   		right: 20px;
+  		z-index: 11;
   		width: 16px;
   		height: 16px;
   		background: url("assets/images/icons.png") no-repeat 0px -246px;
@@ -202,9 +203,21 @@ section.program {
 			&:not(:last-child) {
 				margin-bottom: 25px;
 			}
+
+			input {
+				display: block;
+				background: none;
+				border: none;
+				width: 24px;
+
+				&:focus {
+					box-shadow: none;
+				}
+			}
 		}
 
-		span {
+		span,
+		input[type="text"] {
 			display: block;
 			min-width: 24px;
 			flex-shrink: 0;
@@ -340,57 +353,58 @@ section.program {
 				width: 20%;
 			}
 
-			&:hover {
+			&:hover,
+			&.active {
 
 				.action-buttons {
 					opacity: 1;
 				}
 			}
 		}
+	}
 
-		.action-buttons {
-			position: absolute;
-			top: 0;
-			left: 150px;
-			transition: 0.3s;
-			opacity: 0;
+	.action-buttons {
+		position: absolute;
+		top: 0;
+		left: 150px;
+		transition: 0.3s;
+		opacity: 0;
 
-			a {
-				width: 32px;
-				height: 32px;
-				display: flex;
-				align-items: center;
-				justify-content: center;
-				border-radius: 50%;
+		a {
+			width: 32px;
+			height: 32px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			border-radius: 50%;
 
-				&:first-child {
-					margin-bottom: 14px;
-				}
-
-				&:before {
-					display: block;
-					content: '';
-					width: 12px;
-					height: 12px;
-					background: url("assets/images/icons.png") no-repeat;
-				}
+			&:first-child {
+				margin-bottom: 14px;
 			}
 
-			.move {
-				background-color: rgb(47, 67, 102);
-
-				&:before {
-					background-position: 0 -174px;
-				}
+			&:before {
+				display: block;
+				content: '';
+				width: 12px;
+				height: 12px;
+				background: url("assets/images/icons.png") no-repeat;
 			}
+		}
 
-			.delete {
-				background-color: rgb(240, 76, 94);
+		.move {
+			background-color: rgb(47, 67, 102);
 
-				&:before {
-					background-position: 0 -358px;
-					height: 16px;
-				}
+			&:before {
+				background-position: 0 -174px;
+			}
+		}
+
+		.delete {
+			background-color: rgb(240, 76, 94);
+
+			&:before {
+				background-position: 0 -358px;
+				height: 16px;
 			}
 		}
 	}
@@ -417,13 +431,21 @@ section.program {
 		article {
 			min-width: 145.6px;
 			width: 25%;
+			position: relative;
 			margin-bottom: 36px;
 
 			@media (min-width: 1600px) {
 				width: 20%;
 			}
 
-			a {
+			&:hover {
+
+				.action-buttons {
+					opacity: 1;
+				}
+			}
+
+			&>a {
 				display: block;
 
 				&:hover {
@@ -782,6 +804,16 @@ section.program {
 
 		a {
 			display: block;
+
+			&:hover {
+
+				.img-holder {
+			    
+			    &:after {
+			    	opacity: 1;
+			    }
+				}
+			}
 		}		
 
 		.item {
@@ -836,19 +868,6 @@ section.program {
 		max-height: 340px;
 		padding-right: 8px;
 		margin-right: -15px;
-
-		a {
-
-			&:hover {
-
-				.img-holder {
-			    
-			    &:after {
-			    	opacity: 1;
-			    }
-				}
-			}
-		}
 	}
 
 	.article-list {
