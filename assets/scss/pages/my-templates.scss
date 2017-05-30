@@ -171,6 +171,14 @@ section.templates {
 		font-size: 14px;
 	  letter-spacing: -0.1px;
 	  color: rgb(102, 117, 139);
+	  display: flex;
+
+	  select {
+	  	background: transparent;
+	  	border: none;
+	  	cursor: pointer;
+	  	outline: none;
+	  }
 	}
 }
 

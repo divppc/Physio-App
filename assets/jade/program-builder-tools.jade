@@ -68,7 +68,19 @@ html(lang="en")
 									li.active
 									li.active
 									li
-						.frequency 1 Timer per Day
+						.frequency
+							//- 1 Timer per Day
+							.select
+								select#frequency-count(name="frequency-count")
+									option(value="1") 1
+									option(value="2") 2
+									option(value="3") 3
+									option(value="4") 4
+							.select
+								select#frequency-type(name="frequency-type")
+									option(value="type1") Time per Day
+									option(value="type2") Time per Week
+									option(value="type3") Time per Month
 						.tags
 							a(href="#" class="tag") Pain Scale
 				.program-main
