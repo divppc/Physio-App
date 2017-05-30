@@ -19,8 +19,16 @@ window.onload = function () {
 	
 	if (exerciseArr.length > 0) {
 		for (var i = 0, len = exerciseArr.length; i < len; i++) {
-			exerciseArr[i].addEventListener('click', function () {
-				this.classList.toggle('active');
+			exerciseArr[i].addEventListener('click', function (e) {
+
+				for (var j = 0, len2 = exerciseArr.length; j < len2; j++) {
+					exerciseArr[j].classList.remove('active');
+				};
+
+				this.classList.add('active');
+				var exerciseName = this.querySelector("span").innerHTML,
+						exerciseNameHolder = document.querySelector(".program-name h1");
+				exerciseNameHolder.innerHTML = exerciseName;
 			});
 		};
 	};
@@ -75,8 +83,6 @@ window.onload = function () {
 			this.parentElement.parentElement.classList.remove("active");
 		});
 	}
-
-
 
 
 	//delete program item
