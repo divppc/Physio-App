@@ -25,6 +25,18 @@ window.onload = function () {
 		};
 	};
 
+	//remove tag
+
+	var removeTagBtn = document.querySelectorAll(".tag i");
+
+	if (removeTagBtn) {
+		for (var i = 0, len = removeTagBtn.length; i < len; i++) {
+			removeTagBtn[i].addEventListener("click", function (e) {
+				this.parentElement.remove();
+			});
+		};
+	}
+
 
 	//program modal
 	var modalBtn = document.querySelector(".preview .play-btn"),

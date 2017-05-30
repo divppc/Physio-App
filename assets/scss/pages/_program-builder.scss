@@ -15,6 +15,10 @@ section.program {
 
 		&+.template-head {
 			border-bottom: 0;
+
+			&>.template-data {
+				min-height: 53px;
+			}
 		}
 
 		.select-program {
@@ -118,16 +122,19 @@ section.program {
 			font-size: 12px;
 		  font-weight: 600;
 		  letter-spacing: -0.2px;
-		  display: block;
 		  color: rgb(72, 84, 101);
 		  border-radius: 3px;
   		border: solid 1px rgba(72, 84, 101, 0.2);
-  		padding: 10px 15px;
+  		padding: 10px 5px 10px 15px;
   		display: flex;
   		align-items: center;
 
   		&:hover {
 				border: solid 1px rgba(72, 84, 101, 1);
+
+				i {
+					opacity: 1;
+				}
   		}
 
   		&:before {
@@ -138,15 +145,30 @@ section.program {
   			background: url("assets/images/icons.png") no-repeat 0px -187px;
   			margin-right: 12px;
   		}
+		}
 
-  		&:after {
-  			display: block;
-  			content: '';
-  			width: 12px;
-  			height: 12px;
-  			background: url("assets/images/icons.png") no-repeat 0px -44px;
-  			margin-left: 16px;
-  		}
+		.remove-tag {
+			width: 20px;
+	    height: 20px;
+	    border-radius: 50%;
+	    text-align: center;
+	    opacity: 0;
+	    transition: 0.3s;
+	    font-style: normal;
+	    display: block;
+	    line-height: 20px;
+	    font-size: 18px;
+	    -webkit-transform: rotate(45deg);
+	    -ms-transform: rotate(45deg);
+	    transform: rotate(45deg);
+	    color: #fff;
+	    background: #f04c5e;
+	    cursor: pointer;
+	    margin-left: 10px;
+
+	    &:hover {
+	    	background: #ee3449;
+	    }
 		}
 	}
 
