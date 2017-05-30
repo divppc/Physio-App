@@ -26,17 +26,45 @@ window.onload = function () {
 	};
 
 
-	//edit program
+	//program modal
+	var modalBtn = document.querySelector(".preview .play-btn"),
+			modalWindow = document.querySelector(".modal.list"),
+			closeModalList = document.querySelector(".list .close-modal");
 
-	// var editBtn = document.querySelector(".edit-name");
+	if (modalBtn && modalWindow) {
 
-	// if (editBtn !== null) {
-	// 	editBtn.addEventListener('click', function(e) {
-	// 		e.preventDefault();
-	// 		var target = document.querySelector(".program-setting");
-	// 		target.classList.toggle('active');
-	// 	});
-	// };
+		modalBtn.addEventListener("click", function(e) {
+			e.preventDefault();
+			document.body.classList.add("modal-open");
+			modalWindow.classList.add('active');
+		});
+
+		closeModalList.addEventListener("click", function () {
+			document.body.classList.remove("modal-open");
+			this.parentElement.parentElement.classList.remove("active");
+		});
+	};
+
+	//modal video
+
+	var videoBtn = document.querySelectorAll(".video-holder"),
+			videoModal = document.querySelector(".modal.video"),
+			closeModalVideo = document.querySelector(".video .close-modal");
+
+	if (videoBtn && videoModal) {
+		for (var i = 0, len = videoBtn.length; i < len; i++) {
+			videoBtn[i].addEventListener("click", function (e) {
+				e.preventDefault();
+				videoModal.classList.add("active");
+			})
+		};
+
+		closeModalVideo.addEventListener("click", function () {
+			this.parentElement.parentElement.classList.remove("active");
+		});
+	}
+
+
 
 
 	//delete program item
