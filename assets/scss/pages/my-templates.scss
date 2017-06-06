@@ -103,14 +103,18 @@ section.templates {
 	}
 
 	.current-status {
+		margin-right: 24px;
+	}
+
+	.percent {
 		width: 44px;
+		margin-bottom: 10px;
 		height: 44px;
-	  margin-right: 24px;
 	  border-radius: 50%;
 	  box-shadow: 0 2px 18px 0 rgba(202, 211, 222, 0.5);
 	  background-image: linear-gradient(to bottom, #45BFB1, #BAE791);
 
-  	&>div {
+	  &>div {
 			font-size: 12px;
 		  font-weight: bold;
 		  letter-spacing: -0.2px;
@@ -141,27 +145,27 @@ section.templates {
 		  color: rgb(72, 84, 101);
 		  margin-bottom: 8px;
 		}
+	}
 
-		.rate {
+	.rate {
 
-			ul {
-				display: flex;
-				align-items: center;
+		ul {
+			display: flex;
+			align-items: center;
+		}
+
+		li {
+			display: block;
+			width: 12.5px;
+			height: 12px;
+			background: url("assets/images/icons.png") no-repeat 0px -443px;
+
+			&:not(:last-child) {
+				margin-right: 8.5px;
 			}
 
-			li {
-				display: block;
-				width: 12.5px;
-				height: 12px;
-				background: url("assets/images/icons.png") no-repeat 0px -443px;
-
-				&:not(:last-child) {
-					margin-right: 8.5px;
-				}
-
-				&.active {
-					background-position: 0 -430px;
-				}
+			&.active {
+				background-position: 0 -430px;
 			}
 		}
 	}

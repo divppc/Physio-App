@@ -129,6 +129,10 @@ section.settings {
 		border-right: solid 1px #e6ebf1;
 	}
 
+	.details {
+		width: 370px;
+	}
+
 	.details-item {
 		padding-left: 40px;
 		position: relative;
@@ -155,10 +159,22 @@ section.settings {
 		  margin-bottom: 10px;
 		}
 
-		span {
+		input {
+			display: block;
 			font-size: 16px;
 		  letter-spacing: -0.1px;
 		  color: #90a4ae;
+		  background: transparent;
+		  width: 100%;
+		  padding: 0 10px;
+		  border: solid 1px #e6ebf1;
+		  overflow: hidden;
+		  white-space: nowrap;
+		  text-overflow: ellipsis;
+
+		  &[disabled] {
+		  	border: solid 1px transparent;
+		  }
 		}
 	}
 

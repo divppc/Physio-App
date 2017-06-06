@@ -46,7 +46,7 @@ html(lang="en")
 				.section-panel
 					h1 General
 				.settings-data
-					a(href="#" class="edit-btn") Edit
+					a(href="#" class="edit-btn" id="edit-details") Edit
 					.company
 						h2 Your Logo Company:
 						.company-logo
@@ -61,23 +61,23 @@ html(lang="en")
 						h2 Basic Details
 						.details-item.email
 							p E-mail
-							span wilton.heidenreich@beth.biz
+							input(type="text" disabled value="wilton.heidenreich@beth.biz")
 						.details-item.phone
 							p Telephone
-							span +38096 046 97 91
+							input(type="text" disabled value="+38096 046 97 91")
 						.details-item.name
 							p Name
-							span Active Bodies Physiotherapy and Health
+							input(type="text" disabled value="Active Bodies Physiotherapy and Health")
 						.details-item.address
 							p Practice Address
-							span Level 1, 60 Halifax Street
-							span Adelaide SA 5000
-							span Australia
+							input(type="text" disabled value="Level 1, 60 Halifax Street")
+							input(type="text" disabled value="Adelaide SA 5000")
+							input(type="text" disabled value="Australia")
 						.details-item.timezone
 							p Timezone
-							span Australia Central Standard Time (South Australia)
+							input(type="text" disabled value="Australia Central Standard Time (South Australia)")
 				.settings-data
-					a(href="#" class="edit-btn") Edit
+					a(href="#" class="edit-btn" id="edit-hours") Edit
 					.information
 						h2 Practice information
 						p.

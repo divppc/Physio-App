@@ -95,6 +95,34 @@ window.onload = function () {
 		});
 	};
 
+
+	//edit basic details on general settings page
+
+	var editDetailsBtn = document.getElementById("edit-details");
+
+	editDetailsBtn.addEventListener("click", function (e) {
+		e.preventDefault();
+
+		var a = 'Edit',
+				b = 'Save';
+
+		if (this.innerHTML == a) {
+				this.innerHTML = b
+		} else {
+			this.innerHTML = a;
+		}
+
+		var inputs = document.querySelectorAll(".details input");
+		for (var i = 0, len = inputs.length; i < len; i++) {
+			if (inputs[i].hasAttribute("disabled")) {
+				inputs[i].removeAttribute('disabled');
+			} else {
+				inputs[i].setAttribute('disabled', 'disabled');
+			}
+			
+		};
+	});
+
 	//custom range slider
 
 	var range1 = document.getElementById('range1'),
