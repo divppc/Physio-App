@@ -79,7 +79,20 @@
   		font-size: 16px;
 		  letter-spacing: -0.3px;
 		  color: rgb(72, 84, 101);
-		  margin-bottom: 105px;
+  	}
+
+  	.control-buttons {
+  		margin: 50px auto;
+
+  		a {
+  			display: block;
+    		color: #72cfa5;
+
+
+    		&:hover {
+    			text-decoration: underline;
+    		}
+  		}
   	}
   }
 
