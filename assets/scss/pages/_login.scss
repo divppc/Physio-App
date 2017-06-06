@@ -9,7 +9,6 @@ section.login {
 
 	.login-form {
 		width: 697px;
-	  height: 384px;
 	  border-radius: 5px;
 	  background-color: rgb(255, 255, 255);
 	  margin: 15vh auto 0;
@@ -102,5 +101,18 @@ section.login {
 			height: 16px;
 			background-position: 0 -754px;
 		}
+	}
+}
+
+.forgot-link {
+	display: block;
+	text-align: center;
+	padding-top: 20px;
+	font-size: 16px;
+	color: #08796b;
+	text-decoration: underline;
+
+	&:hover {
+		text-decoration: none;
 	}
 }
