@@ -378,13 +378,13 @@ html(lang="en")
 						a(href="#")
 							img(src="http://pipsum.com/120x100", alt="")
 					li
-						a(href="#")
+						a(href="#").video-holder
 							img(src="http://pipsum.com/120x100", alt="")
 					li
 						a(href="#")
 							img(src="http://pipsum.com/120x100", alt="")
 					li
-						a(href="#")
+						a(href="#").video-holder
 							img(src="http://pipsum.com/120x100", alt="")
 					li
 						a(href="#")
@@ -393,12 +393,13 @@ html(lang="en")
 				button.close-modal.btn-gradient Close
 		.modal.video
 			.modal-title Video
-			.modal-body
-				iframe(width="560" height="315" src="https://www.youtube.com/embed/fcN37TxBE_s" frameborder="0" allowfullscreen)
+			.modal-body#video-container
+				//- iframe(width="560" height="315" src="https://www.youtube.com/embed/fcN37TxBE_s" frameborder="0" allowfullscreen)
 			.modal-footer
 				button.close-modal.btn-gradient Close
 		script(src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous")
 		script(src="assets/js/nouislider.min.js")
 		script(src="assets/js/jquery-ui.min.js")
 		script(src="https://cdn.jsdelivr.net/select2/4.0.3/js/select2.full.min.js")
+		script(src="https://content.jwplatform.com/libraries/QD1ITVfl.js")
 		script(src="assets/js/main.js")

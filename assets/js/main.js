@@ -81,6 +81,7 @@ window.onload = function () {
 
 		closeModalVideo.addEventListener("click", function () {
 			this.parentElement.parentElement.classList.remove("active");
+			jwplayer().stop()
 		});
 	}
 
@@ -238,5 +239,11 @@ window.onload = function () {
 	//sortable exercises
 	$(".template-exercises ol").sortable({
 		handle: ".move"
+	});
+
+	jwplayer("video-container").setup({
+    "file": "https://physio.div.agency/assets/images/video.mp4",
+    "width": 600,
+    "height": 400
 	});
 };
