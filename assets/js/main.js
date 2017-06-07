@@ -100,55 +100,59 @@ window.onload = function () {
 
 	var editDetailsBtn = document.getElementById("edit-details");
 
-	editDetailsBtn.addEventListener("click", function (e) {
-		e.preventDefault();
+	if (editDetailsBtn) {
+			editDetailsBtn.addEventListener("click", function (e) {
+			e.preventDefault();
 
-		var a = 'Edit',
-				b = 'Save';
+			var a = 'Edit',
+					b = 'Save';
 
-		if (this.innerHTML == a) {
-				this.innerHTML = b
-		} else {
-			this.innerHTML = a;
-		}
-
-		var inputs = document.querySelectorAll(".details input");
-		for (var i = 0, len = inputs.length; i < len; i++) {
-			if (inputs[i].hasAttribute("disabled")) {
-				inputs[i].removeAttribute('disabled');
+			if (this.innerHTML == a) {
+					this.innerHTML = b
 			} else {
-				inputs[i].setAttribute('disabled', 'disabled');
+				this.innerHTML = a;
 			}
-			
-		};
-	});
+
+			var inputs = document.querySelectorAll(".details .editable-input");
+			for (var i = 0, len = inputs.length; i < len; i++) {
+				if (inputs[i].hasAttribute("disabled")) {
+					inputs[i].removeAttribute('disabled');
+				} else {
+					inputs[i].setAttribute('disabled', 'disabled');
+				}
+				
+			};
+		});
+	}
 
 	//edit opening hours on general settings page
 
 	var editHoursBtn = document.getElementById("edit-hours");
 
-	editHoursBtn.addEventListener("click", function (e) {
-		e.preventDefault();
+	if (editHoursBtn) {
+			editHoursBtn.addEventListener("click", function (e) {
+			e.preventDefault();
 
-		var a = 'Edit',
-				b = 'Save';
+			var a = 'Edit',
+					b = 'Save';
 
-		if (this.innerHTML == a) {
-				this.innerHTML = b
-		} else {
-			this.innerHTML = a;
-		}
-
-		var selects = document.querySelectorAll(".worktime select");
-		for (var i = 0, len = selects.length; i < len; i++) {
-			if (selects[i].hasAttribute("disabled")) {
-				selects[i].removeAttribute('disabled');
+			if (this.innerHTML == a) {
+					this.innerHTML = b
 			} else {
-				selects[i].setAttribute('disabled', 'disabled');
+				this.innerHTML = a;
 			}
-			
-		};
-	});
+
+			var selects = document.querySelectorAll(".worktime select");
+			for (var i = 0, len = selects.length; i < len; i++) {
+				if (selects[i].hasAttribute("disabled")) {
+					selects[i].removeAttribute('disabled');
+				} else {
+					selects[i].setAttribute('disabled', 'disabled');
+				}
+				
+			};
+		});
+	}
 
 	//custom range slider
 

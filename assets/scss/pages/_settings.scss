@@ -130,7 +130,7 @@ section.settings {
 	}
 
 	.details {
-		width: 370px;
+		width: 430px;
 	}
 
 	.details-item {
@@ -159,7 +159,9 @@ section.settings {
 		  margin-bottom: 10px;
 		}
 
-		input {
+		input,
+		textarea,
+		select {
 			display: block;
 			font-size: 16px;
 		  letter-spacing: -0.1px;
@@ -170,10 +172,12 @@ section.settings {
 		  border: solid 1px #e6ebf1;
 		  overflow: hidden;
 		  white-space: nowrap;
+		  resize: none;		  
 		  text-overflow: ellipsis;
 
 		  &[disabled] {
 		  	border: solid 1px transparent;
+		  	appearance: none;
 		  }
 		}
 	}
