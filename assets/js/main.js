@@ -123,6 +123,33 @@ window.onload = function () {
 		};
 	});
 
+	//edit opening hours on general settings page
+
+	var editHoursBtn = document.getElementById("edit-hours");
+
+	editHoursBtn.addEventListener("click", function (e) {
+		e.preventDefault();
+
+		var a = 'Edit',
+				b = 'Save';
+
+		if (this.innerHTML == a) {
+				this.innerHTML = b
+		} else {
+			this.innerHTML = a;
+		}
+
+		var selects = document.querySelectorAll(".worktime select");
+		for (var i = 0, len = selects.length; i < len; i++) {
+			if (selects[i].hasAttribute("disabled")) {
+				selects[i].removeAttribute('disabled');
+			} else {
+				selects[i].setAttribute('disabled', 'disabled');
+			}
+			
+		};
+	});
+
 	//custom range slider
 
 	var range1 = document.getElementById('range1'),

@@ -82,15 +82,18 @@
   	}
 
   	.control-buttons {
-  		margin: 50px auto;
+  		margin: 5px auto 50px;
 
   		a {
   			display: block;
     		color: #72cfa5;
 
-
     		&:hover {
     			text-decoration: underline;
+    		}
+
+    		&:first-child {
+    			margin-bottom: 40px;
     		}
   		}
   	}

@@ -266,6 +266,18 @@ section.settings {
 			  	background: url("assets/images/icons.png") no-repeat 0px -21px;
 			  }
 			}
+
+			.seperator {
+				margin: 0 5px;
+			}
+
+			select {
+
+				&[disabled] {
+					border: 1px solid transparent;
+					appearance: none;
+				}
+			}
 		}
 	}
 }
