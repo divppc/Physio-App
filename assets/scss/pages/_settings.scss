@@ -9,13 +9,19 @@ section.settings {
 	  padding: 35px 40px;
 	  display: flex;
 	  position: relative;
+	  // justify-content: space-between;
 	  margin-bottom: 16px;
 
 	  &>div {
 
 	  	&:first-of-type {
 				width: 357px;
+				flex-shrink: 0;
 				margin-right: 254px;
+	  	}
+
+	  	&:last-of-type {
+	  		width: 100%;
 	  	}
 	  }
 	}
@@ -129,10 +135,6 @@ section.settings {
 		border-right: solid 1px #e6ebf1;
 	}
 
-	.details {
-		width: 450px;
-	}
-
 	.details-item {
 		padding-left: 40px;
 		position: relative;
@@ -163,6 +165,7 @@ section.settings {
 		textarea,
 		select {
 			display: block;
+			max-width: 450px;
 			font-size: 16px;
 		  letter-spacing: -0.1px;
 		  color: #90a4ae;
@@ -247,7 +250,6 @@ section.settings {
 	}
 
 	.worktime {
-		width: 450px;
 
 		h2 {
 			margin-bottom: 21px;
