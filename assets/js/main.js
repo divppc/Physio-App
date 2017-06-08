@@ -99,61 +99,59 @@ window.onload = function () {
 
 	//edit basic details on general settings page
 
+	var editDetailsFunc = function(inputs, control) {
+		if(control == "edit") {
+			for (var i = 0, len = inputs.length; i < len; i++) {				
+				inputs[i].removeAttribute('disabled');
+			}			
+		} else if (control == "save") {
+			for (var i = 0, len = inputs.length; i < len; i++) {				
+				inputs[i].setAttribute('disabled', 'disabled');
+			}
+		}
+	};
+
 	var editDetailsBtn = document.getElementById("edit-details");
+	var inputs = document.querySelectorAll(".details .editable-input");
+	var saveDetailsBtn = document.getElementById("save-details");
 
 	if (editDetailsBtn) {
 			editDetailsBtn.addEventListener("click", function (e) {
 			e.preventDefault();
-
-			var a = 'Edit',
-					b = 'Save';
-
-			if (this.innerHTML == a) {
-					this.innerHTML = b
-			} else {
-				this.innerHTML = a;
-			}
-
-			var inputs = document.querySelectorAll(".details .editable-input");
-			for (var i = 0, len = inputs.length; i < len; i++) {
-				if (inputs[i].hasAttribute("disabled")) {
-					inputs[i].removeAttribute('disabled');
-				} else {
-					inputs[i].setAttribute('disabled', 'disabled');
-				}
-				
-			};
+			saveDetailsBtn.classList.add("active");
+			editDetailsFunc(inputs, "edit");
 		});
-	}
+	};
+
+	if (saveDetailsBtn) {
+		saveDetailsBtn.addEventListener("click", function (e) {
+			e.preventDefault();
+			saveDetailsBtn.classList.remove("active");
+			editDetailsFunc(inputs, "save");
+		});
+	};
 
 	//edit opening hours on general settings page
 
 	var editHoursBtn = document.getElementById("edit-hours");
+	var selects = document.querySelectorAll(".worktime select");
+	var saveHoursBtn = document.getElementById("save-hours");
 
 	if (editHoursBtn) {
 			editHoursBtn.addEventListener("click", function (e) {
 			e.preventDefault();
-
-			var a = 'Edit',
-					b = 'Save';
-
-			if (this.innerHTML == a) {
-					this.innerHTML = b
-			} else {
-				this.innerHTML = a;
-			}
-
-			var selects = document.querySelectorAll(".worktime select");
-			for (var i = 0, len = selects.length; i < len; i++) {
-				if (selects[i].hasAttribute("disabled")) {
-					selects[i].removeAttribute('disabled');
-				} else {
-					selects[i].setAttribute('disabled', 'disabled');
-				}
-				
-			};
+			saveHoursBtn.classList.add("active");
+			editDetailsFunc(selects, 'edit');
 		});
 	}
+
+	if (saveHoursBtn) {
+		saveHoursBtn.addEventListener("click", function (e) {
+			e.preventDefault();
+			saveHoursBtn.classList.remove("active");
+			editDetailsFunc(selects, "save");
+		});
+	};
 
 	//custom range slider
 

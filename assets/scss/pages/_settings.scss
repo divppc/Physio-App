@@ -130,7 +130,7 @@ section.settings {
 	}
 
 	.details {
-		width: 430px;
+		width: 450px;
 	}
 
 	.details-item {
@@ -232,7 +232,22 @@ section.settings {
 		}
 	}
 
+	.save-btn {
+		display: inline-block;
+		padding: 5px 10px;
+		color: #fff;
+		float: right;
+		border-radius: 3px;
+		margin: 20px 0 0 0;
+		visibility: hidden;
+
+		&.active {
+			visibility: visible;
+		}
+	}
+
 	.worktime {
+		width: 450px;
 
 		h2 {
 			margin-bottom: 21px;
