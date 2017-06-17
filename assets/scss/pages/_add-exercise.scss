@@ -1,0 +1,58 @@
+/*ADD EXERCISE*/
+
+section.add-exercise {
+	padding: 30px 0 50px 0;
+
+	form {
+		display: flex;
+		width: 100%;
+
+		.exercise-data {
+			width: 50%;
+		}
+	}
+
+	.name {
+		margin-bottom: 30px;
+
+		label {
+	    display: block;
+	    font-size: 16px;
+	    letter-spacing: -0.1px;
+	    color: #485465;
+	    margin-bottom: 10px;
+		}
+
+		input {
+	    display: block;
+	    width: 100%;
+	    min-height: 50px;
+	    background: #fff;
+	    border-radius: 3px;
+	    padding: 0 24px;
+	    border: none;
+		}
+	}
+
+	.file-uploads {
+		width: 50%;
+	}
+
+	.program-setting {
+		width: 100%;
+	}
+
+	.save-exercise {
+		margin-top: 50px;
+
+		input {
+			border-radius: 3px;
+	    background-color: #cad3de;
+	    font-size: 12px;
+	    font-weight: bold;
+	    letter-spacing: -0.2px;
+	    color: white;
+	    padding: 13px 20px;
+		}
+	}
+}

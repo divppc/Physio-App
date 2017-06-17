@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+html(lang="en")
+	head
+		meta(http-equiv="X-UA-Compatible" content="IE=edge")
+		meta(charset="UTF-8")
+		link(rel="stylesheet", href="https://necolas.github.io/normalize.css/3.0.2/normalize.css")
+		link(rel="stylesheet", href="style.css")
+		link(rel="stylesheet", href="assets/css/nouislider.css")
+		title My Physio Dashboard | Add exercise
+	body
+		header
+			.main-line
+				.container
+					.header-panel
+						.logo
+							a(href="/") MyPhysio
+						.patient
+							a(href="#") Patients
+						.settings
+							a(href="#" class="active") General Settings
+					.user-panel
+						.user
+							.user-avatar.avatar
+								img(src="http://pipsum.com/100x100", alt="")
+							.user-name Henry Wagner
+						.logout
+							a(href="#" title="Log Out")
+			nav
+				.container
+					ul
+						li
+							a(href="#" class="active") General
+						li
+							a(href="#") Team Members
+						li
+							a(href="#") My Exercises
+						li
+							a(href="#") My Templates
+						li
+							a(href="#") My Articles
+						li
+							a(href="#") Integrations 
+						li
+							a(href="#") Marketing Automation
+		.breadcrumbs
+			.container
+				ul
+					li.back
+						a(href="#" class="back-link") Back
+					li
+						a(href="#") My Exercises
+					li
+						span Add Exercise
+		section.add-exercise
+			.container
+				form(action="#")
+					.exercise-data
+						.name
+							label(for="exercise-name") Name
+							input(type="text" id="exercise-name" required placeholder="Type your exercise name")
+						.program-setting.active
+							.range-holder
+								span Reps
+								.range-line#range1
+								input(type="text" id="range1-output")
+							.range-holder
+								span Time
+								.range-line#range2
+								input(type="text" id="range2-output")
+							.radio-holder
+								.radio
+									input(type="radio" name="program-type" id="type1" checked)
+									label(for="type1") Left Side
+								.radio
+									input(type="radio" name="program-type" id="type2")
+									label(for="type2") Alternating
+								.radio
+									input(type="radio" name="program-type" id="type3")
+									label(for="type3") Right Side
+								.radio
+									input(type="radio" name="program-type" id="type4")
+									label(for="type4") Both
+							.range-holder
+								span Sets
+								.range-line#range3
+								input(type="text" id="range3-output")
+							.range-holder
+								span Rest
+								.range-line#range4
+								input(type="text" id="range4-output")
+						.save-exercise
+							input(type="submit" value="Save" class="btn-gradient")
+					.file-uploads
+		
+		script(src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous")
+		script(src="assets/js/nouislider.min.js")
+		script(src="assets/js/main.js")

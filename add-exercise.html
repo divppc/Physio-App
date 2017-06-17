@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/3.0.2/normalize.css"/>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="assets/css/nouislider.css"/>
+    <title>My Physio Dashboard | Add exercise</title>
+  </head>
+  <body>
+    <header>
+      <div class="main-line">
+        <div class="container">
+          <div class="header-panel">
+            <div class="logo"><a href="/">MyPhysio</a></div>
+            <div class="patient"><a href="#">Patients</a></div>
+            <div class="settings"><a href="#" class="active">General Settings</a></div>
+          </div>
+          <div class="user-panel">
+            <div class="user">
+              <div class="user-avatar avatar"><img src="http://pipsum.com/100x100" alt=""/></div>
+              <div class="user-name">Henry Wagner</div>
+            </div>
+            <div class="logout"><a href="#" title="Log Out"></a></div>
+          </div>
+        </div>
+      </div>
+      <nav>
+        <div class="container">
+          <ul>
+            <li><a href="#" class="active">General</a></li>
+            <li><a href="#">Team Members</a></li>
+            <li><a href="#">My Exercises</a></li>
+            <li><a href="#">My Templates</a></li>
+            <li><a href="#">My Articles</a></li>
+            <li><a href="#">Integrations </a></li>
+            <li><a href="#">Marketing Automation</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <div class="breadcrumbs">
+      <div class="container">
+        <ul>
+          <li class="back"><a href="#" class="back-link">Back</a></li>
+          <li><a href="#">My Exercises</a></li>
+          <li><span>Add Exercise</span></li>
+        </ul>
+      </div>
+    </div>
+    <section class="add-exercise">
+      <div class="container">
+        <form action="#">
+          <div class="exercise-data">
+            <div class="name">
+              <label for="exercise-name">Name</label>
+              <input type="text" id="exercise-name" required="required" placeholder="Type your exercise name"/>
+            </div>
+            <div class="program-setting active">
+              <div class="range-holder"><span>Reps</span>
+                <div id="range1" class="range-line"></div>
+                <input type="text" id="range1-output"/>
+              </div>
+              <div class="range-holder"><span>Time</span>
+                <div id="range2" class="range-line"></div>
+                <input type="text" id="range2-output"/>
+              </div>
+              <div class="radio-holder">
+                <div class="radio">
+                  <input type="radio" name="program-type" id="type1" checked="checked"/>
+                  <label for="type1">Left Side</label>
+                </div>
+                <div class="radio">
+                  <input type="radio" name="program-type" id="type2"/>
+                  <label for="type2">Alternating</label>
+                </div>
+                <div class="radio">
+                  <input type="radio" name="program-type" id="type3"/>
+                  <label for="type3">Right Side</label>
+                </div>
+                <div class="radio">
+                  <input type="radio" name="program-type" id="type4"/>
+                  <label for="type4">Both</label>
+                </div>
+              </div>
+              <div class="range-holder"><span>Sets</span>
+                <div id="range3" class="range-line"></div>
+                <input type="text" id="range3-output"/>
+              </div>
+              <div class="range-holder"><span>Rest</span>
+                <div id="range4" class="range-line"></div>
+                <input type="text" id="range4-output"/>
+              </div>
+            </div>
+            <div class="save-exercise">
+              <input type="submit" value="Save" class="btn-gradient"/>
+            </div>
+          </div>
+          <div class="file-uploads"></div>
+        </form>
+      </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="assets/js/nouislider.min.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
