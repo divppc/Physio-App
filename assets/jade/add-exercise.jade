@@ -53,44 +53,61 @@ html(lang="en")
 						span Add Exercise
 		section.add-exercise
 			.container
-				form(action="#")
-					.exercise-data
-						.name
-							label(for="exercise-name") Name
-							input(type="text" id="exercise-name" required placeholder="Type your exercise name")
-						.program-setting.active
-							.range-holder
-								span Reps
-								.range-line#range1
-								input(type="text" id="range1-output")
-							.range-holder
-								span Time
-								.range-line#range2
-								input(type="text" id="range2-output")
-							.radio-holder
-								.radio
-									input(type="radio" name="program-type" id="type1" checked)
-									label(for="type1") Left Side
-								.radio
-									input(type="radio" name="program-type" id="type2")
-									label(for="type2") Alternating
-								.radio
-									input(type="radio" name="program-type" id="type3")
-									label(for="type3") Right Side
-								.radio
-									input(type="radio" name="program-type" id="type4")
-									label(for="type4") Both
-							.range-holder
-								span Sets
-								.range-line#range3
-								input(type="text" id="range3-output")
-							.range-holder
-								span Rest
-								.range-line#range4
-								input(type="text" id="range4-output")
-						.save-exercise
-							input(type="submit" value="Save" class="btn-gradient")
-					.file-uploads
+				.data-form
+					form(action="#")
+						.exercise-data
+							.name
+								label(for="exercise-name") Name
+								input(type="text" id="exercise-name" required placeholder="Type your exercise name")
+							.exercise-selects								
+								.select
+									label(for="exercise-type") Type:
+									select#exercise-type(name="exercise-type")
+										option(value="A") Type A
+										option(value="B") Type B
+										option(value="C") Type C								
+								.select
+									label(for="exercise-part") Part:
+									select#exercise-part(name="exercise-part")
+										option(value="Upper body") Upper body
+										option(value="Upper body") Upper body
+										option(value="Upper body") Upper body
+							.program-setting.active
+								.range-holder
+									span Reps
+									.range-line#range1
+									input(type="text" id="range1-output")
+								.range-holder
+									span Time
+									.range-line#range2
+									input(type="text" id="range2-output")
+								.radio-holder
+									.radio
+										input(type="radio" name="program-type" id="type1" checked)
+										label(for="type1") Left Side
+									.radio
+										input(type="radio" name="program-type" id="type2")
+										label(for="type2") Alternating
+									.radio
+										input(type="radio" name="program-type" id="type3")
+										label(for="type3") Right Side
+									.radio
+										input(type="radio" name="program-type" id="type4")
+										label(for="type4") Both
+								.range-holder
+									span Sets
+									.range-line#range3
+									input(type="text" id="range3-output")
+								.range-holder
+									span Rest
+									.range-line#range4
+									input(type="text" id="range4-output")
+							.save-exercise
+								input(type="submit" value="Save" class="btn-gradient")
+				.file-uploads
+					span put uploads form here
+					button save
+					button cancel
 		
 		script(src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous")
 		script(src="assets/js/nouislider.min.js")

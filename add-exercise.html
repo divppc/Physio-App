@@ -51,54 +51,77 @@
     </div>
     <section class="add-exercise">
       <div class="container">
-        <form action="#">
-          <div class="exercise-data">
-            <div class="name">
-              <label for="exercise-name">Name</label>
-              <input type="text" id="exercise-name" required="required" placeholder="Type your exercise name"/>
+        <div class="data-form">
+          <form action="#">
+            <div class="exercise-data">
+              <div class="name">
+                <label for="exercise-name">Name</label>
+                <input type="text" id="exercise-name" required="required" placeholder="Type your exercise name"/>
+              </div>
+              <div class="exercise-selects">								
+                <div class="select">
+                  <label for="exercise-type">Type:</label>
+                  <select id="exercise-type" name="exercise-type">
+                    <option value="A">Type A</option>
+                    <option value="B">Type B</option>
+                    <option value="C">Type C								</option>
+                  </select>
+                </div>
+                <div class="select">
+                  <label for="exercise-part">Part:</label>
+                  <select id="exercise-part" name="exercise-part">
+                    <option value="Upper body">Upper body</option>
+                    <option value="Upper body">Upper body</option>
+                    <option value="Upper body">Upper body</option>
+                  </select>
+                </div>
+              </div>
+              <div class="program-setting active">
+                <div class="range-holder"><span>Reps</span>
+                  <div id="range1" class="range-line"></div>
+                  <input type="text" id="range1-output"/>
+                </div>
+                <div class="range-holder"><span>Time</span>
+                  <div id="range2" class="range-line"></div>
+                  <input type="text" id="range2-output"/>
+                </div>
+                <div class="radio-holder">
+                  <div class="radio">
+                    <input type="radio" name="program-type" id="type1" checked="checked"/>
+                    <label for="type1">Left Side</label>
+                  </div>
+                  <div class="radio">
+                    <input type="radio" name="program-type" id="type2"/>
+                    <label for="type2">Alternating</label>
+                  </div>
+                  <div class="radio">
+                    <input type="radio" name="program-type" id="type3"/>
+                    <label for="type3">Right Side</label>
+                  </div>
+                  <div class="radio">
+                    <input type="radio" name="program-type" id="type4"/>
+                    <label for="type4">Both</label>
+                  </div>
+                </div>
+                <div class="range-holder"><span>Sets</span>
+                  <div id="range3" class="range-line"></div>
+                  <input type="text" id="range3-output"/>
+                </div>
+                <div class="range-holder"><span>Rest</span>
+                  <div id="range4" class="range-line"></div>
+                  <input type="text" id="range4-output"/>
+                </div>
+              </div>
+              <div class="save-exercise">
+                <input type="submit" value="Save" class="btn-gradient"/>
+              </div>
             </div>
-            <div class="program-setting active">
-              <div class="range-holder"><span>Reps</span>
-                <div id="range1" class="range-line"></div>
-                <input type="text" id="range1-output"/>
-              </div>
-              <div class="range-holder"><span>Time</span>
-                <div id="range2" class="range-line"></div>
-                <input type="text" id="range2-output"/>
-              </div>
-              <div class="radio-holder">
-                <div class="radio">
-                  <input type="radio" name="program-type" id="type1" checked="checked"/>
-                  <label for="type1">Left Side</label>
-                </div>
-                <div class="radio">
-                  <input type="radio" name="program-type" id="type2"/>
-                  <label for="type2">Alternating</label>
-                </div>
-                <div class="radio">
-                  <input type="radio" name="program-type" id="type3"/>
-                  <label for="type3">Right Side</label>
-                </div>
-                <div class="radio">
-                  <input type="radio" name="program-type" id="type4"/>
-                  <label for="type4">Both</label>
-                </div>
-              </div>
-              <div class="range-holder"><span>Sets</span>
-                <div id="range3" class="range-line"></div>
-                <input type="text" id="range3-output"/>
-              </div>
-              <div class="range-holder"><span>Rest</span>
-                <div id="range4" class="range-line"></div>
-                <input type="text" id="range4-output"/>
-              </div>
-            </div>
-            <div class="save-exercise">
-              <input type="submit" value="Save" class="btn-gradient"/>
-            </div>
-          </div>
-          <div class="file-uploads"></div>
-        </form>
+          </form>
+        </div>
+        <div class="file-uploads"><span>put uploads form here</span>
+          <button>save</button>
+          <button>cancel</button>
+        </div>
       </div>
     </section>
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>

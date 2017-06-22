@@ -13,6 +13,26 @@ window.onload = function () {
 		});
 	}
 
+	//add exercise - file uploads overlay
+	var submitExerciseBtn = document.querySelector(".save-exercise input");
+	if(submitExerciseBtn) {
+		submitExerciseBtn.addEventListener("click", function(e) {
+			e.preventDefault();
+
+			var exerciseName = document.getElementById("exercise-name"),
+					overlay = document.querySelector(".file-uploads");
+
+			if (exerciseName.value <= 0) {
+				exerciseName.classList.add("error");
+			} else {
+				exerciseName.classList.remove("error");
+				overlay.classList.add("active");
+			}
+		});
+	}
+
+	
+
 	//select exercise
 
 	var exerciseArr = document.querySelectorAll(".template-exercises ol li");
@@ -244,4 +264,5 @@ window.onload = function () {
     "width": 600,
     "height": 400
 	});
+
 };
