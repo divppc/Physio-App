@@ -105,9 +105,21 @@ html(lang="en")
 							.save-exercise
 								input(type="submit" value="Save" class="btn-gradient")
 				.file-uploads
-					span put uploads form here
-					button save
-					button cancel
+					.fileupload-buttonbar
+						.col-lg-7
+							span.btn.btn-success
+								i.glyphicon.glyphicon-plus
+								span Add files...
+								input(type="file")
+							button.btn.btn-primary
+								i.glyphicon.glyphicon-upload
+								span Start upload
+							button.btn.btn-warning
+								i.glyphicon.glyphicon-ban-circle
+								span Cancel upload
+							button.btn.btn-danger
+								i.glyphicon.glyphicon-trash
+								span Delete
 		
 		script(src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous")
 		script(src="assets/js/nouislider.min.js")

@@ -49,7 +49,7 @@ section.add-exercise {
 
 		&:after {
 			display: block;
-			content: "";
+			// content: "";
 			position: absolute;
 			top: 0;
 			cursor: no-drop;
@@ -118,5 +118,115 @@ section.add-exercise {
     appearance: none;
     background: url(assets/images/select-arrow.png) no-repeat 96% center, #fff;
     background: url(assets/images/select-arrow.png) no-repeat calc(100% - 20px) center, #fff;
+	}
+}
+
+.fileupload-buttonbar {
+
+	.col-lg-7 {
+		display: flex;
+		align-items: center;
+	}
+
+	input {
+
+		&[type="file"] {
+	    position: absolute;
+	    top: 0;
+	    right: 0;
+	    margin: 0;
+	    opacity: 0;
+	    -ms-filter: 'alpha(opacity=0)';
+	    font-size: 200px !important;
+	    direction: ltr;
+	    cursor: pointer;
+		}
+	}
+
+	.btn {
+		display: block;
+		position: relative;
+		padding: 9px 12px;
+		display: flex;
+		align-items: center;
+		border-radius: 4px;
+		white-space: nowrap;
+		transition: 0.3s;
+
+		&:not(:last-child) {
+			margin-right: 5px;
+		}
+
+		span {
+			color: #fff;
+			font-size: 14px;
+		}
+	}
+
+	.glyphicon {
+		display: block;
+		font-style: normal;
+		flex-shrink: 0;
+		margin-right: 5px;
+	}
+
+	.btn-success {
+		background: #5cb85c;
+
+		&:hover {
+			background: #449d44;
+		}
+	}
+
+	.btn-primary {
+		background: #428bca;
+
+		&:hover {
+			background: #3071a9;
+		}
+	}
+
+	.btn-warning {
+		background: #f0ad4e;
+
+		&:hover {
+			background: #ec971f;
+		}
+	}
+
+	.btn-danger {
+		background: #d9534f;
+
+		&:hover {
+			background: #c9302c;
+		}
+	}
+
+	.glyphicon-plus {
+		display: block;
+    width: 14px;
+    height: 14px;
+    background: url(assets/images/icons.png) no-repeat 0px -415px;
+	}
+
+	.glyphicon-upload {
+		display: block;
+    width: 16px;
+    height: 16px;
+    background: url(assets/images/upload-icon.png) no-repeat;
+	}
+
+	.glyphicon-ban-circle {
+		display: block;
+    width: 16px;
+    height: 16px;
+    background: url(assets/images/cancel.png) no-repeat;
+	}
+
+	.glyphicon-trash {
+		display: block;
+    width: 16px;
+    height: 19px;
+    background: url(assets/images/remove-icon.png) no-repeat;
 	}
 }
