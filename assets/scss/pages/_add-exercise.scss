@@ -122,6 +122,7 @@ section.add-exercise {
 }
 
 .fileupload-buttonbar {
+	cursor: pointer;
 
 	.col-lg-7 {
 		display: flex;
@@ -139,94 +140,178 @@ section.add-exercise {
 	    -ms-filter: 'alpha(opacity=0)';
 	    font-size: 200px !important;
 	    direction: ltr;
+	    width: 100%;
+	    height: 100%;
 	    cursor: pointer;
 		}
 	}
 
 	.btn {
-		display: block;
-		position: relative;
-		padding: 9px 12px;
-		display: flex;
-		align-items: center;
-		border-radius: 4px;
-		white-space: nowrap;
-		transition: 0.3s;
 
 		&:not(:last-child) {
 			margin-right: 5px;
 		}
-
-		span {
-			color: #fff;
-			font-size: 14px;
-		}
 	}
+}
 
-	.glyphicon {
-		display: block;
-		font-style: normal;
-		flex-shrink: 0;
-		margin-right: 5px;
+.glyphicon {
+	display: block;
+	font-style: normal;
+	flex-shrink: 0;
+	margin-right: 5px;
+}
+
+.btn-success {
+	background: #5cb85c;
+	position: relative;
+	cursor: pointer;
+
+	&:hover {
+		background: #449d44;
 	}
+}
 
-	.btn-success {
-		background: #5cb85c;
+.btn-primary {
+	background: #428bca;
 
-		&:hover {
-			background: #449d44;
-		}
+	&:hover {
+		background: #3071a9;
 	}
+}
 
-	.btn-primary {
-		background: #428bca;
+.btn-warning {
+	background: #f0ad4e;
 
-		&:hover {
-			background: #3071a9;
-		}
+	&:hover {
+		background: #ec971f;
 	}
+}
 
-	.btn-warning {
-		background: #f0ad4e;
+.btn-danger {
+	background: #d9534f;
 
-		&:hover {
-			background: #ec971f;
-		}
+	&:hover {
+		background: #c9302c;
 	}
+}
 
-	.btn-danger {
-		background: #d9534f;
+.glyphicon-plus {
+	display: block;
+  width: 14px;
+  height: 14px;
+  background: url(assets/images/icons.png) no-repeat 0px -415px;
+}
 
-		&:hover {
-			background: #c9302c;
-		}
+.glyphicon-upload {
+	display: block;
+  width: 16px;
+  height: 16px;
+  background: url(assets/images/upload-icon.png) no-repeat;
+}
+
+.glyphicon-ban-circle {
+	display: block;
+  width: 16px;
+  height: 16px;
+  background: url(assets/images/cancel.png) no-repeat;
+}
+
+.glyphicon-trash {
+	display: block;
+  width: 16px;
+  height: 19px;
+  background: url(assets/images/remove-icon.png) no-repeat;
+}
+
+.btn {
+	display: block;
+	position: relative;
+	padding: 9px 12px;
+	display: flex;
+	align-items: center;
+	border-radius: 4px;
+	white-space: nowrap;
+	transition: 0.3s;
+
+	span {
+		color: #fff;
+		font-size: 14px;
 	}
+}
 
-	.glyphicon-plus {
-		display: block;
-    width: 14px;
-    height: 14px;
-    background: url(assets/images/icons.png) no-repeat 0px -415px;
-	}
+.progress {
+  height: 20px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  background-color: #f5f5f5;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
+  box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
+}
 
-	.glyphicon-upload {
-		display: block;
-    width: 16px;
-    height: 16px;
-    background: url(assets/images/upload-icon.png) no-repeat;
-	}
+.table-striped {
+	width: 100%;
+	max-width: 100%;
+}
 
-	.glyphicon-ban-circle {
-		display: block;
-    width: 16px;
-    height: 16px;
-    background: url(assets/images/cancel.png) no-repeat;
-	}
+.table-striped>tbody>tr:nth-child(odd)>td,
+.table-striped>tbody>tr:nth-child(odd)>th {
+	background-color: #f9f9f9;
+}
 
-	.glyphicon-trash {
-		display: block;
-    width: 16px;
-    height: 19px;
-    background: url(assets/images/remove-icon.png) no-repeat;
-	}
+.table-striped>thead>tr>th,
+.table-striped>tbody>tr>th,
+.table-striped>tfoot>tr>th,
+.table-striped>thead>tr>td,
+.table-striped>tbody>tr>td,
+.table-striped>tfoot>tr>td {
+  padding: 8px;
+  line-height: 1.42857143;
+  vertical-align: top;
+  border-top: 1px solid #ddd;
+}
+
+.progress.active .progress-bar, .progress-bar.active {
+  -webkit-animation: progress-bar-stripes 2s linear infinite;
+  -o-animation: progress-bar-stripes 2s linear infinite;
+  animation: progress-bar-stripes 2s linear infinite;
+}
+.progress-striped .progress-bar-success {
+  background-image: -webkit-linear-gradient(45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);
+  background-image: -o-linear-gradient(45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);
+  background-image: linear-gradient(45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);
+}
+.progress-striped .progress-bar, .progress-bar-striped {
+  background-image: -webkit-linear-gradient(45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);
+  background-image: -o-linear-gradient(45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);
+  background-image: linear-gradient(45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);
+  -webkit-background-size: 40px 40px;
+  background-size: 40px 40px;
+}
+
+.progress-bar-success {
+  background-color: #5cb85c;
+}
+
+.progress-bar {
+  float: left;
+  width: 0;
+  height: 100%;
+  font-size: 12px;
+  line-height: 20px;
+  color: #fff;
+  text-align: center;
+  background-color: #428bca;
+  -webkit-box-shadow: inset 0 -1px 0 rgba(0,0,0,.15);
+  box-shadow: inset 0 -1px 0 rgba(0,0,0,.15);
+  -webkit-transition: width .6s ease;
+  -o-transition: width .6s ease;
+  transition: width .6s ease;
+}
+
+.fade {
+  opacity: 0;
+  -webkit-transition: opacity .15s linear;
+  -o-transition: opacity .15s linear;
+  transition: opacity .15s linear;
 }
