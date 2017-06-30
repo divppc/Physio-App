@@ -315,3 +315,24 @@ section.add-exercise {
   -o-transition: opacity .15s linear;
   transition: opacity .15s linear;
 }
+
+.fileinput-button {
+	display: flex;
+}
+
+.fade.in {
+  opacity: 1;
+}
+
+.files tr {
+	background: #fff;
+}
+
+.files tr td:last-child {
+	display: flex;
+	align-items: center;
+}
+
+.files tr td:last-child .btn:first-child {
+	margin-right: 4px;
+}
