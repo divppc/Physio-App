@@ -53,7 +53,7 @@ section.invite {
 
 	input {
 
-		&[type="checkbox"] {
+		&[type="radio"] {
 			display: none;
 
 			&+label {

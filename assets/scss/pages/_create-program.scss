@@ -84,16 +84,28 @@
   	.control-buttons {
   		margin: 5px auto 50px;
 
-  		a {
+  		a,input {
   			display: block;
     		color: #72cfa5;
+    		margin: 0 auto;
+    		cursor: pointer;
+    		text-align: center;
 
-    		&:hover {
+    		&::-webkit-input-placeholder {					
+					font-size: 16px;
+				}
+  		}
+
+  		input {
+  			padding: 0 5px;
+  			margin-bottom: 40px;
+  		}
+
+  		a {
+  			position: relative;
+
+				&:hover {
     			text-decoration: underline;
-    		}
-
-    		&:first-child {
-    			margin-bottom: 40px;
     		}
   		}
   	}
@@ -381,3 +393,47 @@ section.create-program {
 		}
 	}
 }
+
+.icon-del {
+	position: absolute;
+  top: -1px;
+  right: -1px;
+  width: 15px;
+  height: 15px;
+  display: none;
+  background: url(../images/close-window.png) no-repeat 0px 0px / contain;
+  cursor: pointer;
+}
+
+// .add-tag-panel {
+// 	position: absolute;
+//   top: 110%;
+//   left: 38px;
+//   box-shadow: 0px 1px 4px rgba(0,0,0,.5);
+//   background: #fff;
+//   padding: 10px;
+//   border-radius: 5px;
+//   display: none;
+//   z-index: 3;
+
+//   input {
+//   	padding: 0 5px;
+//   	border: 1px solid #dbdbdb;
+//   	display: block;
+//   	margin-bottom: 5px;
+//   }
+// }
+
+// .tags-container {
+
+// 	li {
+// 		position: relative;
+
+// 		&.active {
+
+// 			i {
+// 				display: block;
+// 			}
+// 		}
+// 	}
+// }
