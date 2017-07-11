@@ -32,6 +32,10 @@ body {
 
 	&.sign-up {
 		background-image: linear-gradient(to bottom, #ffffff, #e6ebf1);
+
+		header {
+			margin-bottom: 30px;
+		}
 	}
 }
 

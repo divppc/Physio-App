@@ -104,3 +104,135 @@ section.invite {
 		}
 	}
 }
+
+.members-container {
+	flex-wrap: wrap;
+	display: flex;
+	justify-content: flex-end;
+  border-radius: 3px;
+  background-color: #ffffff;
+  border: solid 0.5px #cad3de;
+  padding: 35px 40px;
+  position: relative;
+
+	.table-head {
+		display: flex;
+		margin-bottom: 30px;
+		align-items: center;
+		width: 100%;
+
+		a {
+			color: #fff;
+	    padding: 5px 10px;
+	    color: #fff;
+	    border-radius: 3px;
+	    font-size: 12px;
+	    display: block;
+	    margin-left: 10px;
+		}
+	}
+
+	.members {
+		width: 100%;
+	}
+
+	thead {
+		td {
+			font-weight: bold;
+		}
+	}
+
+	td {
+		padding: 5px 0;
+	}
+
+	.member-role,
+	.actions {
+		display: flex;
+		align-items: center;
+	}
+
+	.actions {
+
+		a {
+			color: #72cfa5;
+			text-decoration: underline;
+
+			&:hover {
+				text-decoration: none;
+			}
+
+			&:first-child {
+				margin-right: 10px;
+			}
+		}
+	}
+
+	input[type="radio"] {
+		display: none;
+
+		&+label {
+	    display: flex;
+	    align-items: center;
+	    font-size: 12px;
+	    position: relative;
+	    letter-spacing: -0.2px;
+	    color: #485465;
+	    margin-right: 10px;
+	    cursor: pointer;
+
+			&:before {
+				display: block;
+		    content: '';
+		    border-radius: 50%;
+		    margin-right: 5px;
+		    width: 16px;
+		    height: 16px;
+		    -webkit-flex-shrink: 0;
+		    -ms-flex-negative: 0;
+		    flex-shrink: 0;
+		    cursor: pointer;
+		    border: solid 3px #9ba9bc;
+		    background: #fff;
+		    -webkit-box-sizing: border-box;
+		    box-sizing: border-box;
+		    border: solid 1px #9ba9bc;
+			}
+		}
+
+		&:checked {
+
+			&+label {
+
+				&:before {
+					background-size: 152%;
+					border-color: transparent;
+					box-shadow: 0 2px 14px 0 rgb(202, 211, 222);
+			    background: -webkit-gradient(linear, left top, left bottom, from(#52C7CC), to(#95DDAE));
+			    background: -webkit-linear-gradient(top, #52C7CC, #95DDAE);
+			    background: -o-linear-gradient(top, #52C7CC, #95DDAE);
+			    background: linear-gradient(to bottom, #52C7CC, #95DDAE);
+			    background-size: 172%;
+			    border-color: transparent;
+			    background-position: 0 -21px;
+				}
+
+				&:after {
+			    width: 6px;
+			    height: 6px;
+			    display: block;
+			    flex-shrink: 0;
+			    content: '';
+			    border: 2px solid #fff;
+			    position: absolute;
+			    top: 50%;
+			    transform: translateY(-50%);
+			    cursor: pointer;
+			    border-radius: 50%;
+			    left: 3px;
+			    background: transparent;
+				}
+			}
+		}
+	}
+}

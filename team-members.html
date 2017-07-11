@@ -8,59 +8,120 @@
     <title>My Physio Dashboard | Sign Up</title>
   </head>
   <body class="sign-up">
-    <section class="invite">
-      <h1>Send Invitations</h1>
-      <p>Invite a new member to the practice.</p>
-      <form action="#" class="signup-form">
-        <div class="form-field">
-          <label for="name">Name</label>
-          <input type="text" id="name" required="required"/>
-        </div>
-        <div class="form-field">
-          <label for="email">Email</label>
-          <input type="email" id="email" required="required"/>
-        </div>
-        <div class="form-field">
-          <label for="confirm-email">Confirm Email</label>
-          <input type="email" id="confirm-email" required="required"/>
-        </div>
-        <div class="form-field roles">
-          <div class="field-subtitle">Roles:</div>
-          <div class="member-role">
-            <div class="role">
-              <input type="radio" id="role1" name="member-role"/>
-              <label for="role1">Patient</label>
+    <header>
+      <div class="main-line">
+        <div class="container">
+          <div class="header-panel">
+            <div class="logo"><a href="/">MyPhysio</a></div>
+            <div class="patient"><a href="#">Patients</a></div>
+            <div class="settings"><a href="#" class="active">General Settings</a></div>
+          </div>
+          <div class="user-panel">
+            <div class="user">
+              <div class="user-avatar avatar"><img src="http://pipsum.com/100x100" alt=""/></div>
+              <div class="user-name">Henry Wagner</div>
             </div>
-            <div class="role">
-              <input type="radio" id="role2" name="member-role"/>
-              <label for="role2">Practic Manager</label>
-            </div>
-            <div class="role">
-              <input type="radio" id="role3" name="member-role"/>
-              <label for="role3">Lead Physio</label>
-            </div>
-            <div class="role">
-              <input type="radio" id="role4" name="member-role"/>
-              <label for="role4">Physio</label>
-            </div>
-            <div class="role">
-              <input type="radio" id="role5" name="member-role"/>
-              <label for="role5">Admin</label>
-            </div>
-            <div class="role">
-              <input type="radio" id="role6" name="member-role" checked="checked"/>
-              <label for="role6">Team Member</label>
-            </div>
-            <div class="role">
-              <input type="radio" id="role7" name="member-role"/>
-              <label for="role7">System Admin</label>
-            </div><span>Select all the roles this user will perform</span>
+            <div class="logout"><a href="#" title="Log Out"></a></div>
           </div>
         </div>
-        <div class="form-field">
-          <input type="submit" value="Send invitation" class="btn-gradient"/>
+      </div>
+      <nav>
+        <div class="container">
+          <ul>
+            <li><a href="#">General</a></li>
+            <li><a href="#" class="active">Team Members</a></li>
+            <li><a href="#">My Exercises</a></li>
+            <li><a href="#">My Templates</a></li>
+            <li><a href="#">My Articles</a></li>
+            <li><a href="#">Integrations </a></li>
+            <li><a href="#">Marketing Automation</a></li>
+          </ul>
         </div>
-      </form>
+      </nav>
+    </header>
+    <section class="settings">
+      <div class="container">
+        <div class="members-container"><a href="#" id="edit-details" class="edit-btn">Edit</a>
+          <div class="table-head">
+            <h3>Team Member List</h3><a href="#" class="btn-gradient">Add</a>
+          </div>
+          <table class="members">
+            <thead>
+              <tr>
+                <td>Name</td>
+                <td>Email</td>
+                <td>Roles</td>
+                <td>Action</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <input type="text" value="Justin"/>
+                </td>
+                <td>
+                  <input type="email" value="justin@gmail.com"/>
+                </td>
+                <td>
+                  <div class="member-role">
+                    <input type="radio" name="member1-role" id="member1-role1"/>
+                    <label for="member1-role1">Admin</label>
+                    <input type="radio" name="member1-role" id="member1-role2"/>
+                    <label for="member1-role2">Super Admin</label>
+                    <input type="radio" name="member1-role" id="member1-role3"/>
+                    <label for="member1-role3">Physio</label>
+                  </div>
+                </td>
+                <td>
+                  <div class="actions"><a href="#">Active/Inactive</a><a href="#">Delete</a></div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input type="text" value="Justin"/>
+                </td>
+                <td>
+                  <input type="email" value="justin@gmail.com"/>
+                </td>
+                <td>
+                  <div class="member-role">
+                    <input type="radio" name="member2-role" id="member2-role1"/>
+                    <label for="member2-role1">Admin</label>
+                    <input type="radio" name="member2-role" id="member2-role2"/>
+                    <label for="member2-role2">Super Admin</label>
+                    <input type="radio" name="member2-role" id="member2-role3"/>
+                    <label for="member2-role3">Physio</label>
+                  </div>
+                </td>
+                <td>
+                  <div class="actions"><a href="#">Active/Inactive</a><a href="#">Delete</a></div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input type="text" value="Justin"/>
+                </td>
+                <td>
+                  <input type="email" value="justin@gmail.com"/>
+                </td>
+                <td>
+                  <div class="member-role">
+                    <input type="radio" name="member3-role" id="member3-role1"/>
+                    <label for="member3-role1">Admin</label>
+                    <input type="radio" name="member3-role" id="member3-role2"/>
+                    <label for="member3-role2">Super Admin</label>
+                    <input type="radio" name="member3-role" id="member3-role3"/>
+                    <label for="member3-role3">Physio</label>
+                  </div>
+                </td>
+                <td>
+                  <div class="actions"><a href="#">Active/Inactive</a><a href="#">Delete</a></div>
+                </td>
+              </tr>
+            </tbody>
+          </table><a href="#" id="save-hours" class="save-btn btn-gradient">Save</a>
+        </div>
+      </div>
     </section>
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
     <script src="assets/js/main.js"></script>

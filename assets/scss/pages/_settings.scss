@@ -14,7 +14,7 @@ section.settings {
 
 	  &>div {
 
-	  	&:first-of-type {
+	  	&:first-of-type:not(.table-head) {
 				width: 357px;
 				flex-shrink: 0;
 				margin-right: 254px;
@@ -57,6 +57,12 @@ section.settings {
 	  margin-bottom: 36px;
 	}
 
+	h3 {
+		font-size: 24px;
+	  letter-spacing: -0.1px;
+	  color: #485465;
+	}
+
 	.company-logo {
 		width: 100%;
 	  height: 169px;
@@ -91,28 +97,28 @@ section.settings {
 		  letter-spacing: -0.1px;
 		  color: #90a4ae;
 	  }
-	}
 
-	label {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		cursor: pointer;
-		height: 100%;
-		width: calc(100% - 256px);
-		font-size: 16px;
-  	color: #66758b;
+	  label {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			cursor: pointer;
+			height: 100%;
+			width: calc(100% - 256px);
+			font-size: 16px;
+	  	color: #66758b;
 
-  	&:after {
-  		display: block;
-	    content: '';
-	    width: 22px;
-	    height: 22px;
-	    cursor: pointer;
-	    margin-left: 17px;
-	    z-index: 1;
-	    background: url(assets/images/icons.png) no-repeat 0px -456px;
-  	}
+	  	&:after {
+	  		display: block;
+		    content: '';
+		    width: 22px;
+		    height: 22px;
+		    cursor: pointer;
+		    margin-left: 17px;
+		    z-index: 1;
+		    background: url(assets/images/icons.png) no-repeat 0px -456px;
+	  	}
+		}
 	}
 
 	input {
