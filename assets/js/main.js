@@ -1,3 +1,24 @@
+$(document).ready(function() {
+	//toggle between unser invite steps
+	var nextStep = $('.add_user_btn'),
+			prevStep = $('.back-btn'),
+			step1 = $('.invite-container .step1'),
+			step2 = $('.invite-container .step2');
+
+	$(nextStep).on('click', function(e) {
+		e.preventDefault();
+		step1.removeClass('active');
+		step2.addClass('active');
+	});
+
+	$(prevStep).on('click', function(e) {
+		e.preventDefault();
+		step2.removeClass('active');
+		step1.addClass('active');
+	})
+});
+
+
 
 window.onload = function () {
 
@@ -180,6 +201,7 @@ window.onload = function () {
 			range3 = document.getElementById('range3'),
 			range4 = document.getElementById('range4');
 
+
 	noUiSlider.create(range1, {
 		start: [ 2 ],
 		connect: [false, true],
@@ -264,5 +286,4 @@ window.onload = function () {
     "width": 600,
     "height": 400
 	});
-
 };

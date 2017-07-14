@@ -17,3 +17,4 @@ Physio Dashboard
 15) Program builder 3 http://physio.div.agency/program-builder-tools3.html<br />
 16) Login page http://physio.div.agency/login.html<br />
 17) Add exercise http://physio.div.agency/add-exercise.html<br />
+18) Invite user http://physio.div.agency/invite.html<br />
