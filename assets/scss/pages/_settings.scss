@@ -174,7 +174,7 @@ section.settings {
 			font-size: 16px;
 		  letter-spacing: -0.1px;
 		  color: #90a4ae;
-		  background: transparent;
+		  background: #fff;
 		  width: 100%;
 		  padding: 0 10px;
 		  border: solid 1px #e6ebf1;
@@ -186,6 +186,16 @@ section.settings {
 		  &[disabled] {
 		  	border: solid 1px transparent;
 		  	appearance: none;
+		  	outline: none;
+
+		  	span {
+		  		color: #90a4ae !important;
+		  		background: #fff !important;
+
+		  		&:focus {
+		  			outline: none !important;
+		  		}
+		  	}
 		  }
 		}
 	}
