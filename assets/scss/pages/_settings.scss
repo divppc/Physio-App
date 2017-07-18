@@ -9,7 +9,6 @@ section.settings {
 	  padding: 35px 40px;
 	  display: flex;
 	  position: relative;
-	  // justify-content: space-between;
 	  margin-bottom: 16px;
 
 	  &>div {
@@ -307,4 +306,25 @@ section.settings {
 			}
 		}
 	}
+}
+
+textarea.custom-textarea {
+	display: block;
+	max-width: 450px;
+	font-size: 16px;
+  letter-spacing: -0.1px;
+  color: #90a4ae;
+  background: transparent;
+  width: 100%;
+  padding: 0 10px;
+  border: solid 1px #e6ebf1;
+  overflow: hidden;
+  white-space: nowrap;
+  resize: none;		  
+  text-overflow: ellipsis;
+
+  &[disabled] {
+  	border: solid 1px transparent;
+  	appearance: none;
+  }
 }
