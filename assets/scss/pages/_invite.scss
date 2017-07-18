@@ -20,6 +20,15 @@ section.invite {
 			margin-bottom: 44px;
 	  }
 	}
+}
+
+
+.form-field {
+
+	&.roles {
+		display: flex;
+		margin-bottom: 21px;
+	}
 
 	.member-role {
 
@@ -27,15 +36,7 @@ section.invite {
 			font-size: 16px;
   		color: #90a4ae;
 		}
-	}
-
-	.form-field {
-
-		&.roles {
-			display: flex;
-			margin-bottom: 21px;
-		}
-	}
+	}	
 
 	.field-subtitle {
 		font-size: 16px;

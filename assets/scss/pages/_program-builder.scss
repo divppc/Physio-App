@@ -866,6 +866,7 @@ body {
 
 	&.modal-open {
 		position: relative;
+		min-height: 100vh;
 
 		&:after {
 			width: 100%;
