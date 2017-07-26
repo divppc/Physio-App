@@ -322,3 +322,9 @@
 		}
 	}
 }
+
+.users-form {
+	input:not([type='submit']):not([type='file']):focus {
+		box-shadow: none;
+	}
+}
