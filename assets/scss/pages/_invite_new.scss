@@ -74,6 +74,24 @@
 			  	background: url("assets/images/icons.png") no-repeat 0px -374px;
 			  }
 			}
+
+			.resend-invite {
+				font-size: 16px;
+			  font-weight: 600;
+			  color: rgb(111, 208, 167);
+			  display: flex;
+			  align-items: center;
+
+			  &:after {
+			  	display: block;
+			  	content: '';
+			  	width: 18px;
+			  	height: 16px;
+			  	margin-left: 10px;
+			  	transition: 0.3s;
+			  	background: url("assets/images/resend.png") no-repeat;
+			  }
+			}
 		}
 	}
 
