@@ -183,6 +183,13 @@ section.templates {
 	  	cursor: pointer;
 	  	outline: none;
 	  }
+
+	  .select {
+
+	  	&:last-child {
+	  		margin-left: 10px;
+	  	}
+	  }
 	}
 }
 

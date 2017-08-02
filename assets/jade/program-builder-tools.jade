@@ -85,7 +85,6 @@ html(lang="en")
 						.template-name
 							.name Program for Junior
 						.frequency
-							//- 1 Timer per Day
 							.select
 								select#frequency-count(name="frequency-count")
 									option(value="1") 1
@@ -97,6 +96,15 @@ html(lang="en")
 									option(value="type1") Time per Day
 									option(value="type2") Time per Week
 									option(value="type3") Time per Month
+							.select
+								span for
+								select#frequency-duration(name="frequency-duration")
+									option(value="1") 1
+									option(value="2") 2
+									option(value="3") 3
+									option(value="4") 4
+									option(value="5") 5
+								span day
 						.tags
 							a(href="#" class="tag") Pain Scale
 								i.remove-tag +
