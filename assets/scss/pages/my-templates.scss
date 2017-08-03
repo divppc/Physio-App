@@ -100,6 +100,7 @@ section.templates {
 
 	.template-data {
 		display: flex;
+		align-items: flex-start;
 	}
 
 	.current-status {
@@ -185,9 +186,23 @@ section.templates {
 	  }
 
 	  .select {
+	  	display: flex;
+	  	align-items: center;
+	  }
 
-	  	&:last-child {
-	  		margin-left: 10px;
+	  label {
+	  	white-space: nowrap;
+	  	display: block;
+	  	margin: 0 5px;
+	  }
+
+	  input {
+	  	max-width: 40px;
+	  	display: block;
+	  	background: transparent;
+
+	  	&:focus {
+	  		background: #fff;
 	  	}
 	  }
 	}
