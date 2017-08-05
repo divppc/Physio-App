@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+html(lang="en")
+	head
+		meta(http-equiv="X-UA-Compatible" content="IE=edge")
+		meta(charset="UTF-8")
+		link(rel="stylesheet", href="https://necolas.github.io/normalize.css/3.0.2/normalize.css")
+		link(rel="stylesheet", href="https://cdn.jsdelivr.net/select2/4.0.3/css/select2.min.css")
+		link(rel="stylesheet", href="style.css")
+		link(rel="stylesheet", href="assets/css/nouislider.css")
+		link(rel="stylesheet", href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css")
+		title My Physio Dashboard | Active programs
+	body
+		section.program
+			.user-side
+				.top-panel
+					ul
+						li
+							a(href="#" class="back" title="Back")
+						li
+							a(href="#" title="Home")
+								img(src="assets/images/main-logo.svg", alt="")
+						li
+							span My Physio
+				.user
+					.user-photo.avatar
+						img(src="http://pipsum.com/100x100", alt="")
+					.user-name Serhii Hubarenko
+					.user-mail lelaquin@gmail.com	
+					.control-buttons
+						.add-mobile
+							input(type="text" value="" placeholder="Add mobile" title="Edit")			
+						a(href="#" class="add-tag-btn") Add tag
+					ul.nav-panel
+						li
+							a(href="#" class="programs active") Programs
+						li
+							a(href="#" class="chat") Chat
+						li
+							a(href="#" class="insights") Insights
+			.programs-content
+				.active-programs
+					h1 Active programs
+					.programs-container
+						.slider-arrows
+							.arrow-left
+								button
+								span 10 programs
+							.arrow-right
+								button
+								span 10 programs
+						.programs-slider
+							.program
+								table
+									thead
+										tr
+											td Shoulder Rehab
+											td
+												a(href="#" class="program-settings" title="Settings")
+													img(src="assets/images/settings-icon.svg", alt="Settings")
+									tbody
+										tr
+											td(rowspan="2")
+												.program-score(data-percent="75")
+													.score-data
+												a(href="#") view details
+											td Day 5 of 14
+										tr
+											td Recomend:
+												span +2  day
+										tr
+											td Best success:
+											td
+												span eg home 9-10am
+										tr
+											td Reminders:
+											td
+												.reminder.no-reminder None
+										tr
+											td Prescription: 
+											td
+												span 2x daily
+										tr.positive
+											td Recovery: 
+											td
+										tr.positive
+											td Managing Inflammation tick:  
+											td
+							.program
+								table
+									thead
+										tr
+											td Shoulder Rehab
+											td
+												a(href="#" class="program-settings" title="Settings")
+													img(src="assets/images/settings-icon.svg", alt="Settings")
+									tbody
+										tr
+											td(rowspan="2")
+												.program-score(data-percent="80")
+													.score-data
+												a(href="#") view details
+											td Day 5 of 14
+										tr
+											td Recomend:
+												span +2  day
+										tr
+											td Best success:
+											td
+												span eg home 9-10am
+										tr
+											td Reminders:
+											td
+												.reminder.no-reminder None
+										tr
+											td Prescription: 
+											td
+												span 2x daily
+										tr.positive
+											td Recovery: 
+											td
+										tr.positive
+											td Managing Inflammation tick:  
+											td
+							.program
+								table
+									thead
+										tr
+											td Shoulder Rehab
+											td
+												a(href="#" class="program-settings" title="Settings")
+													img(src="assets/images/settings-icon.svg", alt="Settings")
+									tbody
+										tr
+											td(rowspan="2")
+												.program-score(data-percent="62")
+													.score-data
+												a(href="#") view details
+											td Day 5 of 14
+										tr
+											td Recomend:
+												span +2  day
+										tr
+											td Best success:
+											td
+												span eg home 9-10am
+										tr
+											td Reminders:
+											td
+												.reminder.no-reminder None
+										tr
+											td Prescription: 
+											td
+												span 2x daily
+										tr.positive
+											td Recovery: 
+											td
+										tr.positive
+											td Managing Inflammation tick:  
+											td
+							.program
+								table
+									thead
+										tr
+											td Shoulder Rehab
+											td
+												a(href="#" class="program-settings" title="Settings")
+													img(src="assets/images/settings-icon.svg", alt="Settings")
+									tbody
+										tr
+											td(rowspan="2")
+												.program-score(data-percent="70")
+													.score-data
+												a(href="#") view details
+											td Day 5 of 14
+										tr
+											td Recomend:
+												span +2  day
+										tr
+											td Best success:
+											td
+												span eg home 9-10am
+										tr
+											td Reminders:
+											td
+												.reminder.no-reminder None
+										tr
+											td Prescription: 
+											td
+												span 2x daily
+										tr.positive
+											td Recovery: 
+											td
+										tr.positive
+											td Managing Inflammation tick:  
+											td
+							.program
+								table
+									thead
+										tr
+											td Shoulder Rehab
+											td
+												a(href="#" class="program-settings" title="Settings")
+													img(src="assets/images/settings-icon.svg", alt="Settings")
+									tbody
+										tr
+											td(rowspan="2")
+												.program-score(data-percent="75")
+													.score-data
+												a(href="#") view details
+											td Day 5 of 14
+										tr
+											td Recomend:
+												span +2  day
+										tr
+											td Best success:
+											td
+												span eg home 9-10am
+										tr
+											td Reminders:
+											td
+												.reminder.no-reminder None
+										tr
+											td Prescription: 
+											td
+												span 2x daily
+										tr.positive
+											td Recovery: 
+											td
+										tr.positive
+											td Managing Inflammation tick:  
+											td
+							.program
+								table
+									thead
+										tr
+											td Shoulder Rehab
+											td
+												a(href="#" class="program-settings" title="Settings")
+													img(src="assets/images/settings-icon.svg", alt="Settings")
+									tbody
+										tr
+											td(rowspan="2")
+												.program-score(data-percent="80")
+													.score-data
+												a(href="#") view details
+											td Day 5 of 14
+										tr
+											td Recomend:
+												span +2  day
+										tr
+											td Best success:
+											td
+												span eg home 9-10am
+										tr
+											td Reminders:
+											td
+												.reminder.no-reminder None
+										tr
+											td Prescription: 
+											td
+												span 2x daily
+										tr.positive
+											td Recovery: 
+											td
+										tr.positive
+											td Managing Inflammation tick:  
+											td
+							.program
+								table
+									thead
+										tr
+											td Shoulder Rehab
+											td
+												a(href="#" class="program-settings" title="Settings")
+													img(src="assets/images/settings-icon.svg", alt="Settings")
+									tbody
+										tr
+											td(rowspan="2")
+												.program-score(data-percent="62")
+													.score-data
+												a(href="#") view details
+											td Day 5 of 14
+										tr
+											td Recomend:
+												span +2  day
+										tr
+											td Best success:
+											td
+												span eg home 9-10am
+										tr
+											td Reminders:
+											td
+												.reminder.no-reminder None
+										tr
+											td Prescription: 
+											td
+												span 2x daily
+										tr.positive
+											td Recovery: 
+											td
+										tr.positive
+											td Managing Inflammation tick:  
+											td
+							.program
+								table
+									thead
+										tr
+											td Shoulder Rehab
+											td
+												a(href="#" class="program-settings" title="Settings")
+													img(src="assets/images/settings-icon.svg", alt="Settings")
+									tbody
+										tr
+											td(rowspan="2")
+												.program-score(data-percent="70")
+													.score-data
+												a(href="#") view details
+											td Day 5 of 14
+										tr
+											td Recomend:
+												span +2  day
+										tr
+											td Best success:
+											td
+												span eg home 9-10am
+										tr
+											td Reminders:
+											td
+												.reminder.no-reminder None
+										tr
+											td Prescription: 
+											td
+												span 2x daily
+										tr.positive
+											td Recovery: 
+											td
+										tr.positive
+											td Managing Inflammation tick:  
+											td
+				.active-tools
+					h2 Active tools
+					.panel
+						.panel-head
+							.panel-title Month
+							.panel-buttons
+								.control-buttons
+									a(href="#!" class="pdf-btn") View as pdf
+									a(href="#!" class="archive-btn") Archive
+								.navigation
+									ul
+										li
+											a(href="#!")
+										li
+											a(href="#!")
+						.panel-chart
+		script(src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous")
+		script(src="assets/js/easypiechart.min.js")
+		script(src="assets/js/nouislider.min.js")
+		script(src="assets/js/jquery-ui.min.js")
+		script(src="https://cdn.jsdelivr.net/select2/4.0.3/js/select2.full.min.js")
+		script(src="https://content.jwplatform.com/libraries/QD1ITVfl.js")
+		script(src="assets/js/chart.js")
+		script(src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js")
+		script(src="assets/js/main.js")

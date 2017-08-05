@@ -16,6 +16,20 @@ $(document).ready(function() {
 		step2.removeClass('active');
 		step1.addClass('active');
 	})
+
+	var programsSlider = $(".programs-slider");
+
+  if (programsSlider.length > 0) {
+    $(programsSlider).slick({
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      dots: false,
+      infinite: true,
+      autoplay: false,
+      prevArrow: '.arrow-left',
+      nextArrow: '.arrow-right'
+    });
+  };
 });
 
 
