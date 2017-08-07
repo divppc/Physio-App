@@ -236,6 +236,44 @@
   			}  			
   		}
   	}
+
+  	.settings {
+
+  		&:before {
+  			width: 24px;
+  			height: 24px;
+  			left: 29px;
+  			top: 14px;
+  			background-position: 0 -712px;
+  		}
+
+  		&:hover,
+  		&.active {
+
+  			&:before {
+  				background-position: -25px -712px;
+  			}  			
+  		}
+  	}
+
+  	.logout {
+
+  		&:before {
+  			left: 32px;
+  			top: 14px;
+  			width: 20px;
+				height: 24px;
+				background: url('assets/images/logout-dark.png') no-repeat 0px 0px;
+  		}
+
+  		&:hover,
+  		&.active {
+
+  			&:before {
+  				background-position: -20px 0px;
+  			}  			
+  		}
+  	}
   }
 }
 
