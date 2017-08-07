@@ -156,15 +156,28 @@ section.invite {
 	.actions {
 
 		a {
-			color: #72cfa5;
-			text-decoration: underline;
-
-			&:hover {
-				text-decoration: none;
-			}
+			text-indent: -999999px;
 
 			&:first-child {
-				margin-right: 10px;
+				margin-right: 20px;
+				display: block;
+				width: 60px;
+				height: 27px;
+				background: url('assets/images/member-status.png');
+
+				&.active {
+					background-position: 0 0;
+				}
+
+				&.inactive {
+					background-position: 0 -34px;
+				}
+			}
+
+			&:last-child {
+				width: 20px;
+				height: 24px;
+				background: url('assets/images/delete-member.png') no-repeat center;
 			}
 		}
 	}
@@ -213,6 +226,37 @@ section.invite {
 			    background: -webkit-linear-gradient(top, #52C7CC, #95DDAE);
 			    background: -o-linear-gradient(top, #52C7CC, #95DDAE);
 			    background: linear-gradient(to bottom, #52C7CC, #95DDAE);
+			    background-size: 172%;
+			    border-color: transparent;
+			    background-position: 0 -21px;
+				}
+
+				&:after {
+			    width: 6px;
+			    height: 6px;
+			    display: block;
+			    flex-shrink: 0;
+			    content: '';
+			    border: 2px solid #fff;
+			    position: absolute;
+			    top: 50%;
+			    transform: translateY(-50%);
+			    cursor: pointer;
+			    border-radius: 50%;
+			    left: 3px;
+			    background: transparent;
+				}
+			}
+		}
+
+		&.disabled {
+
+			&+label {
+
+				&:before {
+					background-size: 152%;
+					border-color: transparent;
+			  	background: #dbdbdb;
 			    background-size: 172%;
 			    border-color: transparent;
 			    background-position: 0 -21px;

@@ -65,13 +65,13 @@ html(lang="en")
 									.member-role
 										input(type="radio" name="member1-role" id="member1-role1")
 										label(for="member1-role1") Admin
-										input(type="radio" name="member1-role" id="member1-role2")
+										input(type="radio" name="member1-role" id="member1-role2" class="disabled" disabled)
 										label(for="member1-role2") Super Admin
 										input(type="radio" name="member1-role" id="member1-role3")
 										label(for="member1-role3") Physio
 								td
 									.actions
-										a(href="#") Active/Inactive
+										a(href="#" class="active") Active/Inactive
 										a(href="#") Delete
 							tr
 								td
@@ -88,7 +88,7 @@ html(lang="en")
 										label(for="member2-role3") Physio
 								td
 									.actions
-										a(href="#") Active/Inactive
+										a(href="#" class="inactive") Active/Inactive
 										a(href="#") Delete
 							tr
 								td
@@ -105,7 +105,7 @@ html(lang="en")
 										label(for="member3-role3") Physio
 								td
 									.actions
-										a(href="#") Active/Inactive
+										a(href="#" class="active") Active/Inactive
 										a(href="#") Delete
 					a(href="#" class="save-btn btn-gradient" id="save-hours") Save
 		//- section.invite
