@@ -230,5 +230,15 @@ i {
 				background-position: -25px -712px;
 			}
 		}
+
+		&.icon-logout {
+			width: 20px;
+			height: 24px;
+			background: url('assets/images/logout-dark.png') no-repeat 0px 0px;
+
+			&:hover {
+				background-position: -20px 0px;
+			}
+		}
 	}
 }
