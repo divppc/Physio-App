@@ -87,6 +87,11 @@
 		  		background: url('assets/images/more-programs.svg') no-repeat center, #7ed4a9;		  		
 		  	}
 		  }
+
+		  &.slick-disabled {
+	  		opacity: 0;
+	  		visibility: hidden;
+	  	}
 		}
 	}
 
@@ -273,6 +278,15 @@
 	  	font-size: 14px;
 		  font-weight: 600;
 		  color: rgb(47, 67, 102);
+
+		  select {
+		  	border: none;
+		  	cursor: pointer;
+
+		  	&:focus {
+		  		outline: none;
+		  	}
+		  }
 	  }
 
 	  .navigation {

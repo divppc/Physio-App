@@ -338,10 +338,16 @@ html(lang="en")
 											td Managing Inflammation tick:  
 											td
 				.active-tools
-					h2 Active tools
+					h2 Insights tools
 					.panel
 						.panel-head
-							.panel-title Month
+							.panel-title
+								select#panel-title(name="panel-title")
+									option(value="Success rate") Success rate
+									option(value="Success time of day") Success time of day
+									option(value="Success location (later)") Success location (later)
+									option(value="Articles") Articles
+									option(value="Pain scale") Pain scale
 							.panel-buttons
 								.control-buttons
 									a(href="#!" class="pdf-btn") View as pdf

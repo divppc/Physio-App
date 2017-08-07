@@ -24,11 +24,11 @@ $(document).ready(function() {
       slidesToShow: 4,
       slidesToScroll: 1,
       dots: false,
-      infinite: true,
+      infinite: false,
       autoplay: false,
       prevArrow: '.arrow-left',
       nextArrow: '.arrow-right'
-    });
+		});
   };
 });
 
