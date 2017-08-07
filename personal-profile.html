@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/3.0.2/normalize.css"/>
+    <link rel="stylesheet" href="style.css"/>
+    <title>My Physio Dashboard | Personal Profile</title>
+  </head>
+  <body>
+    <header>
+      <div class="main-line">
+        <div class="container">
+          <div class="header-panel">
+            <div class="logo"><a href="/">MyPhysio</a></div>
+            <div class="patient"><a href="#">Patients</a></div>
+            <div class="settings"><a href="#" class="active">General Settings</a></div>
+          </div>
+          <div class="user-panel">
+            <div class="user">
+              <div class="user-avatar avatar"><img src="http://pipsum.com/100x100" alt=""/></div>
+              <div class="user-name">Henry Wagner</div>
+            </div>
+            <div class="logout"><a href="#" title="Log Out"></a></div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="personal">
+      <div class="section-title">
+        <div class="container">Personal Profile</div>
+      </div>
+      <div class="container">
+        <div class="profile">
+          <div class="profile-panel">
+            <div class="profile-title">Personal Profile</div>
+            <div class="edit-profile"><a href="#">edit Profile</a></div>
+          </div>
+          <form action="#">
+            <div class="user-photo">
+              <div class="photo-preview"><img src="http://pipsum.com/100x100" alt=""/></div>
+              <div class="photo-upload">
+                <div id="filename"></div>
+                <label for="input-file">Edit
+                  <input type="file" id="input-file"/>
+                </label>
+              </div>
+            </div>
+            <div class="inputs">
+              <div class="input">
+                <label for="first-name">Full First Name</label>
+                <input type="text" id="first-name" required="required"/>
+              </div>
+              <div class="input">
+                <label for="last-name">Last Name</label>
+                <input type="text" id="last-name" required="required"/>
+              </div>
+            </div>
+            <div class="inputs">
+              <div class="input">
+                <label for="mail">Mail</label>
+                <input type="email" id="mail" required="required"/>
+              </div>
+              <div class="input">
+                <label for="phone">Phone</label>
+                <div class="phone-inputs">
+                  <input type="text" id="phone" placeholder="+1" required="required" maxlength="2"/>
+                  <input type="text" placeholder="1241241212" required="required"/>
+                </div>
+              </div>
+            </div>
+            <div class="form-controls">
+              <button type="reset">Cancel</button>
+              <button type="submit">Save</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

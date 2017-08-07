@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+html(lang="en")
+	head
+		meta(http-equiv="X-UA-Compatible" content="IE=edge")
+		meta(charset="UTF-8")
+		link(rel="stylesheet", href="https://necolas.github.io/normalize.css/3.0.2/normalize.css")
+		link(rel="stylesheet", href="style.css")
+		title My Physio Dashboard | Personal Profile
+	body
+		header
+			.main-line
+				.container
+					.header-panel
+						.logo
+							a(href="/") MyPhysio
+						.patient
+							a(href="#") Patients
+						.settings
+							a(href="#" class="active") General Settings
+					.user-panel
+						.user
+							.user-avatar.avatar
+								img(src="http://pipsum.com/100x100", alt="")
+							.user-name Henry Wagner
+						.logout
+							a(href="#" title="Log Out")
+		section.personal
+			.section-title
+				.container Personal Profile
+			.container
+				.profile
+					.profile-panel
+						.profile-title Personal Profile
+						.edit-profile
+							a(href="#") edit Profile
+					form(action="#")
+						.user-photo
+							.photo-preview
+								img(src="http://pipsum.com/100x100", alt="")
+							.photo-upload
+								#filename
+								label(for="input-file") Edit
+									input(type="file" id="input-file")
+						.inputs
+							.input
+								label(for="first-name") Full First Name
+								input(type="text" id="first-name" required)
+							.input
+								label(for="last-name") Last Name
+								input(type="text" id="last-name" required)
+						.inputs
+							.input
+								label(for="mail") Mail
+								input(type="email" id="mail" required)
+							.input
+								label(for="phone") Phone
+								.phone-inputs
+									input(type="text" id="phone" placeholder="+1" required maxlength="2")
+									input(type="text" placeholder="1241241212" required)
+						.form-controls
+							button(type="reset") Cancel
+							button(type="submit") Save
+		script(src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous")
+		script(src="assets/js/main.js")

@@ -1,0 +1,240 @@
+.section-title {
+	border-bottom: 2px solid rgb(207, 216, 220);
+
+	.container {
+		padding: 22px 0 18px 0;
+		font-size: 14px;
+	  font-weight: bold;
+	  color: rgb(47, 67, 102);
+	}
+}
+
+section.personal {
+
+	&>.container {
+		padding: 47px 0 77px 0;
+	}
+
+	.profile {
+		max-width: 750px;
+	}
+
+	.profile-panel {
+		display: flex;
+		border-radius: 3px 3px 0 0;
+		justify-content: space-between;
+		align-items: center;
+		border-bottom: solid 1px rgba(130, 156, 169, 0.45);
+		background-color: rgba(207, 216, 220, .2);
+	}
+
+	.profile-title {
+		padding: 30px 0 30px 37px;
+		font-size: 14px;
+		text-transform: uppercase;
+	  font-weight: bold;
+	  color: rgb(156, 175, 195);
+	}
+
+	.edit-profile {
+		padding: 23px 30px 23px 21px;
+		border-left: solid 1px rgba(207, 216, 220, 0.6);
+
+		a {
+			display: flex;
+			align-items: center;
+			font-size: 14px;
+		  font-weight: 600;
+		  color: rgb(156, 175, 195);
+
+		  &:hover {
+		  	text-decoration: underline;
+		  }
+
+		  &:before {
+		  	display: block;
+		  	transition: 0.3s;
+		  	content: url('assets/images/edit-profile.svg');
+		  	margin-right: 24px;
+		  }
+		}
+	}
+
+	form {
+		padding: 36px 0;
+		background-color: rgb(255, 255, 255);
+		min-height: 300px;
+		border-radius: 0px 0px 3px 3px;
+	}
+
+	.user-photo {
+		margin-bottom: 36px;
+		display: flex;
+		align-items: center;
+		padding: 0 38px;
+	}
+
+	.photo-preview {
+		width: 60px;
+	  height: 60px;
+	  background: #fff;
+	  padding: 3px;
+	  margin-right: 24px;
+	  border-radius: 50%;
+	  border: solid 3px #D1DCE4;
+
+	  img {
+	  	display: block;
+	  	width: 100%;
+	  	border-radius: 50%;
+	  	height: 100%;
+	  	object-fit: cover;
+	  }
+	}
+
+	.photo-upload {
+		width: 293px;
+	  height: 39px;
+	  display: flex;
+	  line-height: 37px;
+	  border-radius: 3px;
+	  background-color: rgba(207, 216, 220, 0.1);
+
+	  #filename {
+	  	width: 206px;
+	  	overflow: hidden;
+	  	text-overflow: ellipsis;
+	  	white-space: nowrap;
+	  	padding: 0 17px;
+	  	border-radius: 3px 0 0 3px;
+	  	border-bottom: solid 1px rgb(207, 216, 220);
+	  	border-top: solid 1px rgb(207, 216, 220);
+	  	border-left: solid 1px rgb(207, 216, 220);
+	  	font-size: 14px;
+		  font-weight: 600;
+		  letter-spacing: -0.2px;
+		  color: rgba(47, 67, 102, .7);
+	  }
+
+	  label {
+	  	font-size: 14px;
+		  font-weight: 600;
+		  letter-spacing: -0.2px;
+		  text-align: center;
+		  display: block;
+		  line-height: 37px;
+		  cursor: pointer;
+		  width: 87px;
+		  border-radius: 0 3px 3px 0;
+		  background-color: rgba(123, 211, 161, 0.3);
+  		border: solid 1px rgb(123, 211, 161);
+		  color: rgb(121, 211, 163);
+	  }
+
+	  input {
+	  	display: none;
+	  }
+	}
+
+	.inputs {
+		display: flex;
+		padding: 0 38px;
+		align-items: center;
+		margin-bottom: 37px;
+
+		.input {
+			width: 228px;
+
+			&:first-child {
+				margin-right: 196px;
+			}
+		}
+
+		label {
+			display: block;
+			font-size: 14px;
+		  font-weight: 600;
+		  margin-bottom: 5px;
+		  color: rgb(156, 175, 195);
+		}
+
+		input {
+			font-size: 16px;
+		  font-weight: 600;
+		  text-align: left;
+		  color: rgb(47, 67, 102);
+		  display: block;
+		  padding: 8px 0;
+		  border-bottom: solid 1px rgba(207, 216, 220, 0.5);
+		  transition: 0.3s;
+
+		  &:focus {
+		  	box-shadow: none;
+		  	border-bottom: solid 1px rgb(111, 208, 167);
+		  }
+		}
+	}
+
+	.form-controls {
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		padding-top: 36px;
+		border-top: solid 1px rgba(130, 156, 169, 0.2);
+
+		button {
+			font-size: 14px;
+		  font-weight: 600;
+		  letter-spacing: -0.2px;
+		  display: block;
+		  height: 40px;
+		  line-height: 42px;
+		  padding: 0 43px;
+		  text-align: center;
+		  border-radius: 3px;
+		  text-transform: uppercase;
+  		background-color: rgb(207, 216, 220);
+		  color: rgb(255, 255, 255);
+		  transition: 0.3s;
+
+		  &[type="submit"] {
+		  	margin-left: 14px;
+		  	margin-right: 36px;
+		  	background-image: linear-gradient(to bottom, rgb(111, 208, 167), rgb(134, 215, 157));
+		  }
+
+		  &:focus {
+		  	outline: none;
+		  }
+		}
+	}
+
+	.phone-inputs {
+		display: flex;
+		position: relative;
+
+		&:after {
+			display: block;
+			content: '';
+			width: 2px;
+			height: calc(100% - 20px);
+			position: absolute;
+			bottom: 10px;
+			left: 30px;
+			background: rgba(151, 151, 151, 0.3);
+		}
+
+		input {
+
+			&:first-of-type {
+				color: rgb(0, 158, 250);
+				width: 30px;
+				padding-right: 10px;
+			}
+
+			&:last-of-type {
+				padding-left: 10px;
+			}
+		}
+	}
+}
