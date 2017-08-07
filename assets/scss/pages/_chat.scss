@@ -185,72 +185,72 @@ section.chat {
 			}
 		}
 	}
+}
 
-	.new-message {
-		display: block;
-		width: 100%;
-		height: 59px;
-		border-radius: 3px;
-	  background-color: rgb(255, 255, 255);
-	  box-shadow: 0 2px 50px 0 rgba(205, 213, 218, 0.5);
-	  display: flex;
+.new-message {
+	display: block;
+	width: 100%;
+	height: 59px;
+	border-radius: 3px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 2px 50px 0 rgba(205, 213, 218, 0.5);
+  display: flex;
 
-	  input {
-	  	display: block;
-	  	width: 100%;
-	  	height: 100%;
-	  }
+  input {
+  	display: block;
+  	width: 100%;
+  	height: 100%;
+  }
 
-	  .input-send {
-			width: 4.3%;
-			padding-right: 24px;
+  .input-send {
+		width: 4.3%;
+		padding-right: 24px;
 
-			input {
-				display: none;
-			}
+		input {
+			display: none;
+		}
 
-			label {
-				width: 17px;
-				display: block;
-				height: 16px;
-				position: relative;
-				top: 50%;
-				cursor: pointer;
-				transform: translateY(-50%);
-				background: url("assets/images/icons.png") no-repeat 0px -651px;
-			}
-	  }
+		label {
+			width: 17px;
+			display: block;
+			height: 16px;
+			position: relative;
+			top: 50%;
+			cursor: pointer;
+			transform: translateY(-50%);
+			background: url("assets/images/icons.png") no-repeat 0px -651px;
+		}
+  }
 
-	  .input-file {
-			width: 3.65%;
+  .input-file {
+		width: 3.65%;
 
-			input {
-				display: none;
-			}
+		input {
+			display: none;
+		}
 
-			label {
-				width: 16px;
-				display: block;
-				height: 17px;
-				position: relative;
-				top: 50%;
-				cursor: pointer;
-				transform: translateY(-50%);
-				background: url("assets/images/icons.png") no-repeat 0px -667px;
-			}
-	  }
+		label {
+			width: 16px;
+			display: block;
+			height: 17px;
+			position: relative;
+			top: 50%;
+			cursor: pointer;
+			transform: translateY(-50%);
+			background: url("assets/images/icons.png") no-repeat 0px -667px;
+		}
+  }
 
-	  .input-text {
-	  	width: calc(100% - 3.65% - 4.3%);
+  .input-text {
+  	width: calc(100% - 3.65% - 4.3%);
 
-	  	input {
-	  		padding: 0 24px;
+  	input {
+  		padding: 0 24px;
 
 
-	  		&:focus {
-	  			box-shadow: none;
-	  		}
-	  	}
-	  }
-	}
+  		&:focus {
+  			box-shadow: none;
+  		}
+  	}
+  }
 }
