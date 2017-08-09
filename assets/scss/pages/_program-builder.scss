@@ -704,6 +704,17 @@ section.program {
   		}
   	}
 
+  	.time {
+
+  		.tool-name {
+
+  			&:before {
+  				height: 31px;
+  				background: url('assets/images/clock-icon.png') no-repeat;
+  			}
+  		}
+  	}
+
   	.note {
 
   		.tool-name {

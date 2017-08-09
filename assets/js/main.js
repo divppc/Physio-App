@@ -21,7 +21,7 @@ $(document).ready(function() {
 
   if (programsSlider.length > 0) {
     $(programsSlider).slick({
-      slidesToShow: 4,
+      // slidesToShow: 4,
       slidesToScroll: 1,
       dots: false,
       infinite: false,
