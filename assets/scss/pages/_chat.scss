@@ -1,11 +1,13 @@
 /*CHAT*/
 section.chat {
 	display: flex;
+	max-height: 100vh;
 
 	.chat-container {
 		width: 960px;		
-		margin: 36px 20px 18px 52px;
+		padding: 36px 20px 18px 52px;
 		min-height: 100%;
+		overflow: auto;
 	}
 
 	.chat-window {
