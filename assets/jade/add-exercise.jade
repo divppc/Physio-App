@@ -60,18 +60,42 @@ html(lang="en")
 								label(for="exercise-name") Name
 								input(type="text" id="exercise-name" required placeholder="Type your exercise name")
 							.exercise-selects								
-								.select
-									label(for="exercise-type") Type:
-									select#exercise-type(name="exercise-type")
-										option(value="A") Type A
-										option(value="B") Type B
-										option(value="C") Type C								
+								.checkbox-group
+									span Type:
+									.checkbox-list
+										input(type="checkbox" id="type-strength" value="strength")
+										label(for="type-strength") Strength
+										input(type="checkbox" id="type-selfRelease" value="selfRelease")
+										label(for="type-selfRelease") Release
+										input(type="checkbox" id="type-stretches" value="stretches")
+										label(for="type-stretches") Stretch
+										input(type="checkbox" id="type-neutralMob" value="neutralMob")
+										label(for="type-neutralMob") Neutral Mob.
+										input(type="checkbox" id="type-selfMob" value="selfMob")
+										label(for="type-selfMob") Self Mob.
+										input(type="checkbox" id="type-postOp" value="postOp")
+										label(for="type-postOp") Post op.
+										input(type="checkbox" id="type-posture" value="posture")
+										label(for="type-posture") Posture
+										input(type="checkbox" id="type-proprioception" value="proprioception")
+										label(for="type-proprioception") Proprioception
+										input(type="checkbox" id="type-cardio" value="cardio")
+										label(for="type-cardio") Cardio
+										input(type="checkbox" id="type-agility" value="agility")
+										label(for="type-agility") Agility
+										input(type="checkbox" id="type-others" value="others")
+										label(for="type-others") Others
 								.select
 									label(for="exercise-part") Part:
 									select#exercise-part(name="exercise-part")
 										option(value="Upper body") Upper body
 										option(value="Upper body") Upper body
 										option(value="Upper body") Upper body
+								.checkbox-group
+									span Show sides:
+									.checkbox-list
+										input(type="checkbox" id="showSides" value="1" checked)
+										label(for="showSides") Display the left/right/both selector
 							.program-setting.active
 								.range-holder
 									span Reps

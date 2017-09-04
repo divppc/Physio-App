@@ -86,20 +86,120 @@ section.add-exercise {
 		}
 	}
 
+	.checkbox-group {
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		align-items: center;
+
+		&:last-child {
+
+			.checkbox-list {
+
+				input {
+
+					&+label {
+						width: 100%;
+					}
+				}
+			}
+		}
+	}
+
+	.checkbox-list {
+
+		input {
+			display: none;
+
+			&+label {
+				width: 32%;
+				cursor: pointer;
+				margin-right: 0;
+
+				&:before {
+					display: block;
+			    content: '';
+			    border-radius: 50%;
+			    margin-right: 16px;
+			    width: 16px;
+			    height: 16px;
+			    -webkit-flex-shrink: 0;
+			    -ms-flex-negative: 0;
+			    flex-shrink: 0;
+			    cursor: pointer;
+			    border: solid 1px #9ba9bc;
+			    background: #fff;
+			    -webkit-box-sizing: border-box;
+			    box-sizing: border-box;
+				}
+			}
+
+			&:checked {
+
+				&+label {
+
+					&:before {
+				    background: -webkit-gradient(linear, left top, left bottom, from(#52C7CC), to(#95DDAE));
+				    background: -webkit-linear-gradient(top, #52C7CC, #95DDAE);
+				    background: -o-linear-gradient(top, #52C7CC, #95DDAE);
+				    background: linear-gradient(to bottom, #52C7CC, #95DDAE);
+				    background-size: 172%;
+				    border-color: transparent;
+				    background-position: 0 -21px;
+				    background-size: 152%;
+				    border-color: transparent;
+				    -webkit-box-shadow: 0 2px 14px 0 #cad3de;
+				    box-shadow: 0 2px 14px 0 #cad3de;
+					}
+
+					&:after {
+						width: 6px;
+				    height: 6px;
+				    display: block;
+				    -webkit-flex-shrink: 0;
+				    -ms-flex-negative: 0;
+				    flex-shrink: 0;
+				    content: '';
+				    border: 2px solid #fff;
+				    position: absolute;
+				    top: 50%;
+				    -webkit-transform: translateY(-50%);
+				    -ms-transform: translateY(-50%);
+				    transform: translateY(-50%);
+				    cursor: pointer;
+				    border-radius: 50%;
+				    left: 3px;
+				    background: transparent;
+					}
+				}
+			}
+		}
+
+		label {
+			position: relative;
+			display: -webkit-inline-flex;
+			display: -moz-inline-flex;
+			display: -ms-inline-flex;
+			display: -o-inline-flex;
+			display: inline-flex;
+			align-items: center;
+		}
+	}
+
 	.exercise-selects {
 
 		.select {
 			display: flex;
 			align-items: center;
 			width: 300px;
-
-			&:first-child {
-				margin-bottom: 10px;
-			}
+			margin: 20px 0;
 		}
 	}
 
-	label {
+	label,
+	span {
 		min-width: 50px;
 		margin-right: 10px;
 	}

@@ -59,13 +59,31 @@
                 <input type="text" id="exercise-name" required="required" placeholder="Type your exercise name"/>
               </div>
               <div class="exercise-selects">								
-                <div class="select">
-                  <label for="exercise-type">Type:</label>
-                  <select id="exercise-type" name="exercise-type">
-                    <option value="A">Type A</option>
-                    <option value="B">Type B</option>
-                    <option value="C">Type C								</option>
-                  </select>
+                <div class="checkbox-group"><span>Type:</span>
+                  <div class="checkbox-list">
+                    <input type="checkbox" id="type-strength" value="strength"/>
+                    <label for="type-strength">Strength</label>
+                    <input type="checkbox" id="type-selfRelease" value="selfRelease"/>
+                    <label for="type-selfRelease">Release</label>
+                    <input type="checkbox" id="type-stretches" value="stretches"/>
+                    <label for="type-stretches">Stretch</label>
+                    <input type="checkbox" id="type-neutralMob" value="neutralMob"/>
+                    <label for="type-neutralMob">Neutral Mob.</label>
+                    <input type="checkbox" id="type-selfMob" value="selfMob"/>
+                    <label for="type-selfMob">Self Mob.</label>
+                    <input type="checkbox" id="type-postOp" value="postOp"/>
+                    <label for="type-postOp">Post op.</label>
+                    <input type="checkbox" id="type-posture" value="posture"/>
+                    <label for="type-posture">Posture</label>
+                    <input type="checkbox" id="type-proprioception" value="proprioception"/>
+                    <label for="type-proprioception">Proprioception</label>
+                    <input type="checkbox" id="type-cardio" value="cardio"/>
+                    <label for="type-cardio">Cardio</label>
+                    <input type="checkbox" id="type-agility" value="agility"/>
+                    <label for="type-agility">Agility</label>
+                    <input type="checkbox" id="type-others" value="others"/>
+                    <label for="type-others">Others</label>
+                  </div>
                 </div>
                 <div class="select">
                   <label for="exercise-part">Part:</label>
@@ -74,6 +92,12 @@
                     <option value="Upper body">Upper body</option>
                     <option value="Upper body">Upper body</option>
                   </select>
+                </div>
+                <div class="checkbox-group"><span>Show sides:</span>
+                  <div class="checkbox-list">
+                    <input type="checkbox" id="showSides" value="1" checked="checked"/>
+                    <label for="showSides">Display the left/right/both selector</label>
+                  </div>
                 </div>
               </div>
               <div class="program-setting active">
