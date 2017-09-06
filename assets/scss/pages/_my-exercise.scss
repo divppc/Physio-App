@@ -85,7 +85,15 @@ section.exercise {
 
   	.exercise {
 			width: 200.4px;
+			position: relative;
 			margin-bottom: 41.4px;
+
+			&:hover {
+
+				.action-buttons {
+					opacity: 1;
+				}
+			}
 
 			&:not(:nth-child(4n+4)) {
 				margin-right: 33px;
@@ -103,7 +111,6 @@ section.exercise {
 			}
 
 			a {
-				display: block;
 
 				&:hover {
 
@@ -132,5 +139,9 @@ section.exercise {
 			  color: rgb(72, 84, 101);
 			}
   	}
+  }
+
+  .action-buttons {
+  	left: 200px;
   }
 }

@@ -2,6 +2,10 @@
 section.articles {
 	padding: 0 0 50px 0;
 
+	.action-buttons {
+		left: 200px;
+	}
+
 	.articles-container {
 		display: flex;
 		flex-wrap: wrap;
@@ -9,6 +13,14 @@ section.articles {
 		article {
 			width: 200.4px;
 			margin-bottom: 60px;
+			position: relative;
+
+			&:hover {
+
+				.action-buttons {
+					opacity: 1;
+				}
+			}
 
 			&:not(:nth-child(5n+5)) {
 				margin-right: 34px;
@@ -26,7 +38,6 @@ section.articles {
 			}
 
 			a {
-				display: block;
 
 				&:hover {
 
