@@ -157,17 +157,14 @@ section.invite {
 
 		a {
 			text-indent: -999999px;
+			transition: 0s;
 
 			&:first-child {
 				margin-right: 20px;
 				display: block;
 				width: 60px;
 				height: 27px;
-				background: url('assets/images/member-status.png');
-
-				&.active {
-					background-position: 0 0;
-				}
+				background: url('assets/images/member-status.png') no-repeat 0 0;
 
 				&.inactive {
 					background-position: 0 -34px;

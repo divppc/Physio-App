@@ -208,6 +208,14 @@ window.onload = function () {
 		});
 	};
 
+	var memberStatus = $('.actions a:first-of-type');
+	if(memberStatus.lenght !== 0) {
+		$(memberStatus).on('click', function (e) {
+			e.preventDefault();
+			$(this).toggleClass('inactive');
+		});
+	};
+
 	//custom range slider
 
 	var range1 = document.getElementById('range1'),
