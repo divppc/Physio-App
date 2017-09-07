@@ -324,6 +324,28 @@
 	  }
 	}
 
+	.edit-btn {
+		font-size: 14px;
+	  letter-spacing: -0.1px;
+	  color: #72cfa5;
+	  justify-content: flex-end;
+	  display: flex;
+	  align-items: center;
+
+	  &:hover {
+	  	text-decoration: underline;
+	  }
+
+	  &:before {
+	  	display: block;
+	  	width: 17px;
+	  	height: 16px;
+	  	content: '';
+	  	margin-right: 9px;
+	  	background: url("assets/images/icons.png") no-repeat 0px -72px;
+	  }
+	}
+
 	.panel-buttons {
 		display: flex;
 		align-items: center;
