@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+html(lang="en")
+	head
+		meta(http-equiv="X-UA-Compatible" content="IE=edge")
+		meta(charset="UTF-8")
+		link(rel="stylesheet", href="https://necolas.github.io/normalize.css/3.0.2/normalize.css")
+		link(rel="stylesheet", href="style.css")
+		title My Physio Dashboard | Invite new
+	body
+		section.home.invite-member.invite-new
+			.user-added.active New User is Added
+			.container
+				.home-panel
+					.user
+						.ava-holder.avatar
+							img(src="http://pipsum.com/100x100", alt="")
+						.user-name Good Morning, Triton!
+						.search
+							input(type="text" placeholder="Search")
+				.home-data
+					.contacts
+						.invite-container
+							.step1.active
+								a(href="#" class="add_user_btn") Create new client
+								.list
+									ul
+										li.member
+											.member-photo.avatar
+												img(src="http://pipsum.com/49x49", alt="")
+											.member-data
+												.name Triton
+												.success
+													span 50% completion of exerciese program.
+												.member-btns
+													a(href="#" class="send-invite") Send invited
+													a(href="#" class="mobile-alert active" title="Mobile notifications")
+										li.member
+											.member-photo.avatar.default-avatar
+											.member-data
+												.name Triton
+												.success
+													span 50% completion of exerciese program.
+												.member-btns
+													a(href="#" class="send-invite") Send invited
+													a(href="#" class="mobile-alert" title="Mobile notifications")
+							.step2
+								.invite-head
+									h3 New Client
+									a(href="#" class="back-btn") Back
+								form(action="#").add-users
+									.users-form
+										.member-photo.avatar.default-avatar
+										.fields
+											.form-field
+												span First Name
+												input(type="email" placeholder="First Name" required)
+											.form-field
+												span Last Name
+												input(type="email" placeholder="Last Name")
+									.submit
+										button(type="submit")
+											span Create
+		script(src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous")
+		script(src="assets/js/nouislider.min.js")
+		script(src="assets/js/jquery-ui.min.js")
+		script(src="https://cdn.jsdelivr.net/select2/4.0.3/js/select2.full.min.js")
+		script(src="https://content.jwplatform.com/libraries/QD1ITVfl.js")
+		script(src="assets/js/main.js")
