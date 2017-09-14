@@ -10,6 +10,8 @@
 
 		.list {
 			width: 51.75%;
+			max-height: 545px;
+			overflow: auto;
 
 			ul {
 				padding: 24px	0 25px 25px;
