@@ -12,12 +12,13 @@
   </head>
   <body>
     <section class="program">
-      <div class="user-side">
+      <div class="user-side collapsed">
         <div class="top-panel">
           <ul>
             <li><a href="#" title="Back" class="back"></a></li>
             <li><a href="#" title="Home"><img src="assets/images/main-logo.svg" alt=""/></a></li>
             <li><span>My Physio</span></li>
+            <li class="collapse-btn"></li>
           </ul>
         </div>
         <div class="user">
@@ -35,8 +36,10 @@
             <li><a href="#" class="insights">Insights</a></li>
           </ul>
         </div>
+        <div class="collapse-panel"></div>
       </div>
       <div class="programs-content">
+        <div class="page-title">Select program: </div>
         <div class="active-programs">
           <h1>Active programs</h1>
           <div class="programs-container">
@@ -440,6 +443,104 @@
         </div>
       </div>
     </section>
+    <div id="tabs" class="side-panel collapsed">
+      <ul class="tabs-navigation">
+        <li><a href="#tabs-1">Exercises </a></li>
+        <li><a href="#tabs-2">Tools</a></li>
+        <li><a href="#tabs-3">Articles</a></li>
+      </ul>
+      <div id="tabs-1" class="tab">
+        <h4>Exercises Library</h4>
+        <form class="search-form">
+          <input type="text" placeholder="Search" required="required"/>
+          <button type="submit" title="Submit"></button>
+        </form>
+        <ul class="exercises-tags">
+          <li><a href="#" class="active">All</a></li>
+          <li><a href="#">Realese</a></li>
+          <li><a href="#">Stretch</a></li>
+          <li><a href="#">Posture.</a></li>
+          <li><a href="#">Self Mob.</a></li>
+          <li><a href="#">Post Op.</a></li>
+          <li><a href="#">Proproception.</a></li>
+          <li><a href="#">Neutral Mob.</a></li>
+          <li><a href="#">Assessment Tools</a></li>
+        </ul>
+        <div class="select-holder">
+          <select id="select-exercise">
+            <option value="exercise1">All parts</option>
+            <option value="exercise2">All parts</option>
+            <option value="exercise3">All parts</option>
+          </select>
+        </div>
+        <ul class="exercise-list">
+          <li class="item"><a href="#">
+              <div class="img-holder"><img src="assets/images/ex1.png" alt="" class="img-responsive"/></div><span>Side Lying Hip Internal Rotation</span></a></li>
+          <li class="item"><a href="#">
+              <div class="img-holder"><img src="assets/images/ex7.png" alt="" class="img-responsive"/></div><span>Side Lying Hip Internal Rotation</span></a></li>
+          <li class="item"><a href="#">
+              <div class="img-holder"><img src="assets/images/ex6.png" alt="" class="img-responsive"/></div><span>Side Lying Hip Internal Rotation</span></a></li>
+          <li class="item"><a href="#">
+              <div class="img-holder"><img src="assets/images/ex12.png" alt="" class="img-responsive"/></div><span>Side Lying Hip Internal Rotation</span></a></li>
+          <li class="item"><a href="#">
+              <div class="img-holder"><img src="assets/images/ex1.png" alt="" class="img-responsive"/></div><span>Side Lying Hip Internal Rotation</span></a></li>
+          <li class="item"><a href="#">
+              <div class="img-holder"><img src="assets/images/ex7.png" alt="" class="img-responsive"/></div><span>Side Lying Hip Internal Rotation</span></a></li>
+          <li class="item"><a href="#">
+              <div class="img-holder"><img src="assets/images/ex1.png" alt="" class="img-responsive"/></div><span>Side Lying Hip Internal Rotation</span></a></li>
+          <li class="item"><a href="#">
+              <div class="img-holder"><img src="assets/images/ex7.png" alt="" class="img-responsive"/></div><span>Side Lying Hip Internal Rotation</span></a></li>
+          <li class="item"><a href="#">
+              <div class="img-holder"><img src="assets/images/ex6.png" alt="" class="img-responsive"/></div><span>Side Lying Hip Internal Rotation</span></a></li>
+          <li class="item"><a href="#">
+              <div class="img-holder"><img src="assets/images/ex12.png" alt="" class="img-responsive"/></div><span>Side Lying Hip Internal Rotation</span></a></li>
+          <li class="item"><a href="#">
+              <div class="img-holder"><img src="assets/images/ex1.png" alt="" class="img-responsive"/></div><span>Side Lying Hip Internal Rotation</span></a></li>
+          <li class="item"><a href="#">
+              <div class="img-holder"><img src="assets/images/ex7.png" alt="" class="img-responsive"/></div><span>Side Lying Hip Internal Rotation</span></a></li>
+        </ul>
+      </div>
+      <div id="tabs-2" class="tab">
+        <h4>Tools</h4>
+        <form class="search-form">
+          <input type="text" placeholder="Search" required="required"/>
+          <button type="submit" title="Submit"></button>
+        </form>
+        <div class="add-tools">
+          <div class="tool pain-scale">
+            <div class="tool-name">Add Pain Scale</div><a href="#" title="Add" class="add-tool"></a>
+          </div>
+          <div class="tool note">
+            <div class="tool-name">Add Note</div><a href="#" title="Add" class="add-tool"></a>
+          </div>
+          <div class="tool note">
+            <div class="tool-name">Motivational Quotes</div><a href="#" title="Add" class="add-tool"></a>
+          </div>
+          <div class="tool time">
+            <div class="tool-name">"Time of day Success"</div><a href="#" title="Add" class="add-tool"></a>
+          </div>
+        </div>
+      </div>
+      <div id="tabs-3" class="tab">
+        <h4>Articles</h4>
+        <form class="search-form">
+          <input type="text" placeholder="Search" required="required"/>
+          <button type="submit" title="Submit"></button>
+        </form>
+        <ul class="article-list">
+          <li class="item"><a href="#">
+              <div class="img-holder"><img src="assets/images/ex11.png" alt="" class="img-responsive"/></div><span>Hot-Cold Treatment</span></a></li>
+          <li class="item"><a href="#">
+              <div class="img-holder"><img src="assets/images/ex8.png" alt="" class="img-responsive"/></div><span>Injury Healing Process</span></a></li>
+          <li class="item"><a href="#">
+              <div class="img-holder"><img src="assets/images/ex9.png" alt="" class="img-responsive"/></div><span>Managing Inflammation</span></a></li>
+          <li class="item"><a href="#">
+              <div class="img-holder"><img src="assets/images/ex10.png" alt="" class="img-responsive"/></div><span>Office Ergonomics	</span></a></li>
+        </ul>
+      </div>
+      <div class="collapse-panel"></div>
+    </div>
+    <div class="collapse-sidebar"></div>
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
     <script src="assets/js/easypiechart.min.js"></script>
     <script src="assets/js/nouislider.min.js"></script>

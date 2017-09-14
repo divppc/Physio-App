@@ -1,4 +1,28 @@
 $(document).ready(function() {
+
+	//colapse user side
+	$('.user-side .collapse-btn').on('click', function() {
+		$('.user-side').addClass('collapsed');
+	});
+
+	$('.user-side .collapse-panel').on('click', function() {
+		$('.user-side').removeClass('collapsed');
+	});
+
+	//colapse right sidebar side
+	$('.side-panel .collapse-panel').on('click', function() {
+		$('.side-panel').addClass('collapsed');
+		$('.collapse-sidebar').removeClass('hidden');
+	});
+
+	$('.collapse-sidebar').on('click', function () {
+		$(this).addClass('hidden');
+		$('.side-panel').removeClass('collapsed')
+	});
+
+	//tabs
+	$("#tabs").tabs();
+	
 	//toggle between unser invite steps
 	var nextStep = $('.add_user_btn'),
 			prevStep = $('.back-btn'),
@@ -294,9 +318,6 @@ window.onload = function () {
 
 	//costom select
 	$(".js-example-basic-single").select2();
-
-	//tabs
-	$("#tabs").tabs();
 
 	//sortable exercises
 	$(".template-exercises ol").sortable({

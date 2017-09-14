@@ -509,9 +509,42 @@ section.program {
   border-image-source: linear-gradient(to bottom, rgba(139, 147, 153, 0.12), rgba(255, 255, 255, 0.06) 20%, rgba(255, 255, 255, 0));
   border-image-slice: 1;
 
+  max-height: 100%;
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 355px;
+	z-index: 3;
+	transform: none;
+	transition: 0.5s;
+
   @media (min-width: $responsive-wide) {
   	width: 355px;
   }
+
+  &.collapsed {
+		transform: translateX(100%);
+
+		.collapse-panel {
+			opacity: 0;
+			visibility: hidden;
+		}
+	}
+
+	.collapse-panel {
+		left: -15px;
+		height: calc(100% + 2px);
+		top: -1px;
+		background-color: #6C7684;
+
+		&:after {
+			background: url('assets/images/collapse-white.svg') no-repeat center;
+		}
+
+		&:hover {
+			background: darken(#6C7684, 3%);
+		}
+	}
 
   .tabs-navigation {
 

@@ -26,9 +26,11 @@ body {
 	min-width: 1253px;
 	margin: 0;
 	padding: 0;
+	overflow-x: hidden;
 	width: 100%;
 	min-height: 100%;
 	background-color: #f1f4f8;
+	position: relative;
 
 	&.sign-up {
 		background-image: linear-gradient(to bottom, #ffffff, #e6ebf1);

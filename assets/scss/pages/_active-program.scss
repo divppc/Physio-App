@@ -2,8 +2,16 @@
 	width: 100%;
 	overflow: hidden;
 	min-height: 100%;
-	padding-top: 92px;
+	padding-top: 24px;
 	padding-bottom: 80px;
+
+	.page-title {
+		font-size: 14px;
+	  text-align: left;
+	  padding-left: 37px;
+	  color: #2f3658;
+	  margin-bottom: 51px;
+	}
 
 	h1,h2 {
 		font-size: 14px;
@@ -15,7 +23,7 @@
 	}
 
 	.active-programs {
-		padding-left: 24px;
+		padding-left: 37px;
 		padding-bottom: 24px;
 		margin-bottom: 25px;
 		border-bottom: solid 1px rgba(207, 216, 220, 0.2);
@@ -258,7 +266,7 @@
 	}
 
 	.active-tools {
-		padding: 0 24px;
+		padding: 0 24px 0 37px;
 	}
 
 	.panel {

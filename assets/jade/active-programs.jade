@@ -11,7 +11,7 @@ html(lang="en")
 		title My Physio Dashboard | Active programs
 	body
 		section.program
-			.user-side
+			.user-side.collapsed
 				.top-panel
 					ul
 						li
@@ -21,6 +21,7 @@ html(lang="en")
 								img(src="assets/images/main-logo.svg", alt="")
 						li
 							span My Physio
+						li.collapse-btn
 				.user
 					.user-photo.avatar
 						img(src="http://pipsum.com/100x100", alt="")
@@ -37,7 +38,9 @@ html(lang="en")
 							a(href="#" class="chat") Chat
 						li
 							a(href="#" class="insights") Insights
+				.collapse-panel
 			.programs-content
+				.page-title Select program: 
 				.active-programs
 					h1 Active programs
 					.programs-container
@@ -351,6 +354,150 @@ html(lang="en")
 										li
 											a(href="#!")
 						.panel-chart
+		.side-panel#tabs.collapsed
+			ul.tabs-navigation
+				li
+					a(href="#tabs-1") Exercises 
+				li
+					a(href="#tabs-2") Tools
+				li
+					a(href="#tabs-3") Articles
+			.tab#tabs-1
+				h4 Exercises Library
+				form.search-form
+					input(type="text" placeholder="Search" required)
+					button(type="submit" title="Submit")
+				ul.exercises-tags
+					li
+						a(href="#" class="active") All
+					li
+						a(href="#") Realese
+					li
+						a(href="#") Stretch
+					li
+						a(href="#") Posture.
+					li
+						a(href="#") Self Mob.
+					li
+						a(href="#") Post Op.
+					li
+						a(href="#") Proproception.
+					li
+						a(href="#") Neutral Mob.
+					li
+						a(href="#") Assessment Tools
+				.select-holder
+					select#select-exercise
+						option(value="exercise1") All parts
+						option(value="exercise2") All parts
+						option(value="exercise3") All parts
+				ul.exercise-list
+					li.item
+						a(href="#")
+							.img-holder
+								img(src="assets/images/ex1.png", alt="" class="img-responsive")
+							span Side Lying Hip Internal Rotation
+					li.item
+						a(href="#")
+							.img-holder
+								img(src="assets/images/ex7.png", alt="" class="img-responsive")
+							span Side Lying Hip Internal Rotation
+					li.item
+						a(href="#")
+							.img-holder
+								img(src="assets/images/ex6.png", alt="" class="img-responsive")
+							span Side Lying Hip Internal Rotation
+					li.item
+						a(href="#")
+							.img-holder
+								img(src="assets/images/ex12.png", alt="" class="img-responsive")
+							span Side Lying Hip Internal Rotation
+					li.item
+						a(href="#")
+							.img-holder
+								img(src="assets/images/ex1.png", alt="" class="img-responsive")
+							span Side Lying Hip Internal Rotation
+					li.item
+						a(href="#")
+							.img-holder
+								img(src="assets/images/ex7.png", alt="" class="img-responsive")
+							span Side Lying Hip Internal Rotation
+					li.item
+						a(href="#")
+							.img-holder
+								img(src="assets/images/ex1.png", alt="" class="img-responsive")
+							span Side Lying Hip Internal Rotation
+					li.item
+						a(href="#")
+							.img-holder
+								img(src="assets/images/ex7.png", alt="" class="img-responsive")
+							span Side Lying Hip Internal Rotation
+					li.item
+						a(href="#")
+							.img-holder
+								img(src="assets/images/ex6.png", alt="" class="img-responsive")
+							span Side Lying Hip Internal Rotation
+					li.item
+						a(href="#")
+							.img-holder
+								img(src="assets/images/ex12.png", alt="" class="img-responsive")
+							span Side Lying Hip Internal Rotation
+					li.item
+						a(href="#")
+							.img-holder
+								img(src="assets/images/ex1.png", alt="" class="img-responsive")
+							span Side Lying Hip Internal Rotation
+					li.item
+						a(href="#")
+							.img-holder
+								img(src="assets/images/ex7.png", alt="" class="img-responsive")
+							span Side Lying Hip Internal Rotation
+			.tab#tabs-2
+				h4 Tools
+				form.search-form
+					input(type="text" placeholder="Search" required)
+					button(type="submit" title="Submit")
+				.add-tools
+					.tool.pain-scale
+						.tool-name Add Pain Scale
+						a(href="#" class="add-tool" title="Add")
+					.tool.note
+						.tool-name Add Note
+						a(href="#" class="add-tool" title="Add")
+					.tool.note
+						.tool-name Motivational Quotes
+						a(href="#" class="add-tool" title="Add")
+					.tool.time
+						.tool-name "Time of day Success"
+						a(href="#" class="add-tool" title="Add")
+			.tab#tabs-3
+				h4 Articles
+				form.search-form
+					input(type="text" placeholder="Search" required)
+					button(type="submit" title="Submit")
+				ul.article-list
+					li.item
+						a(href="#")
+							.img-holder
+								img(src="assets/images/ex11.png", alt="" class="img-responsive")
+							span Hot-Cold Treatment
+					li.item
+						a(href="#")
+							.img-holder
+								img(src="assets/images/ex8.png", alt="" class="img-responsive")
+							span Injury Healing Process
+					li.item
+						a(href="#")
+							.img-holder
+								img(src="assets/images/ex9.png", alt="" class="img-responsive")
+							span Managing Inflammation
+					li.item
+						a(href="#")
+							.img-holder
+								img(src="assets/images/ex10.png", alt="" class="img-responsive")
+							span Office Ergonomics	
+			.collapse-panel
+		.collapse-sidebar
 		script(src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous")
 		script(src="assets/js/easypiechart.min.js")
 		script(src="assets/js/nouislider.min.js")
