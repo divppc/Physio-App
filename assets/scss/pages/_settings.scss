@@ -10,17 +10,18 @@ section.settings {
 	  display: flex;
 	  position: relative;
 	  margin-bottom: 16px;
+	  justify-content: space-between;
 
 	  &>div {
 
 	  	&:first-of-type:not(.table-head) {
 				width: 357px;
 				flex-shrink: 0;
-				margin-right: 254px;
+				// margin-right: 254px;
 	  	}
 
 	  	&:last-of-type {
-	  		width: 100%;
+	  		width: 50%;
 	  	}
 	  }
 	}

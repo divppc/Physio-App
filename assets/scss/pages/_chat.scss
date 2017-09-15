@@ -7,6 +7,24 @@ section.chat {
 		width: 960px;		
 		padding: 36px 20px 18px 52px;
 		min-height: 100%;
+
+		&.inner {
+			padding: 36px 52px 18px 52px;
+			width: 100%;
+
+			.container {
+				width: 100%;
+				min-width: 0px;
+			}
+		}
+
+		.select2-container {
+			width: 100% !important;
+		}
+	}
+
+	.select2-container .select2-selection--single .select2-selection__rendered {
+		padding: 0 5px;
 	}
 
 	.chat-window {

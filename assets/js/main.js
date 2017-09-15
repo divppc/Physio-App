@@ -20,6 +20,13 @@ $(document).ready(function() {
 		$('.side-panel').removeClass('collapsed')
 	});
 
+	// exercise parts and types display
+	$('.section-subheading .view-toggle').on('click', function(e) {
+		e.preventDefault();
+		$(this).toggleClass('active');
+		$(this).parent().siblings('.list-of-buttons').toggleClass('active');
+	});
+
 	//tabs
 	$("#tabs").tabs();
 	

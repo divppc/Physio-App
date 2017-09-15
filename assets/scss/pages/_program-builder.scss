@@ -718,10 +718,43 @@ section.program {
   	}
   }
 
-  .exercises-tags {
+  .section-subheading {
+    font-size: 16px;
+    font-family: "ProximaNovaBold";
+    letter-spacing: -0.1px;
+    color: white;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+    .view-toggle {
+    	display: block;
+    	transition: none;
+	    width: 14px;
+	    -webkit-flex-shrink: 0;
+	    -ms-flex-negative: 0;
+	    flex-shrink: 0;
+	    height: 14px;
+	    background: url(assets/images/icons.png) no-repeat 0px -415px;
+
+	    &.active {
+	    	height: 3px;
+	    	background: #fff;
+	    }
+    }
+  }
+
+  .list-of-buttons {
   	padding: 16px 0 10px 0;
   	display: flex;
   	flex-wrap: wrap;
+  	display: none;
+
+  	&.active {
+  		display: flex;
+  	}
 
   	li {
   		margin-bottom: 8px;
