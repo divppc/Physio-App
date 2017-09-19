@@ -62,35 +62,52 @@ html(lang="en")
 							.exercise-selects								
 								.checkbox-group
 									span Type:
-									.checkbox-list
-										input(type="checkbox" id="type-strength" value="strength")
-										label(for="type-strength") Strength
-										input(type="checkbox" id="type-selfRelease" value="selfRelease")
-										label(for="type-selfRelease") Release
-										input(type="checkbox" id="type-stretches" value="stretches")
-										label(for="type-stretches") Stretch
-										input(type="checkbox" id="type-neutralMob" value="neutralMob")
-										label(for="type-neutralMob") Neutral Mob.
-										input(type="checkbox" id="type-selfMob" value="selfMob")
-										label(for="type-selfMob") Self Mob.
-										input(type="checkbox" id="type-postOp" value="postOp")
-										label(for="type-postOp") Post op.
-										input(type="checkbox" id="type-posture" value="posture")
-										label(for="type-posture") Posture
-										input(type="checkbox" id="type-proprioception" value="proprioception")
-										label(for="type-proprioception") Proprioception
-										input(type="checkbox" id="type-cardio" value="cardio")
-										label(for="type-cardio") Cardio
-										input(type="checkbox" id="type-agility" value="agility")
-										label(for="type-agility") Agility
-										input(type="checkbox" id="type-others" value="others")
-										label(for="type-others") Others
-								.select
-									label(for="exercise-part") Part:
-									select#exercise-part(name="exercise-part")
-										option(value="Upper body") Upper body
-										option(value="Upper body") Upper body
-										option(value="Upper body") Upper body
+									ul.checkbox-list
+										li
+											input(type="checkbox" id="type-strength" value="strength")
+											label(for="type-strength") Strength
+										li
+											input(type="checkbox" id="type-selfRelease" value="selfRelease")
+											label(for="type-selfRelease") Release
+										li
+											input(type="checkbox" id="type-stretches" value="stretches")
+											label(for="type-stretches") Stretch
+										li
+											input(type="checkbox" id="type-neutralMob" value="neutralMob")
+											label(for="type-neutralMob") Neutral Mob.
+										li
+											input(type="checkbox" id="type-selfMob" value="selfMob")
+											label(for="type-selfMob") Self Mob.
+										li
+											input(type="checkbox" id="type-postOp" value="postOp")
+											label(for="type-postOp") Post op.
+										li
+											input(type="checkbox" id="type-posture" value="posture")
+											label(for="type-posture") Posture
+										li
+											input(type="checkbox" id="type-proprioception" value="proprioception")
+											label(for="type-proprioception") Proprioception
+										li
+											input(type="checkbox" id="type-cardio" value="cardio")
+											label(for="type-cardio") Cardio
+										li
+											input(type="checkbox" id="type-agility" value="agility")
+											label(for="type-agility") Agility
+										li
+											input(type="checkbox" id="type-others" value="others")
+											label(for="type-others") Others
+								.checkbox-group.parts
+									span Part:
+									ul.checkbox-list
+										li
+											input(type="radio" id="type-strength2" value="strength" name="new-exercise-part")
+											label(for="type-strength2") Strength
+										li
+											input(type="radio" id="type-selfRelease2" value="selfRelease" name="new-exercise-part")
+											label(for="type-selfRelease2") Release
+										li
+											input(type="radio" id="type-stretches2" value="stretches" name="new-exercise-part")
+											label(for="type-stretches2") Stretch
 								.checkbox-group
 									span Show sides:
 									.checkbox-list

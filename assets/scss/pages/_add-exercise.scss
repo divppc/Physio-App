@@ -94,6 +94,10 @@ section.add-exercise {
 		display: flex;
 		align-items: center;
 
+		&.parts {
+			margin: 20px 0;
+		}
+
 		&:last-child {
 
 			.checkbox-list {
@@ -109,70 +113,38 @@ section.add-exercise {
 	}
 
 	.checkbox-list {
+		display: flex;
+		flex-wrap: wrap;
+
+		li {
+			margin-bottom: 8px;
+		}
 
 		input {
 			display: none;
 
 			&+label {
-				width: 32%;
-				cursor: pointer;
-				margin-right: 0;
-
-				&:before {
-					display: block;
-			    content: '';
-			    border-radius: 50%;
-			    margin-right: 16px;
-			    width: 16px;
-			    height: 16px;
-			    -webkit-flex-shrink: 0;
-			    -ms-flex-negative: 0;
-			    flex-shrink: 0;
-			    cursor: pointer;
-			    border: solid 1px #9ba9bc;
-			    background: #fff;
-			    -webkit-box-sizing: border-box;
-			    box-sizing: border-box;
-				}
+		    display: block;
+		    font-size: 12px;
+		    letter-spacing: -0.1px;
+		    color: #000;
+		    opacity: .8;
+		    border-radius: 3px;
+		    padding: 9px 23px;
+		    border: solid 1px rgba(255, 255, 255, 0.2);
+		    border: solid 1px rgba(0, 0, 0, 0.2);
+		    cursor: pointer;
 			}
 
 			&:checked {
 
 				&+label {
-
-					&:before {
-				    background: -webkit-gradient(linear, left top, left bottom, from(#52C7CC), to(#95DDAE));
-				    background: -webkit-linear-gradient(top, #52C7CC, #95DDAE);
-				    background: -o-linear-gradient(top, #52C7CC, #95DDAE);
-				    background: linear-gradient(to bottom, #52C7CC, #95DDAE);
-				    background-size: 172%;
-				    border-color: transparent;
-				    background-position: 0 -21px;
-				    background-size: 152%;
-				    border-color: transparent;
-				    -webkit-box-shadow: 0 2px 14px 0 #cad3de;
-				    box-shadow: 0 2px 14px 0 #cad3de;
-					}
-
-					&:after {
-						width: 6px;
-				    height: 6px;
-				    display: block;
-				    -webkit-flex-shrink: 0;
-				    -ms-flex-negative: 0;
-				    flex-shrink: 0;
-				    content: '';
-				    border: 2px solid #fff;
-				    position: absolute;
-				    top: 50%;
-				    -webkit-transform: translateY(-50%);
-				    -ms-transform: translateY(-50%);
-				    transform: translateY(-50%);
-				    cursor: pointer;
-				    border-radius: 50%;
-				    left: 3px;
-				    background: transparent;
-					}
+					border-color: transparent;
+			    opacity: 1;
+			    color: #fff;
+			    background-image: -webkit-linear-gradient(71deg, #6FD1BF, #A0E0A9);
+			    background-image: -o-linear-gradient(71deg, #6FD1BF, #A0E0A9);
+			    background-image: linear-gradient(19deg, #6FD1BF, #A0E0A9);
 				}
 			}
 		}
