@@ -40,25 +40,6 @@ section.personal {
 	.edit-profile {
 		padding: 23px 30px 23px 21px;
 		border-left: solid 1px rgba(207, 216, 220, 0.6);
-
-		a {
-			display: flex;
-			align-items: center;
-			font-size: 14px;
-		  font-weight: 600;
-		  color: rgb(156, 175, 195);
-
-		  &:hover {
-		  	text-decoration: underline;
-		  }
-
-		  &:before {
-		  	display: block;
-		  	transition: 0.3s;
-		  	content: url('assets/images/edit-profile.svg');
-		  	margin-right: 24px;
-		  }
-		}
 	}
 
 	form {
@@ -184,16 +165,11 @@ section.personal {
 		border-top: solid 1px rgba(130, 156, 169, 0.2);
 
 		button {
-			font-size: 14px;
-		  font-weight: 600;
-		  letter-spacing: -0.2px;
+			font-size: inherit;
 		  display: block;
-		  height: 40px;
-		  line-height: 42px;
-		  padding: 0 43px;
+		 	padding: 5px 10px;
 		  text-align: center;
 		  border-radius: 3px;
-		  text-transform: uppercase;
   		background-color: rgb(207, 216, 220);
 		  color: rgb(255, 255, 255);
 		  transition: 0.3s;
@@ -201,7 +177,6 @@ section.personal {
 		  &[type="submit"] {
 		  	margin-left: 14px;
 		  	margin-right: 36px;
-		  	background-image: linear-gradient(to bottom, rgb(111, 208, 167), rgb(134, 215, 157));
 		  }
 
 		  &:focus {
