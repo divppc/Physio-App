@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+html(lang="en")
+	head
+		meta(http-equiv="X-UA-Compatible" content="IE=edge")
+		meta(charset="UTF-8")
+		link(rel="stylesheet", href="https://necolas.github.io/normalize.css/3.0.2/normalize.css")
+		link(rel="stylesheet", href="https://cdn.jsdelivr.net/select2/4.0.3/css/select2.min.css")
+		link(rel="stylesheet", href="style.css")
+		link(rel="stylesheet", href="assets/css/nouislider.css")
+		link(rel="stylesheet", href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css")
+		title My Physio Dashboard | Team
+	body
+		section.team
+			.user-side.collapsed
+				.top-panel
+					ul
+						li
+							a(href="#" class="back" title="Back")
+						li
+							a(href="#" title="Home")
+								img(src="assets/images/main-logo.svg", alt="")
+						li
+							span My Physio
+						li.collapse-btn
+				.user
+					.user-photo.avatar
+						img(src="http://pipsum.com/100x100", alt="")
+					.user-name Serhii Hubarenko
+					.user-mail lelaquin@gmail.com	
+					.control-buttons
+						.add-mobile
+							input(type="text" value="" placeholder="Add mobile" title="Edit")			
+						a(href="#" class="add-tag-btn") Add tag
+					ul.nav-panel
+						li
+							a(href="#" class="programs active") Programs
+						li
+							a(href="#" class="settings") Settings
+						li
+							a(href="#" class="team") Team
+						li
+							a(href="#" class="exercises") Exercises
+						li
+							a(href="#" class="articles") Articles
+						li
+							a(href="#" class="insights") Insights						
+						li
+							a(href="#" class="logout") Logout
+				.collapse-panel
+			.team-data
+				.head-panel
+					.inner-container
+						h1 Team Members
+						a(href="#" class="search-icon" title="Search")
+							img(src="assets/images/search-icon.svg", alt="Search")
+				.team-table
+					.inner-container
+						table
+							thead
+								tr
+									td Avatar
+									td
+										a(href="#" class="sortable-table-item") Name
+									td Email
+									td Role
+									td Action
+							tbody
+								tr
+									td
+										img(src="http://pipsum.com/36x36", alt="" class="avatar")
+									td
+										input(type="text" class="member-name editable-input" value="Glen Pope")
+									td
+										input(type="email" class="member-mail editable-input" value="glen.pope@gmail.com")
+									td
+										.member-role(data-role="1") Lead Physio
+										.select-holder
+											select#role-member-1(name="#role-member-1")
+												option(value="Lead Physio" data-role="1") Lead Physio
+												option(value="Physio" data-role="2") Physio
+												option(value="Practic Manager / Admin" data-role="3") Practic Manager / Admin
+												option(value="System Admin" data-role="4") System Admin
+									td
+										.actions
+											input(type="checkbox" id="activity-user1" class="toggle-activity")
+											label(for="activity-user1")
+											.edit-member
+											.delete-member
+								tr
+									td
+										img(src="http://pipsum.com/36x36", alt="" class="avatar")
+									td
+										input(type="text" class="member-name editable-input" value="Juan George")
+									td
+										input(type="email" class="member-mail editable-input" value="tianna_fadel@loyce.io")
+									td
+										.member-role(data-role="2") Physio
+										.select-holder
+											select#role-member-2(name="#role-member-2")
+												option(value="Lead Physio" data-role="1") Lead Physio
+												option(value="Physio" data-role="2") Physio
+												option(value="Practic Manager / Admin" data-role="3") Practic Manager / Admin
+												option(value="System Admin" data-role="4") System Admin
+									td
+										.actions
+											input(type="checkbox" id="activity-user2" class="toggle-activity")
+											label(for="activity-user2")
+											.edit-member
+											.delete-member
+								tr
+									td
+										img(src="http://pipsum.com/36x36", alt="" class="avatar")
+									td
+										input(type="text" class="member-name editable-input" value="Claudia Daniel")
+									td
+										input(type="email" class="member-mail editable-input" value="maya.kerluke@bryana.co.uk")
+									td
+										.member-role(data-role="3") Practic Manager / Admin
+										.select-holder
+											select#role-member-3(name="#role-member-3")
+												option(value="Lead Physio" data-role="1") Lead Physio
+												option(value="Physio" data-role="2") Physio
+												option(value="Practic Manager / Admin" data-role="3") Practic Manager / Admin
+												option(value="System Admin" data-role="4") System Admin
+									td
+										.actions
+											input(type="checkbox" id="activity-user3" class="toggle-activity")
+											label(for="activity-user3")
+											.edit-member
+											.delete-member
+								tr
+									td
+										img(src="http://pipsum.com/36x36", alt="" class="avatar")
+									td
+										input(type="text" class="member-name editable-input" value="Ruby Guerrero")
+									td
+										input(type="email" class="member-mail editable-input" value="hickle.bettye@jordyn.com")
+									td
+										.member-role(data-role="4") System Admin
+										.select-holder
+											select#role-member-4(name="#role-member-4")
+												option(value="Lead Physio" data-role="1") Lead Physio
+												option(value="Physio" data-role="2") Physio
+												option(value="Practic Manager / Admin" data-role="3") Practic Manager / Admin
+												option(value="System Admin" data-role="4") System Admin
+									td
+										.actions
+											input(type="checkbox" id="activity-user4" class="toggle-activity")
+											label(for="activity-user4")
+											.edit-member
+											.delete-member
+								tr
+									td
+										img(src="http://pipsum.com/36x36", alt="" class="avatar")
+									td
+										input(type="text" class="member-name editable-input" value="Georgia Fowler")
+									td
+										input(type="email" class="member-mail editable-input" value="niko.champlin@gmail.com")
+									td
+										.member-role(data-role="1") Lead Physio
+										.select-holder
+											select#role-member-5(name="#role-member-5")
+												option(value="Lead Physio" data-role="1") Lead Physio
+												option(value="Physio" data-role="2") Physio
+												option(value="Practic Manager / Admin" data-role="3") Practic Manager / Admin
+												option(value="System Admin" data-role="4") System Admin
+									td
+										.actions
+											input(type="checkbox" id="activity-user5" class="toggle-activity")
+											label(for="activity-user5")
+											.edit-member
+											.delete-member
+								tr
+									td
+										img(src="http://pipsum.com/36x36", alt="" class="avatar")
+									td
+										input(type="text" class="member-name editable-input" value="Sallie Young")
+									td
+										input(type="email" class="member-mail editable-input" value="keeling.garnet@wolff.info")
+									td
+										.member-role(data-role="3") Practic Manager / Admin
+										.select-holder
+											select#role-member-6(name="#role-member-6")
+												option(value="Lead Physio" data-role="1") Lead Physio
+												option(value="Physio" data-role="2") Physio
+												option(value="Practic Manager / Admin" data-role="3") Practic Manager / Admin
+												option(value="System Admin" data-role="4") System Admin
+									td
+										.actions
+											input(type="checkbox" id="activity-user6" class="toggle-activity")
+											label(for="activity-user6")
+											.edit-member
+											.delete-member
+								tr
+									td
+										img(src="http://pipsum.com/36x36", alt="" class="avatar")
+									td
+										input(type="text" class="member-name editable-input" value="Dominic Duncan")
+									td
+										input(type="email" class="member-mail editable-input" value="bode_mose@gmail.com")
+									td
+										.member-role(data-role="2") Physio
+										.select-holder
+											select#role-member-7(name="#role-member-7")
+												option(value="Lead Physio" data-role="1") Lead Physio
+												option(value="Physio" data-role="2") Physio
+												option(value="Practic Manager / Admin" data-role="3") Practic Manager / Admin
+												option(value="System Admin" data-role="4") System Admin
+									td
+										.actions
+											input(type="checkbox" id="activity-user7" class="toggle-activity")
+											label(for="activity-user7")
+											.edit-member
+											.delete-member
+								tr
+									td
+										img(src="http://pipsum.com/36x36", alt="" class="avatar")
+									td
+										input(type="text" class="member-name editable-input" value="Sue Colon")
+									td
+										input(type="email" class="member-mail editable-input" value="clotilde_stamm@emmerich.net")
+									td
+										.member-role(data-role="2") Physio
+										.select-holder
+											select#role-member-8(name="#role-member-8")
+												option(value="Lead Physio" data-role="1") Lead Physio
+												option(value="Physio" data-role="2") Physio
+												option(value="Practic Manager / Admin" data-role="3") Practic Manager / Admin
+												option(value="System Admin" data-role="4") System Admin
+									td
+										.actions
+											input(type="checkbox" id="activity-user8" class="toggle-activity")
+											label(for="activity-user8")
+											.edit-member
+											.delete-member
+						.pagination
+							ul
+								li
+									a(href="#" class="active") 1
+								li
+									a(href="#") 2
+								li
+									a(href="#") 3
+								li
+									a(href="#" class="next")
+						.new-member
+							.panel
+								.add-btn Add new member
+							.member-form
+								form(action="#")
+									.field
+										label(for="first-name") First Name <sup>*</sup>
+										input(type="text" id="first-name" required placeholder="First Name")
+									.field
+										label(for="last-name") Last Name <sup>*</sup>
+										input(type="text" id="last-name" required placeholder="Last Name")
+									.field
+										label(for="email") E-mail <sup>*</sup>
+										input(type="email" id="email" required placeholder="Sample@gmail.com")
+									.field
+										label(for="role") Role <sup>*</sup>
+										.select-holder
+											select#role(name="role")
+												option(value="" selected disabled) Select role
+												option(value="1") Physio
+												option(value="2") Physio
+												option(value="3") Physio
+									.field
+										button(type="submit") Add
+		script(src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous")
+		script(src="assets/js/easypiechart.min.js")
+		script(src="assets/js/nouislider.min.js")
+		script(src="assets/js/jquery-ui.min.js")
+		script(src="https://cdn.jsdelivr.net/select2/4.0.3/js/select2.full.min.js")
+		script(src="https://content.jwplatform.com/libraries/QD1ITVfl.js")
+		script(src="assets/js/chart.js")
+		script(src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js")
+		script(src="assets/js/main.js")

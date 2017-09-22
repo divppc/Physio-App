@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/3.0.2/normalize.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/select2/4.0.3/css/select2.min.css"/>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="assets/css/nouislider.css"/>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+    <title>My Physio Dashboard | Team</title>
+  </head>
+  <body>
+    <section class="team">
+      <div class="user-side collapsed">
+        <div class="top-panel">
+          <ul>
+            <li><a href="#" title="Back" class="back"></a></li>
+            <li><a href="#" title="Home"><img src="assets/images/main-logo.svg" alt=""/></a></li>
+            <li><span>My Physio</span></li>
+            <li class="collapse-btn"></li>
+          </ul>
+        </div>
+        <div class="user">
+          <div class="user-photo avatar"><img src="http://pipsum.com/100x100" alt=""/></div>
+          <div class="user-name">Serhii Hubarenko</div>
+          <div class="user-mail">lelaquin@gmail.com	</div>
+          <div class="control-buttons">
+            <div class="add-mobile">
+              <input type="text" value="" placeholder="Add mobile" title="Edit"/>
+            </div><a href="#" class="add-tag-btn">Add tag</a>
+          </div>
+          <ul class="nav-panel">
+            <li><a href="#" class="programs active">Programs</a></li>
+            <li><a href="#" class="settings">Settings</a></li>
+            <li><a href="#" class="team">Team</a></li>
+            <li><a href="#" class="exercises">Exercises</a></li>
+            <li><a href="#" class="articles">Articles</a></li>
+            <li><a href="#" class="insights">Insights						</a></li>
+            <li><a href="#" class="logout">Logout</a></li>
+          </ul>
+        </div>
+        <div class="collapse-panel"></div>
+      </div>
+      <div class="team-data">
+        <div class="head-panel">
+          <div class="inner-container">
+            <h1>Team Members</h1><a href="#" title="Search" class="search-icon"><img src="assets/images/search-icon.svg" alt="Search"/></a>
+          </div>
+        </div>
+        <div class="team-table">
+          <div class="inner-container">
+            <table>
+              <thead>
+                <tr>
+                  <td>Avatar</td>
+                  <td><a href="#" class="sortable-table-item">Name</a></td>
+                  <td>Email</td>
+                  <td>Role</td>
+                  <td>Action</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><img src="http://pipsum.com/36x36" alt="" class="avatar"/></td>
+                  <td>
+                    <input type="text" value="Glen Pope" class="member-name editable-input"/>
+                  </td>
+                  <td>
+                    <input type="email" value="glen.pope@gmail.com" class="member-mail editable-input"/>
+                  </td>
+                  <td>
+                    <div data-role="1" class="member-role">Lead Physio</div>
+                    <div class="select-holder">
+                      <select id="role-member-1" name="#role-member-1">
+                        <option value="Lead Physio" data-role="1">Lead Physio</option>
+                        <option value="Physio" data-role="2">Physio</option>
+                        <option value="Practic Manager / Admin" data-role="3">Practic Manager / Admin</option>
+                        <option value="System Admin" data-role="4">System Admin</option>
+                      </select>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="actions">
+                      <input type="checkbox" id="activity-user1" class="toggle-activity"/>
+                      <label for="activity-user1"></label>
+                      <div class="edit-member"></div>
+                      <div class="delete-member"></div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td><img src="http://pipsum.com/36x36" alt="" class="avatar"/></td>
+                  <td>
+                    <input type="text" value="Juan George" class="member-name editable-input"/>
+                  </td>
+                  <td>
+                    <input type="email" value="tianna_fadel@loyce.io" class="member-mail editable-input"/>
+                  </td>
+                  <td>
+                    <div data-role="2" class="member-role">Physio</div>
+                    <div class="select-holder">
+                      <select id="role-member-2" name="#role-member-2">
+                        <option value="Lead Physio" data-role="1">Lead Physio</option>
+                        <option value="Physio" data-role="2">Physio</option>
+                        <option value="Practic Manager / Admin" data-role="3">Practic Manager / Admin</option>
+                        <option value="System Admin" data-role="4">System Admin</option>
+                      </select>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="actions">
+                      <input type="checkbox" id="activity-user2" class="toggle-activity"/>
+                      <label for="activity-user2"></label>
+                      <div class="edit-member"></div>
+                      <div class="delete-member"></div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td><img src="http://pipsum.com/36x36" alt="" class="avatar"/></td>
+                  <td>
+                    <input type="text" value="Claudia Daniel" class="member-name editable-input"/>
+                  </td>
+                  <td>
+                    <input type="email" value="maya.kerluke@bryana.co.uk" class="member-mail editable-input"/>
+                  </td>
+                  <td>
+                    <div data-role="3" class="member-role">Practic Manager / Admin</div>
+                    <div class="select-holder">
+                      <select id="role-member-3" name="#role-member-3">
+                        <option value="Lead Physio" data-role="1">Lead Physio</option>
+                        <option value="Physio" data-role="2">Physio</option>
+                        <option value="Practic Manager / Admin" data-role="3">Practic Manager / Admin</option>
+                        <option value="System Admin" data-role="4">System Admin</option>
+                      </select>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="actions">
+                      <input type="checkbox" id="activity-user3" class="toggle-activity"/>
+                      <label for="activity-user3"></label>
+                      <div class="edit-member"></div>
+                      <div class="delete-member"></div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td><img src="http://pipsum.com/36x36" alt="" class="avatar"/></td>
+                  <td>
+                    <input type="text" value="Ruby Guerrero" class="member-name editable-input"/>
+                  </td>
+                  <td>
+                    <input type="email" value="hickle.bettye@jordyn.com" class="member-mail editable-input"/>
+                  </td>
+                  <td>
+                    <div data-role="4" class="member-role">System Admin</div>
+                    <div class="select-holder">
+                      <select id="role-member-4" name="#role-member-4">
+                        <option value="Lead Physio" data-role="1">Lead Physio</option>
+                        <option value="Physio" data-role="2">Physio</option>
+                        <option value="Practic Manager / Admin" data-role="3">Practic Manager / Admin</option>
+                        <option value="System Admin" data-role="4">System Admin</option>
+                      </select>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="actions">
+                      <input type="checkbox" id="activity-user4" class="toggle-activity"/>
+                      <label for="activity-user4"></label>
+                      <div class="edit-member"></div>
+                      <div class="delete-member"></div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td><img src="http://pipsum.com/36x36" alt="" class="avatar"/></td>
+                  <td>
+                    <input type="text" value="Georgia Fowler" class="member-name editable-input"/>
+                  </td>
+                  <td>
+                    <input type="email" value="niko.champlin@gmail.com" class="member-mail editable-input"/>
+                  </td>
+                  <td>
+                    <div data-role="1" class="member-role">Lead Physio</div>
+                    <div class="select-holder">
+                      <select id="role-member-5" name="#role-member-5">
+                        <option value="Lead Physio" data-role="1">Lead Physio</option>
+                        <option value="Physio" data-role="2">Physio</option>
+                        <option value="Practic Manager / Admin" data-role="3">Practic Manager / Admin</option>
+                        <option value="System Admin" data-role="4">System Admin</option>
+                      </select>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="actions">
+                      <input type="checkbox" id="activity-user5" class="toggle-activity"/>
+                      <label for="activity-user5"></label>
+                      <div class="edit-member"></div>
+                      <div class="delete-member"></div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td><img src="http://pipsum.com/36x36" alt="" class="avatar"/></td>
+                  <td>
+                    <input type="text" value="Sallie Young" class="member-name editable-input"/>
+                  </td>
+                  <td>
+                    <input type="email" value="keeling.garnet@wolff.info" class="member-mail editable-input"/>
+                  </td>
+                  <td>
+                    <div data-role="3" class="member-role">Practic Manager / Admin</div>
+                    <div class="select-holder">
+                      <select id="role-member-6" name="#role-member-6">
+                        <option value="Lead Physio" data-role="1">Lead Physio</option>
+                        <option value="Physio" data-role="2">Physio</option>
+                        <option value="Practic Manager / Admin" data-role="3">Practic Manager / Admin</option>
+                        <option value="System Admin" data-role="4">System Admin</option>
+                      </select>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="actions">
+                      <input type="checkbox" id="activity-user6" class="toggle-activity"/>
+                      <label for="activity-user6"></label>
+                      <div class="edit-member"></div>
+                      <div class="delete-member"></div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td><img src="http://pipsum.com/36x36" alt="" class="avatar"/></td>
+                  <td>
+                    <input type="text" value="Dominic Duncan" class="member-name editable-input"/>
+                  </td>
+                  <td>
+                    <input type="email" value="bode_mose@gmail.com" class="member-mail editable-input"/>
+                  </td>
+                  <td>
+                    <div data-role="2" class="member-role">Physio</div>
+                    <div class="select-holder">
+                      <select id="role-member-7" name="#role-member-7">
+                        <option value="Lead Physio" data-role="1">Lead Physio</option>
+                        <option value="Physio" data-role="2">Physio</option>
+                        <option value="Practic Manager / Admin" data-role="3">Practic Manager / Admin</option>
+                        <option value="System Admin" data-role="4">System Admin</option>
+                      </select>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="actions">
+                      <input type="checkbox" id="activity-user7" class="toggle-activity"/>
+                      <label for="activity-user7"></label>
+                      <div class="edit-member"></div>
+                      <div class="delete-member"></div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td><img src="http://pipsum.com/36x36" alt="" class="avatar"/></td>
+                  <td>
+                    <input type="text" value="Sue Colon" class="member-name editable-input"/>
+                  </td>
+                  <td>
+                    <input type="email" value="clotilde_stamm@emmerich.net" class="member-mail editable-input"/>
+                  </td>
+                  <td>
+                    <div data-role="2" class="member-role">Physio</div>
+                    <div class="select-holder">
+                      <select id="role-member-8" name="#role-member-8">
+                        <option value="Lead Physio" data-role="1">Lead Physio</option>
+                        <option value="Physio" data-role="2">Physio</option>
+                        <option value="Practic Manager / Admin" data-role="3">Practic Manager / Admin</option>
+                        <option value="System Admin" data-role="4">System Admin</option>
+                      </select>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="actions">
+                      <input type="checkbox" id="activity-user8" class="toggle-activity"/>
+                      <label for="activity-user8"></label>
+                      <div class="edit-member"></div>
+                      <div class="delete-member"></div>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="pagination">
+              <ul>
+                <li><a href="#" class="active">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#" class="next"></a></li>
+              </ul>
+            </div>
+            <div class="new-member">
+              <div class="panel">
+                <div class="add-btn">Add new member</div>
+              </div>
+              <div class="member-form">
+                <form action="#">
+                  <div class="field">
+                    <label for="first-name">First Name <sup>*</sup></label>
+                    <input type="text" id="first-name" required="required" placeholder="First Name"/>
+                  </div>
+                  <div class="field">
+                    <label for="last-name">Last Name <sup>*</sup></label>
+                    <input type="text" id="last-name" required="required" placeholder="Last Name"/>
+                  </div>
+                  <div class="field">
+                    <label for="email">E-mail <sup>*</sup></label>
+                    <input type="email" id="email" required="required" placeholder="Sample@gmail.com"/>
+                  </div>
+                  <div class="field">
+                    <label for="role">Role <sup>*</sup></label>
+                    <div class="select-holder">
+                      <select id="role" name="role">
+                        <option value="" selected="selected" disabled="disabled">Select role</option>
+                        <option value="1">Physio</option>
+                        <option value="2">Physio</option>
+                        <option value="3">Physio</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="field">
+                    <button type="submit">Add</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="assets/js/easypiechart.min.js"></script>
+    <script src="assets/js/nouislider.min.js"></script>
+    <script src="assets/js/jquery-ui.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/select2/4.0.3/js/select2.full.min.js"></script>
+    <script src="https://content.jwplatform.com/libraries/QD1ITVfl.js"></script>
+    <script src="assets/js/chart.js"></script>
+    <script src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

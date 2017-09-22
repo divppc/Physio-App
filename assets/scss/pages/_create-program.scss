@@ -33,6 +33,21 @@
 				text-indent: -999px;
 				overflow: hidden;
 
+				&.exercises {
+
+					&:before {
+						left: 42px;
+					}
+				}
+
+				&.articles,
+				&.logout {
+
+					&:before {
+						left: 48px;
+					}
+				}
+
 				&:before {
 					left: 45px;
 				}
@@ -333,6 +348,63 @@
 
   			&:before {
   				background-position: -25px -712px;
+  			}  			
+  		}
+  	}
+
+  	.team {
+
+  		&:before {
+  			width: 24px;
+  			height: 19px;
+  			left: 32px;
+  			top: 14px;
+  			background-position: -25px -771px;
+  		}
+
+  		&:hover,
+  		&.active {
+
+  			&:before {
+  				background-position: 0 -771px;
+  			}  			
+  		}
+  	}
+
+  	.exercises {
+
+  		&:before {
+  			width: 29px;
+  			height: 16px;
+  			left: 27px;
+  			top: 14px;
+  			background-position: -30px -791px;
+  		}
+
+  		&:hover,
+  		&.active {
+
+  			&:before {
+  				background-position: 0 -791px;
+  			}  			
+  		}
+  	}
+
+  	.articles {
+
+  		&:before {
+  			width: 18px;
+  			height: 22px;
+  			left: 32px;
+  			top: 14px;
+  			background-position: -19px -808px;
+  		}
+
+  		&:hover,
+  		&.active {
+
+  			&:before {
+  				background-position: 0 -808px;
   			}  			
   		}
   	}

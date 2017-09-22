@@ -20,6 +20,45 @@ $(document).ready(function() {
 		$('.side-panel').removeClass('collapsed')
 	});
 
+	//edit function for team member on new team template
+	var editBtn = $('.edit-member');
+	if(editBtn.length !== 0) {
+		editBtn.on('click', function (e) {
+			var currentRow = $(this).closest('tr');
+			$(currentRow).toggleClass('edited-row');
+			$(this).toggleClass('active');
+		});
+	}
+
+	//delete member from table
+	var deleteMember = $('.delete-member');
+	if(deleteMember.length !== 0) {
+		deleteMember.on('click', function () {
+			var currentRow = $(this).closest('tr');
+			$(currentRow).remove();
+		});
+	}
+
+	//change role for team member
+	var roles = $('.select-holder select');
+	if(roles.lenght !== 0) {
+		roles.on('change', function (e) {
+			var choosenRole = $(this).val();
+			var choosenAttr = $('option:selected', this).attr('data-role');
+			var	roleHolder = $(this).parent().siblings('.member-role');
+			roleHolder.html(choosenRole).attr('data-role', choosenAttr);
+		});
+	}
+
+	//show panel 'add new member'
+	var addBtn = $('.panel .add-btn');
+	if(addBtn.lenght !== 0) {
+		addBtn.on('click', function () {
+			$(this).toggleClass('active');
+			$('.member-form').slideToggle();
+		});
+	}
+
 	// exercise parts and types display
 	$('.section-subheading .view-toggle').on('click', function(e) {
 		e.preventDefault();
