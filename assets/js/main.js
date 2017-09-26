@@ -239,11 +239,13 @@ window.onload = function () {
 	var editDetailsBtn = document.getElementById("edit-details");
 	var inputs = document.querySelectorAll(".details .editable-input");
 	var saveDetailsBtn = document.getElementById("save-details");
+	var detailsContainer = document.querySelector('.details');
 
 	if (editDetailsBtn) {
 			editDetailsBtn.addEventListener("click", function (e) {
 			e.preventDefault();
 			saveDetailsBtn.classList.add("active");
+			detailsContainer.classList.add("edited");
 			editDetailsFunc(inputs, "edit");
 		});
 	};
@@ -252,6 +254,7 @@ window.onload = function () {
 		saveDetailsBtn.addEventListener("click", function (e) {
 			e.preventDefault();
 			saveDetailsBtn.classList.remove("active");
+			detailsContainer.classList.remove("edited");
 			editDetailsFunc(inputs, "save");
 		});
 	};
@@ -261,11 +264,13 @@ window.onload = function () {
 	var editHoursBtn = document.getElementById("edit-hours");
 	var selects = document.querySelectorAll(".worktime select");
 	var saveHoursBtn = document.getElementById("save-hours");
+	var worktimeTable = document.querySelector('.worktime')
 
 	if (editHoursBtn) {
 			editHoursBtn.addEventListener("click", function (e) {
 			e.preventDefault();
 			saveHoursBtn.classList.add("active");
+			worktimeTable.classList.add("edited");
 			editDetailsFunc(selects, 'edit');
 		});
 	}
@@ -274,6 +279,7 @@ window.onload = function () {
 		saveHoursBtn.addEventListener("click", function (e) {
 			e.preventDefault();
 			saveHoursBtn.classList.remove("active");
+			worktimeTable.classList.remove("edited");
 			editDetailsFunc(selects, "save");
 		});
 	};

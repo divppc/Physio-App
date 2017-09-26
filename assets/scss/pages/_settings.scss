@@ -90,7 +90,6 @@ section.settings {
 		    width: 22px;
 		    height: 22px;
 		    cursor: pointer;
-		    margin-left: 17px;
 		    z-index: 1;
 		    background: url(assets/images/icons.png) no-repeat 0px -456px;
 	  	}
@@ -107,7 +106,7 @@ section.settings {
 	#filename {
 		display: block;
 		height: 100%;
-		width: 256px;
+		width: 450px;
 		background: #fff;
 		padding: 0 24px;
 		line-height: 48px;
@@ -182,7 +181,7 @@ section.settings {
 		&:before {
 			width: 23px;
 			height: 16px;
-			background-position: 0 -157px;
+			background-position: -24px -157px;
 		}
 	}
 
@@ -191,7 +190,7 @@ section.settings {
 		&:before {
 			width: 21px;
 			height: 21px;
-			background-position: 0 -263px;
+			background-position: -22px -263px;
 		}
 	}
 
@@ -200,16 +199,16 @@ section.settings {
 		&:before {
 			width: 17px;
 			height: 23px;
-			background-position: 0 -89px;
+			background-position: -18px -89px;
 		}
 	}
 
 	.timezone {
 
 		&:before {
-			width: 21px;
-			height: 21px;
-			background-position: -23px -21px;
+			width: 22px;
+			height: 22px;
+			background-position: 0 -21px;
 		}
 	}
 
@@ -227,7 +226,57 @@ section.settings {
 		}
 	}
 
+	.details {
+
+		&.edited {
+
+			.details-item {
+
+				&.email {
+
+					&:before {
+						background-position: 0 -157px;
+					}
+				}
+
+				&.phone {
+
+					&:before {
+						background-position: 0 -263px;
+					}
+				}
+
+				&.address {
+
+					&:before {
+						background-position: 0 -89px;
+					}
+				}
+
+				&.timezone {
+
+					&:before {
+						background-position: -23px -21px;
+					}
+				}
+			}
+		}
+	}
+
 	.worktime {
+
+		&.edited {
+
+			td {
+
+				&:last-child {
+
+					&:before {
+						background-position: -23px -21px;
+					}
+				}
+			}
+		}
 
 		h2 {
 			margin-bottom: 21px;

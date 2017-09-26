@@ -46,14 +46,14 @@ html(lang="en")
 				.section-panel
 					h1 General
 				.settings-data
-					a(href="#" class="edit-btn" id="edit-details") Edit
+					a(href="#" class="edit-btn" id="edit-details")
 					.company
 						h2 Your Logo Company:
 						.company-logo
 							img(src="assets/images/company-logo.png", alt="")
 						.edit-logo
 							#filename
-							label(for="input-file") Edit
+							label(for="input-file")
 								input(type="file" id="input-file")
 						p.
 							Upload the logo you wish to display in the app. Must be a .jpg or .png file. We recommended 640x320 pixels for the best result.
@@ -71,6 +71,9 @@ html(lang="en")
 						.details-item.address
 							p Practice Address
 							textarea#adress(name="Practice Address" disabled class="editable-input") Level 1, 60 Halifax Street Adelaide SA 5000 Australia
+						.details-item.url
+							p Website URL
+							input(type="text" class="editable-input" disabled value="http://")
 						.details-item.timezone
 							p Timezone
 							select#timezone(name="timezone" disabled class="editable-input")
@@ -79,7 +82,7 @@ html(lang="en")
 								option(value="Australia Central Standard Time (South Australia)") Australia Central Standard Time (South Australia)
 						a(href="#" class="save-btn btn-gradient" id="save-details") Save
 				.settings-data
-					a(href="#" class="edit-btn" id="edit-hours") Edit
+					a(href="#" class="edit-btn" id="edit-hours")
 					.information
 						h2 Practice information
 						p.
