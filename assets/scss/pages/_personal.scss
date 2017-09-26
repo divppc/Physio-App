@@ -47,6 +47,13 @@ section.personal {
 		background-color: rgb(255, 255, 255);
 		min-height: 300px;
 		border-radius: 0px 0px 3px 3px;
+		position: relative;
+
+		.edit-btn {
+			position: absolute;
+			right: 20px;
+			top: 37px;
+		}
 	}
 
 	.user-photo {

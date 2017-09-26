@@ -66,6 +66,13 @@
 					left: 50px;
 				}
 			}
+
+			.profile {
+
+				&:before {
+					left: 48px;
+				}
+			}
 		}
 
 		.top-panel ul li:nth-child(3),
@@ -405,6 +412,25 @@
 
   			&:before {
   				background-position: 0 -808px;
+  			}  			
+  		}
+  	}
+
+  	.profile {
+
+  		&:before {
+  			left: 31px;
+  			top: 14px;
+  			width: 20px;
+		    height: 23px;
+		    background: url(assets/images/profile-icon.png) no-repeat 0px -23px;
+  		}
+
+  		&:hover,
+  		&.active {
+
+  			&:before {
+  				background-position: 0 0px;
   			}  			
   		}
   	}
