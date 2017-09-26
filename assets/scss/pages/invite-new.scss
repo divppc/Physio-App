@@ -50,6 +50,30 @@
 			}
 		}
 
+		.create {
+		  font-size: 14px;
+		  font-weight: 500;
+		  color: rgb(255, 255, 255);
+		  display: flex;
+		  margin-top: 4px;
+		  align-items: center;
+		  padding: 7px 15px;
+		  border-radius: 3px;
+  		background-color: rgb(111, 208, 167);
+
+  		&:after {
+  			display: block;
+  			content: '+';
+  			font-weight: bold;
+  			font-size: 18px;
+  			margin-left: 8px;
+  		}
+
+  		&:hover {
+  			background-color: darken(rgb(111, 208, 167), 3%);
+  		}
+		}
+
 		.member-btns {
 			display: flex;
 			align-items: center;
@@ -71,6 +95,17 @@
   			&:not(:last-child) {
   				margin-bottom: 4px;
   			}
+
+  			&.new-member {
+
+					.member-btns {
+						justify-content: space-between;
+					}
+
+					.mobile-alert {
+						width: 17px;
+					}			
+  			}
 			}
 
 			.send-invite {
@@ -82,10 +117,14 @@
 				width: 32px;
 				height: 32px;
 				margin-left: 20px;
-				background: url('assets/images/smartphone.png') no-repeat center / contain;
+				background: url('assets/images/smartphone.png') no-repeat left;
 
 				&.active {
-					background: url('assets/images/red_smartphone.png') no-repeat center / contain;
+					background: url('assets/images/red_smartphone.png') no-repeat left;
+				}
+
+				&.installed {
+					background: url('assets/images/smartphone-green.svg') no-repeat left;
 				}
 			}
 		}
