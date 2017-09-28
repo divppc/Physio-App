@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+html(lang="en")
+	head
+		meta(http-equiv="X-UA-Compatible" content="IE=edge")
+		meta(charset="UTF-8")
+		link(rel="stylesheet", href="https://necolas.github.io/normalize.css/3.0.2/normalize.css")
+		link(rel="stylesheet", href="https://cdn.jsdelivr.net/select2/4.0.3/css/select2.min.css")
+		link(rel="stylesheet", href="style.css")
+		link(rel="stylesheet", href="assets/css/nouislider.css")
+		title My Physio Dashboard | Card
+	body
+		section.card
+			.user-side.collapsed
+				.top-panel
+					ul
+						li
+							a(href="#" class="back" title="Back")
+						li
+							a(href="#" title="Home")
+								img(src="assets/images/main-logo.svg", alt="")
+						li
+							span My Physio
+						li.collapse-btn
+				.user
+					.user-photo.avatar
+						img(src="http://pipsum.com/100x100", alt="")
+					.user-name Serhii Hubarenko
+					.user-mail lelaquin@gmail.com	
+					.control-buttons
+						.add-mobile
+							input(type="text" value="" placeholder="Add mobile" title="Edit")			
+						a(href="#" class="add-tag-btn") Add tag
+					ul.nav-panel
+						li
+							a(href="#" class="programs active") Programs
+						li
+							a(href="#" class="settings") Settings
+						li
+							a(href="#" class="team") Team
+						li
+							a(href="#" class="exercises") Exercises
+						li
+							a(href="#" class="articles") Articles
+						li
+							a(href="#" class="insights") Insights
+						li
+							a(href="#" class="profile") Profile					
+						li
+							a(href="#" class="logout") Logout
+				.collapse-panel
+			.card-body
+				.program-head
+					.select-program
+						label(for="select-program") Select Program:
+						.select-holder
+							select#select-program.js-example-basic-single
+								option(selected disabled value="") Add new
+								optgroup(label="Group 1")
+									option(value="program1") Program for Junior
+									option(value="program2") Program for Junior
+									option(value="program3") Program for Junior
+								optgroup(label="Group 1")
+									option(value="program1") Program for Junior
+									option(value="program2") Program for Junior
+									option(value="program3") Program for Junior
+								optgroup(label="Group 1")
+									option(value="program1") Program for Junior
+									option(value="program2") Program for Junior
+									option(value="program3") Program for Junior
+						button.add-program(title="Add new")
+					.buttons
+						a(href="#" class="view") View as PDF
+				.card-container
+					.card-head
+						.status
+							.percent
+								span 7%
+							.program-data
+								.program-name Program for Junior
+								ul.rate
+									li.active
+									li.active
+									li.active
+									li
+									li
+						.head-filters
+							.filters
+								.filter
+									label(for="times") Times per Week
+									.input-number
+										input(type="number" value="1" min="1")
+										.controls
+											a(href="#" class="more")
+											a(href="#" class="less")
+								.filter
+									label(for="for") For
+									.input-select
+										select#for(name="for")
+											option(value="" selected disabled) Select
+											option(value="1") 1
+											option(value="2") 2
+											option(value="3") 3
+								.filter
+									label(for="start-date") Day Start Date
+									.input-date
+										input(type="text" id="start-date" placeholder="11/02/2017")
+							//- a(href="#" class="pain-scale") Pain Scale
+					.desk
+						.desk-head
+							h1.name Side Lying Internal Rotation
+							.control-btns
+								a(href="#" class="edit")
+								a(href="#" class="remove")
+						.desk-data
+							.preview
+								a(href="#" class="play-btn")
+								img(src="http://pipsum.com/800x600", alt="")
+							.program-settings
+								.field
+									.item
+										label(for="hold-time") Hold Time
+										.range-holder
+											#card-range
+									.item
+										label(for="sec") sec
+										input(type="text" id="sec" value="20")
+								.field
+									.item
+										label(for="select-side") Select Side
+										.input-select
+											select#select-side(name="select-side")
+												option(value="" selected disabled) Select
+												option(value="1") 1
+												option(value="2") 2
+												option(value="3") 3
+								.field
+									.item
+										label(for="sets") Sets
+										.input-number
+											input(type="number" value="1" min="1")
+											.controls
+												a(href="#" class="more")
+												a(href="#" class="less")
+									.item
+										label(for="rest") rest
+											a(href="#" class="info")
+												img(src="assets/images/tip.svg", alt="")
+										.input-number
+											input(type="number" value="1" min="1")
+											.controls
+												a(href="#" class="more")
+												a(href="#" class="less")
+							//- .note
+							//- 	.note-head
+							//- 		.note-name Test Note
+							//- 		.control-btns
+							//- 			a(href="#" class="edit")
+							//- 			a(href="#" class="remove")
+							//- 	.note-body
+							//- 		p.
+							//- 			First of all, acid reflux is not a disease.  It is an acquired condition which can be completely healed by eating properly. I wonder if people had acid reflux, gerd and heartburn a thousand years ago. I sincerely doubt it. I believe it is a symptom of the quality of the food we eat today, our eating habits
+					ul.desk-list
+						li.list-item
+							.control-btns
+								a(href="#" class="move")
+								a(href="#" class="edit")
+								a(href="#" class="remove")
+							.item-picture
+								img(src="http://pipsum.com/300x300", alt="")
+							.item-name.
+								Side Lying Internal Rotation
+						li.list-item
+							.control-btns
+								a(href="#" class="move")
+								a(href="#" class="edit")
+								a(href="#" class="remove")
+							.item-picture
+								img(src="http://pipsum.com/300x300", alt="")
+							.item-name.
+								Side Lying Internal Rotation
+						li.list-item
+							.control-btns
+								a(href="#" class="move")
+								a(href="#" class="edit")
+								a(href="#" class="remove")
+							.item-picture
+								img(src="http://pipsum.com/300x300", alt="")
+							.item-name.
+								Side Lying Internal Rotation
+						li.list-item
+							.control-btns
+								a(href="#" class="move")
+								a(href="#" class="edit")
+								a(href="#" class="remove")
+							.item-picture
+								img(src="http://pipsum.com/300x300", alt="")
+							.item-name.
+								Side Lying Internal Rotation
+						li.list-item
+							.control-btns
+								a(href="#" class="move")
+								a(href="#" class="edit")
+								a(href="#" class="remove")
+							.item-picture
+								img(src="http://pipsum.com/300x300", alt="")
+							.item-name.
+								Side Lying Internal Rotation
+						li.list-item.note
+							.control-btns
+								a(href="#" class="move")
+								a(href="#" class="edit")
+								a(href="#" class="remove")
+							.note-name Test Note
+							.note-body
+								p.
+									First of all, acid reflux is not a disease.  It is an acquired condition which
+						li.list-item.painscale
+							.control-btns
+								a(href="#" class="move")
+								a(href="#" class="edit")
+								a(href="#" class="remove")
+							span Pain Scale
+		
+		.right-panel#tabs.collapsed
+			a(href="#" class='panel-search')
+				img(src="assets/images/search-icon-white.svg", alt="Search")
+			.collapse-panel
+			.panel-tabs
+				ul
+					li
+						a(href="#exercises-tab") 
+							span Exercises
+					li
+						a(href="#tools-tab") 
+							span Tools
+					li
+						a(href="#articles-tab") 
+							span Articles
+			.tab#articles-tab
+				.subtitle Articles
+				form.search-form
+					input(type="text" placeholder="Search" required)
+					button(type="submit" title="Submit")
+				ul.side-articles
+					li
+						.article-title.
+							Getting The Upper Hand On Asthma Allergy
+						.article-body.
+							I no longer miss work to go to the doctor. I no longer wait hours sitting in a doctors office just to see the doctor. In the past, after seeing the doctor, I now no longer have to wait at a
+					li
+						.article-title.
+							Getting The Upper Hand On Asthma Allergy
+						.article-body.
+							I no longer miss work to go to the doctor. I no longer wait hours sitting in a doctors office just to see the doctor. In the past, after seeing the doctor, I now no longer have to wait at a
+					li
+						.article-title.
+							Getting The Upper Hand On Asthma Allergy
+						.article-body.
+							I no longer miss work to go to the doctor. I no longer wait hours sitting in a doctors office just to see the doctor. In the past, after seeing the doctor, I now no longer have to wait at a
+			.tab#tools-tab
+				.subtitle Tools
+				form.search-form
+					input(type="text" placeholder="Search" required)
+					button(type="submit" title="Submit")
+				.add-tools
+					.tool.note
+						.tool-name Add Note
+						a(href="#" class="add-tool" title="Add")
+					.tool.pain-scale
+						.tool-name Pain Scale
+						a(href="#" class="add-tool" title="Add")
+					.tool.note
+						.tool-name Motivational Quotes
+						a(href="#" class="add-tool" title="Add")
+			.tab#exercises-tab
+				.subtitle Exercises
+				form.search-form
+					input(type="text" placeholder="Search" required)
+					button(type="submit" title="Submit")
+				ul.list-of-buttons
+					li
+						a(href="#" class="active") All
+					li
+						a(href="#") Realese
+					li
+						a(href="#") Stretch
+					li
+						a(href="#") Posture.
+					li
+						a(href="#") Self Mob.
+					li
+						a(href="#") Post Op.
+					li
+						a(href="#") Proproception.
+					li
+						a(href="#") Neutral Mob.
+					li
+						a(href="#") Assessment Tools
+				.parts
+					.select-holder
+						select#parts(name="parts")
+							option(value="all") All parts
+							option(value="all") All parts
+							option(value="all") All parts
+				ul.exercises-list
+					li
+						.item-photo
+							img(src="http://pipsum.com/400x400", alt="")
+						.item-name Side Lying Internal Rotation
+					li
+						.item-photo
+							img(src="http://pipsum.com/400x400", alt="")
+						.item-name Side Lying Internal Rotation
+					li
+						.item-photo
+							img(src="http://pipsum.com/400x400", alt="")
+						.item-name Side Lying Internal Rotation
+					li
+						.item-photo
+							img(src="http://pipsum.com/400x400", alt="")
+						.item-name Side Lying Internal Rotation
+					li
+						.item-photo
+							img(src="http://pipsum.com/400x400", alt="")
+						.item-name Side Lying Internal Rotation
+					li
+						.item-photo
+							img(src="http://pipsum.com/400x400", alt="")
+						.item-name Side Lying Internal Rotation
+					li
+						.item-photo
+							img(src="http://pipsum.com/400x400", alt="")
+						.item-name Side Lying Internal Rotation
+					li
+						.item-photo
+							img(src="http://pipsum.com/400x400", alt="")
+						.item-name Side Lying Internal Rotation
+					li
+						.item-photo
+							img(src="http://pipsum.com/400x400", alt="")
+						.item-name Side Lying Internal Rotation
+		script(src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous")
+		script(src="assets/js/nouislider.min.js")
+		script(src="assets/js/jquery-ui.min.js")
+		script(src="https://cdn.jsdelivr.net/select2/4.0.3/js/select2.full.min.js")
+		script(src="https://content.jwplatform.com/libraries/QD1ITVfl.js")
+		script(src="assets/js/main.js")

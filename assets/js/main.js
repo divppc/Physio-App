@@ -1,5 +1,17 @@
 $(document).ready(function() {
 
+	//colapse right side
+	$('.right-panel .collapse-panel').on('click', function () {
+		$('.right-panel').toggleClass('collapsed');
+	});
+
+	$('.panel-tabs a').on('click', function (e) {
+		e.preventDefault();
+		if ($('.right-panel').hasClass('collapsed')) {
+			$('.right-panel').removeClass('collapsed');
+		}		
+	});
+
 	//colapse user side
 	$('.user-side .collapse-btn').on('click', function() {
 		$('.user-side').addClass('collapsed');
@@ -100,6 +112,29 @@ $(document).ready(function() {
       nextArrow: '.arrow-right'
 		});
   };
+
+  //custom input number
+  var moreBtn = $('.controls .more'),
+  		lessBtn = $('.controls .less');
+
+  moreBtn.on('click', function(e) {
+  	e.preventDefault();
+  	var input = $(this).parent().siblings('input'),
+  			currentValue = input.val();
+  	input.val(++currentValue);
+  });
+
+  lessBtn.on('click', function(e) {
+  	e.preventDefault();
+  	var input = $(this).parent().siblings('input'),
+  			currentValue = input.val();
+  			if (currentValue-1 !== 0) {
+  				input.val(--currentValue);
+  			}
+  });
+
+  $("#start-date").datepicker();
+
 });
 
 
@@ -297,8 +332,28 @@ window.onload = function () {
 	var range1 = document.getElementById('range1'),
 			range2 = document.getElementById('range2'),
 			range3 = document.getElementById('range3'),
-			range4 = document.getElementById('range4');
+			range4 = document.getElementById('range4'),
+			range5 = document.getElementById('card-range');
 
+	noUiSlider.create(range5, {
+		start: [ 20 ],
+		connect: [false, true],
+		range: {
+			'min': [  1 ],
+			'max': [ 200 ]
+		}
+	});
+
+	var outputRange5 = document.getElementById('sec');
+
+	range5.noUiSlider.on('update', function( values, handle ) {
+		var value = values[handle];
+		outputRange5.value = Math.round(value);
+
+		//you can write additional function here, which will work after slider changed
+
+
+	});
 
 	noUiSlider.create(range1, {
 		start: [ 2 ],

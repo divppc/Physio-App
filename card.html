@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/3.0.2/normalize.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/select2/4.0.3/css/select2.min.css"/>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="assets/css/nouislider.css"/>
+    <title>My Physio Dashboard | Card</title>
+  </head>
+  <body>
+    <section class="card">
+      <div class="user-side collapsed">
+        <div class="top-panel">
+          <ul>
+            <li><a href="#" title="Back" class="back"></a></li>
+            <li><a href="#" title="Home"><img src="assets/images/main-logo.svg" alt=""/></a></li>
+            <li><span>My Physio</span></li>
+            <li class="collapse-btn"></li>
+          </ul>
+        </div>
+        <div class="user">
+          <div class="user-photo avatar"><img src="http://pipsum.com/100x100" alt=""/></div>
+          <div class="user-name">Serhii Hubarenko</div>
+          <div class="user-mail">lelaquin@gmail.com	</div>
+          <div class="control-buttons">
+            <div class="add-mobile">
+              <input type="text" value="" placeholder="Add mobile" title="Edit"/>
+            </div><a href="#" class="add-tag-btn">Add tag</a>
+          </div>
+          <ul class="nav-panel">
+            <li><a href="#" class="programs active">Programs</a></li>
+            <li><a href="#" class="settings">Settings</a></li>
+            <li><a href="#" class="team">Team</a></li>
+            <li><a href="#" class="exercises">Exercises</a></li>
+            <li><a href="#" class="articles">Articles</a></li>
+            <li><a href="#" class="insights">Insights</a></li>
+            <li><a href="#" class="profile">Profile					</a></li>
+            <li><a href="#" class="logout">Logout</a></li>
+          </ul>
+        </div>
+        <div class="collapse-panel"></div>
+      </div>
+      <div class="card-body">
+        <div class="program-head">
+          <div class="select-program">
+            <label for="select-program">Select Program:</label>
+            <div class="select-holder">
+              <select id="select-program" class="js-example-basic-single">
+                <option selected="selected" disabled="disabled" value="">Add new</option>
+                <optgroup label="Group 1">
+                  <option value="program1">Program for Junior</option>
+                  <option value="program2">Program for Junior</option>
+                  <option value="program3">Program for Junior</option>
+                </optgroup>
+                <optgroup label="Group 1">
+                  <option value="program1">Program for Junior</option>
+                  <option value="program2">Program for Junior</option>
+                  <option value="program3">Program for Junior</option>
+                </optgroup>
+                <optgroup label="Group 1">
+                  <option value="program1">Program for Junior</option>
+                  <option value="program2">Program for Junior</option>
+                  <option value="program3">Program for Junior</option>
+                </optgroup>
+              </select>
+            </div>
+            <button title="Add new" class="add-program"></button>
+          </div>
+          <div class="buttons"><a href="#" class="view">View as PDF</a></div>
+        </div>
+        <div class="card-container">
+          <div class="card-head">
+            <div class="status">
+              <div class="percent"><span>7%</span></div>
+              <div class="program-data">
+                <div class="program-name">Program for Junior</div>
+                <ul class="rate">
+                  <li class="active"></li>
+                  <li class="active"></li>
+                  <li class="active"></li>
+                  <li></li>
+                  <li></li>
+                </ul>
+              </div>
+            </div>
+            <div class="head-filters">
+              <div class="filters">
+                <div class="filter">
+                  <label for="times">Times per Week</label>
+                  <div class="input-number">
+                    <input type="number" value="1" min="1"/>
+                    <div class="controls"><a href="#" class="more"></a><a href="#" class="less"></a></div>
+                  </div>
+                </div>
+                <div class="filter">
+                  <label for="for">For</label>
+                  <div class="input-select">
+                    <select id="for" name="for">
+                      <option value="" selected="selected" disabled="disabled">Select</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="filter">
+                  <label for="start-date">Day Start Date</label>
+                  <div class="input-date">
+                    <input type="text" id="start-date" placeholder="11/02/2017"/>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="desk">
+            <div class="desk-head">
+              <h1 class="name">Side Lying Internal Rotation</h1>
+              <div class="control-btns"><a href="#" class="edit"></a><a href="#" class="remove"></a></div>
+            </div>
+            <div class="desk-data">
+              <div class="preview"><a href="#" class="play-btn"></a><img src="http://pipsum.com/800x600" alt=""/></div>
+              <div class="program-settings">
+                <div class="field">
+                  <div class="item">
+                    <label for="hold-time">Hold Time</label>
+                    <div class="range-holder">
+                      <div id="card-range"></div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <label for="sec">sec</label>
+                    <input type="text" id="sec" value="20"/>
+                  </div>
+                </div>
+                <div class="field">
+                  <div class="item">
+                    <label for="select-side">Select Side</label>
+                    <div class="input-select">
+                      <select id="select-side" name="select-side">
+                        <option value="" selected="selected" disabled="disabled">Select</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="field">
+                  <div class="item">
+                    <label for="sets">Sets</label>
+                    <div class="input-number">
+                      <input type="number" value="1" min="1"/>
+                      <div class="controls"><a href="#" class="more"></a><a href="#" class="less"></a></div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <label for="rest">rest<a href="#" class="info"><img src="assets/images/tip.svg" alt=""/></a></label>
+                    <div class="input-number">
+                      <input type="number" value="1" min="1"/>
+                      <div class="controls"><a href="#" class="more"></a><a href="#" class="less"></a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ul class="desk-list">
+            <li class="list-item">
+              <div class="control-btns"><a href="#" class="move"></a><a href="#" class="edit"></a><a href="#" class="remove"></a></div>
+              <div class="item-picture"><img src="http://pipsum.com/300x300" alt=""/></div>
+              <div class="item-name">Side Lying Internal Rotation</div>
+            </li>
+            <li class="list-item">
+              <div class="control-btns"><a href="#" class="move"></a><a href="#" class="edit"></a><a href="#" class="remove"></a></div>
+              <div class="item-picture"><img src="http://pipsum.com/300x300" alt=""/></div>
+              <div class="item-name">Side Lying Internal Rotation</div>
+            </li>
+            <li class="list-item">
+              <div class="control-btns"><a href="#" class="move"></a><a href="#" class="edit"></a><a href="#" class="remove"></a></div>
+              <div class="item-picture"><img src="http://pipsum.com/300x300" alt=""/></div>
+              <div class="item-name">Side Lying Internal Rotation</div>
+            </li>
+            <li class="list-item">
+              <div class="control-btns"><a href="#" class="move"></a><a href="#" class="edit"></a><a href="#" class="remove"></a></div>
+              <div class="item-picture"><img src="http://pipsum.com/300x300" alt=""/></div>
+              <div class="item-name">Side Lying Internal Rotation</div>
+            </li>
+            <li class="list-item">
+              <div class="control-btns"><a href="#" class="move"></a><a href="#" class="edit"></a><a href="#" class="remove"></a></div>
+              <div class="item-picture"><img src="http://pipsum.com/300x300" alt=""/></div>
+              <div class="item-name">Side Lying Internal Rotation</div>
+            </li>
+            <li class="list-item note">
+              <div class="control-btns"><a href="#" class="move"></a><a href="#" class="edit"></a><a href="#" class="remove"></a></div>
+              <div class="note-name">Test Note</div>
+              <div class="note-body">
+                <p>First of all, acid reflux is not a disease.  It is an acquired condition which</p>
+              </div>
+            </li>
+            <li class="list-item painscale">
+              <div class="control-btns"><a href="#" class="move"></a><a href="#" class="edit"></a><a href="#" class="remove"></a></div><span>Pain Scale</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <div id="tabs" class="right-panel collapsed"><a href="#" class="panel-search"><img src="assets/images/search-icon-white.svg" alt="Search"/></a>
+      <div class="collapse-panel"></div>
+      <div class="panel-tabs">
+        <ul>
+          <li><a href="#exercises-tab"> <span>Exercises</span></a></li>
+          <li><a href="#tools-tab"> <span>Tools</span></a></li>
+          <li><a href="#articles-tab"> <span>Articles</span></a></li>
+        </ul>
+      </div>
+      <div id="articles-tab" class="tab">
+        <div class="subtitle">Articles</div>
+        <form class="search-form">
+          <input type="text" placeholder="Search" required="required"/>
+          <button type="submit" title="Submit"></button>
+        </form>
+        <ul class="side-articles">
+          <li>
+            <div class="article-title">Getting The Upper Hand On Asthma Allergy</div>
+            <div class="article-body">I no longer miss work to go to the doctor. I no longer wait hours sitting in a doctors office just to see the doctor. In the past, after seeing the doctor, I now no longer have to wait at a</div>
+          </li>
+          <li>
+            <div class="article-title">Getting The Upper Hand On Asthma Allergy</div>
+            <div class="article-body">I no longer miss work to go to the doctor. I no longer wait hours sitting in a doctors office just to see the doctor. In the past, after seeing the doctor, I now no longer have to wait at a</div>
+          </li>
+          <li>
+            <div class="article-title">Getting The Upper Hand On Asthma Allergy</div>
+            <div class="article-body">I no longer miss work to go to the doctor. I no longer wait hours sitting in a doctors office just to see the doctor. In the past, after seeing the doctor, I now no longer have to wait at a</div>
+          </li>
+        </ul>
+      </div>
+      <div id="tools-tab" class="tab">
+        <div class="subtitle">Tools</div>
+        <form class="search-form">
+          <input type="text" placeholder="Search" required="required"/>
+          <button type="submit" title="Submit"></button>
+        </form>
+        <div class="add-tools">
+          <div class="tool note">
+            <div class="tool-name">Add Note</div><a href="#" title="Add" class="add-tool"></a>
+          </div>
+          <div class="tool pain-scale">
+            <div class="tool-name">Pain Scale</div><a href="#" title="Add" class="add-tool"></a>
+          </div>
+          <div class="tool note">
+            <div class="tool-name">Motivational Quotes</div><a href="#" title="Add" class="add-tool"></a>
+          </div>
+        </div>
+      </div>
+      <div id="exercises-tab" class="tab">
+        <div class="subtitle">Exercises</div>
+        <form class="search-form">
+          <input type="text" placeholder="Search" required="required"/>
+          <button type="submit" title="Submit"></button>
+        </form>
+        <ul class="list-of-buttons">
+          <li><a href="#" class="active">All</a></li>
+          <li><a href="#">Realese</a></li>
+          <li><a href="#">Stretch</a></li>
+          <li><a href="#">Posture.</a></li>
+          <li><a href="#">Self Mob.</a></li>
+          <li><a href="#">Post Op.</a></li>
+          <li><a href="#">Proproception.</a></li>
+          <li><a href="#">Neutral Mob.</a></li>
+          <li><a href="#">Assessment Tools</a></li>
+        </ul>
+        <div class="parts">
+          <div class="select-holder">
+            <select id="parts" name="parts">
+              <option value="all">All parts</option>
+              <option value="all">All parts</option>
+              <option value="all">All parts</option>
+            </select>
+          </div>
+        </div>
+        <ul class="exercises-list">
+          <li>
+            <div class="item-photo"><img src="http://pipsum.com/400x400" alt=""/></div>
+            <div class="item-name">Side Lying Internal Rotation</div>
+          </li>
+          <li>
+            <div class="item-photo"><img src="http://pipsum.com/400x400" alt=""/></div>
+            <div class="item-name">Side Lying Internal Rotation</div>
+          </li>
+          <li>
+            <div class="item-photo"><img src="http://pipsum.com/400x400" alt=""/></div>
+            <div class="item-name">Side Lying Internal Rotation</div>
+          </li>
+          <li>
+            <div class="item-photo"><img src="http://pipsum.com/400x400" alt=""/></div>
+            <div class="item-name">Side Lying Internal Rotation</div>
+          </li>
+          <li>
+            <div class="item-photo"><img src="http://pipsum.com/400x400" alt=""/></div>
+            <div class="item-name">Side Lying Internal Rotation</div>
+          </li>
+          <li>
+            <div class="item-photo"><img src="http://pipsum.com/400x400" alt=""/></div>
+            <div class="item-name">Side Lying Internal Rotation</div>
+          </li>
+          <li>
+            <div class="item-photo"><img src="http://pipsum.com/400x400" alt=""/></div>
+            <div class="item-name">Side Lying Internal Rotation</div>
+          </li>
+          <li>
+            <div class="item-photo"><img src="http://pipsum.com/400x400" alt=""/></div>
+            <div class="item-name">Side Lying Internal Rotation</div>
+          </li>
+          <li>
+            <div class="item-photo"><img src="http://pipsum.com/400x400" alt=""/></div>
+            <div class="item-name">Side Lying Internal Rotation</div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="assets/js/nouislider.min.js"></script>
+    <script src="assets/js/jquery-ui.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/select2/4.0.3/js/select2.full.min.js"></script>
+    <script src="https://content.jwplatform.com/libraries/QD1ITVfl.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
