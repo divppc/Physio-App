@@ -76,7 +76,6 @@ section.team {
 		.sortable-table-item {
 			color: inherit;
 			display: flex;
-			justify-content: center;
 			align-items: center;
 
 			&:after {
@@ -127,6 +126,10 @@ section.team {
 
 			  &:nth-child(3) {
 					padding-left: 40px;
+				}
+
+				a {
+					color: inherit;
 				}
   		}
 		}
