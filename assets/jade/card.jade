@@ -87,11 +87,12 @@ html(lang="en")
 							.filters
 								.filter
 									label(for="times") Times per Week
-									.input-number
-										input(type="number" value="1" min="1")
-										.controls
-											a(href="#" class="more")
-											a(href="#" class="less")
+									.input-select
+										select#for(name="times")
+											option(value="" selected disabled) Select
+											option(value="1") 1
+											option(value="2") 2
+											option(value="3") 3
 								.filter
 									label(for="for") For
 									.input-select
@@ -104,7 +105,6 @@ html(lang="en")
 									label(for="start-date") Day Start Date
 									.input-date
 										input(type="text" id="start-date" placeholder="11/02/2017")
-							//- a(href="#" class="pain-scale") Pain Scale
 					.desk
 						.desk-head
 							h1.name Side Lying Internal Rotation
@@ -120,10 +120,18 @@ html(lang="en")
 									.item
 										label(for="hold-time") Hold Time
 										.range-holder
-											#card-range
+											#card-hold-time.card-range-slider
 									.item
 										label(for="sec") sec
 										input(type="text" id="sec" value="20")
+								.field
+									.item
+										label(for="reps") Reps
+										.range-holder
+											#card-reps.card-range-slider
+									.item
+										label(for="reps-count")
+										input(type="text" id="reps-count" value="1")
 								.field
 									.item
 										label(for="select-side") Select Side
@@ -277,31 +285,75 @@ html(lang="en")
 				form.search-form
 					input(type="text" placeholder="Search" required)
 					button(type="submit" title="Submit")
-				ul.list-of-buttons
-					li
-						a(href="#" class="active") All
-					li
-						a(href="#") Realese
-					li
-						a(href="#") Stretch
-					li
-						a(href="#") Posture.
-					li
-						a(href="#") Self Mob.
-					li
-						a(href="#") Post Op.
-					li
-						a(href="#") Proproception.
-					li
-						a(href="#") Neutral Mob.
-					li
-						a(href="#") Assessment Tools
-				.parts
-					.select-holder
-						select#parts(name="parts")
-							option(value="all") All parts
-							option(value="all") All parts
-							option(value="all") All parts
+				//- ul.list-of-buttons
+				//- 	li
+				//- 		a(href="#" class="active") All
+				//- 	li
+				//- 		a(href="#") Realese
+				//- 	li
+				//- 		a(href="#") Stretch
+				//- 	li
+				//- 		a(href="#") Posture.
+				//- 	li
+				//- 		a(href="#") Self Mob.
+				//- 	li
+				//- 		a(href="#") Post Op.
+				//- 	li
+				//- 		a(href="#") Proproception.
+				//- 	li
+				//- 		a(href="#") Neutral Mob.
+				//- 	li
+				//- 		a(href="#") Assessment Tools
+				//- .parts
+				//- 	.select-holder
+				//- 		select#parts(name="parts")
+				//- 			option(value="all") All parts
+				//- 			option(value="all") All parts
+				//- 			option(value="all") All parts
+				.exercises-types
+					.section-subheading Exercises types
+						a(href="#" class="view-toggle") 
+					ul.list-of-buttons
+						li
+							a(href="#" class="active") All
+						li
+							a(href="#") Realese
+						li
+							a(href="#") Stretch
+						li
+							a(href="#") Posture.
+						li
+							a(href="#") Self Mob.
+						li
+							a(href="#") Post Op.
+						li
+							a(href="#") Proproception.
+						li
+							a(href="#") Neutral Mob.
+						li
+							a(href="#") Assessment Tools
+				.exercises-parts
+					.section-subheading Exercises parts
+						a(href="#" class="view-toggle") 
+					ul.list-of-buttons
+						li
+							a(href="#" class="active") All
+						li
+							a(href="#") Realese
+						li
+							a(href="#") Stretch
+						li
+							a(href="#") Posture.
+						li
+							a(href="#") Self Mob.
+						li
+							a(href="#") Post Op.
+						li
+							a(href="#") Proproception.
+						li
+							a(href="#") Neutral Mob.
+						li
+							a(href="#") Assessment Tools
 				ul.exercises-list
 					li
 						.item-photo

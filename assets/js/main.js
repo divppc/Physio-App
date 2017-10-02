@@ -333,7 +333,8 @@ window.onload = function () {
 			range2 = document.getElementById('range2'),
 			range3 = document.getElementById('range3'),
 			range4 = document.getElementById('range4'),
-			range5 = document.getElementById('card-range');
+			range5 = document.getElementById('card-hold-time'),
+			range6 = document.getElementById('card-reps');
 
 	noUiSlider.create(range5, {
 		start: [ 20 ],
@@ -355,73 +356,93 @@ window.onload = function () {
 
 	});
 
-	noUiSlider.create(range1, {
-		start: [ 2 ],
+	noUiSlider.create(range6, {
+		start: [ 1 ],
 		connect: [false, true],
 		range: {
 			'min': [  1 ],
-			'max': [ 10 ]
+			'max': [ 20 ]
 		}
 	});
 
-	var outputRange1 = document.getElementById('range1-output');
+	var outputRange6 = document.getElementById('reps-count');
 
-	range1.noUiSlider.on('update', function( values, handle ) {
+	range6.noUiSlider.on('update', function( values, handle ) {
 		var value = values[handle];
-		outputRange1.value = Math.round(value);
+		outputRange6.value = Math.round(value);
 
 		//you can write additional function here, which will work after slider changed
 
 
 	});
 
-	noUiSlider.create(range2, {
-		start: [ 5 ],
-		connect: [false, true],
-		range: {
-			'min': [  1 ],
-			'max': [ 10 ]
-		}
-	});
+	// noUiSlider.create(range1, {
+	// 	start: [ 2 ],
+	// 	connect: [false, true],
+	// 	range: {
+	// 		'min': [  1 ],
+	// 		'max': [ 10 ]
+	// 	}
+	// });
 
-	var outputRange2 = document.getElementById('range2-output');
+	// var outputRange1 = document.getElementById('range1-output');
 
-	range2.noUiSlider.on('update', function( values, handle ) {
-		var value = values[handle];
-		outputRange2.value = Math.round(value);	
-	});
+	// range1.noUiSlider.on('update', function( values, handle ) {
+	// 	var value = values[handle];
+	// 	outputRange1.value = Math.round(value);
 
-	noUiSlider.create(range3, {
-		start: [ 1 ],
-		connect: [false, true],
-		range: {
-			'min': [  1 ],
-			'max': [ 5 ]
-		}
-	});
+	// 	//you can write additional function here, which will work after slider changed
 
-	var outputRange3 = document.getElementById('range3-output');
 
-	range3.noUiSlider.on('update', function( values, handle ) {
-		var value = values[handle];
-		outputRange3.value = Math.round(value);	
-	});
+	// });
 
-	noUiSlider.create(range4, {
-		start: [ 3 ],
-		connect: [false, true],
-		range: {
-			'min': [  1 ],
-			'max': [ 10 ]
-		}
-	});
+	// noUiSlider.create(range2, {
+	// 	start: [ 5 ],
+	// 	connect: [false, true],
+	// 	range: {
+	// 		'min': [  1 ],
+	// 		'max': [ 10 ]
+	// 	}
+	// });
 
-	var outputRange4 = document.getElementById('range4-output');
+	// var outputRange2 = document.getElementById('range2-output');
 
-	range4.noUiSlider.on('update', function( values, handle ) {
-		var value = values[handle];
-		outputRange4.value = Math.round(value);	
-	});
+	// range2.noUiSlider.on('update', function( values, handle ) {
+	// 	var value = values[handle];
+	// 	outputRange2.value = Math.round(value);	
+	// });
+
+	// noUiSlider.create(range3, {
+	// 	start: [ 1 ],
+	// 	connect: [false, true],
+	// 	range: {
+	// 		'min': [  1 ],
+	// 		'max': [ 5 ]
+	// 	}
+	// });
+
+	// var outputRange3 = document.getElementById('range3-output');
+
+	// range3.noUiSlider.on('update', function( values, handle ) {
+	// 	var value = values[handle];
+	// 	outputRange3.value = Math.round(value);	
+	// });
+
+	// noUiSlider.create(range4, {
+	// 	start: [ 3 ],
+	// 	connect: [false, true],
+	// 	range: {
+	// 		'min': [  1 ],
+	// 		'max': [ 10 ]
+	// 	}
+	// });
+
+	// var outputRange4 = document.getElementById('range4-output');
+
+	// range4.noUiSlider.on('update', function( values, handle ) {
+	// 	var value = values[handle];
+	// 	outputRange4.value = Math.round(value);	
+	// });
 
 	//costom select
 	$(".js-example-basic-single").select2();

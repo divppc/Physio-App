@@ -379,7 +379,7 @@ section.card {
 				margin-bottom: 20px;
 			}
 
-			&:nth-child(2) {
+			&:nth-child(3) {
 
 				.item {
 					width: 100%;
@@ -424,7 +424,8 @@ section.card {
 	    border: solid 1px #d1dce4;
 		}
 
-		#sec {
+		#sec,
+		#reps-count {
 			width: 45px;
 			padding: 0 5px;
 			text-align: center;
@@ -636,6 +637,34 @@ section.card {
 			}
 		}
 	}
+
+	.section-subheading {
+    font-size: 16px;
+    font-family: "ProximaNovaBold";
+    letter-spacing: -0.1px;
+    color: white;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+    .view-toggle {
+    	display: block;
+    	transition: none;
+	    width: 14px;
+	    -webkit-flex-shrink: 0;
+	    -ms-flex-negative: 0;
+	    flex-shrink: 0;
+	    height: 14px;
+	    background: url(assets/images/icons.png) no-repeat 0px -415px;
+
+	    &.active {
+	    	height: 3px;
+	    	background: #fff;
+	    }
+    }
+  }
 
 	.panel-tabs {
 		padding: 45px 45px 0 24px;
@@ -895,8 +924,12 @@ section.card {
   	padding: 28px 0 8px 0;
   	display: flex;
   	flex-wrap: wrap;
-  	display: flex;
   	border-bottom: 1px dashed rgba(207, 216, 220, 0.5);
+  	display: none;
+
+  	&.active {
+  		display: flex;
+  	}
 
   	li {
   		margin-bottom: 16px;
@@ -944,7 +977,7 @@ section.card {
   	display: flex;
   	flex-wrap: wrap;
   	max-width: 582px;
-  	margin: 0 auto;
+  	margin: 10px auto 0;
   	padding-bottom: 30px;
   	counter-reset: item;
 
@@ -1011,7 +1044,7 @@ section.card {
 	max-width: 787px;
 }
 
-#card-range {
+.card-range-slider {
 	margin: 19px 12px;
 
 	.noUi-base {

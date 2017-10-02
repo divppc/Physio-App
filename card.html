@@ -89,9 +89,13 @@
               <div class="filters">
                 <div class="filter">
                   <label for="times">Times per Week</label>
-                  <div class="input-number">
-                    <input type="number" value="1" min="1"/>
-                    <div class="controls"><a href="#" class="more"></a><a href="#" class="less"></a></div>
+                  <div class="input-select">
+                    <select id="for" name="times">
+                      <option value="" selected="selected" disabled="disabled">Select</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                    </select>
                   </div>
                 </div>
                 <div class="filter">
@@ -126,12 +130,24 @@
                   <div class="item">
                     <label for="hold-time">Hold Time</label>
                     <div class="range-holder">
-                      <div id="card-range"></div>
+                      <div id="card-hold-time" class="card-range-slider"></div>
                     </div>
                   </div>
                   <div class="item">
                     <label for="sec">sec</label>
                     <input type="text" id="sec" value="20"/>
+                  </div>
+                </div>
+                <div class="field">
+                  <div class="item">
+                    <label for="reps">Reps</label>
+                    <div class="range-holder">
+                      <div id="card-reps" class="card-range-slider"></div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <label for="reps-count"></label>
+                    <input type="text" id="reps-count" value="1"/>
                   </div>
                 </div>
                 <div class="field">
@@ -260,25 +276,33 @@
           <input type="text" placeholder="Search" required="required"/>
           <button type="submit" title="Submit"></button>
         </form>
-        <ul class="list-of-buttons">
-          <li><a href="#" class="active">All</a></li>
-          <li><a href="#">Realese</a></li>
-          <li><a href="#">Stretch</a></li>
-          <li><a href="#">Posture.</a></li>
-          <li><a href="#">Self Mob.</a></li>
-          <li><a href="#">Post Op.</a></li>
-          <li><a href="#">Proproception.</a></li>
-          <li><a href="#">Neutral Mob.</a></li>
-          <li><a href="#">Assessment Tools</a></li>
-        </ul>
-        <div class="parts">
-          <div class="select-holder">
-            <select id="parts" name="parts">
-              <option value="all">All parts</option>
-              <option value="all">All parts</option>
-              <option value="all">All parts</option>
-            </select>
-          </div>
+        <div class="exercises-types">
+          <div class="section-subheading">Exercises types<a href="#" class="view-toggle"> </a></div>
+          <ul class="list-of-buttons">
+            <li><a href="#" class="active">All</a></li>
+            <li><a href="#">Realese</a></li>
+            <li><a href="#">Stretch</a></li>
+            <li><a href="#">Posture.</a></li>
+            <li><a href="#">Self Mob.</a></li>
+            <li><a href="#">Post Op.</a></li>
+            <li><a href="#">Proproception.</a></li>
+            <li><a href="#">Neutral Mob.</a></li>
+            <li><a href="#">Assessment Tools</a></li>
+          </ul>
+        </div>
+        <div class="exercises-parts">
+          <div class="section-subheading">Exercises parts<a href="#" class="view-toggle"> </a></div>
+          <ul class="list-of-buttons">
+            <li><a href="#" class="active">All</a></li>
+            <li><a href="#">Realese</a></li>
+            <li><a href="#">Stretch</a></li>
+            <li><a href="#">Posture.</a></li>
+            <li><a href="#">Self Mob.</a></li>
+            <li><a href="#">Post Op.</a></li>
+            <li><a href="#">Proproception.</a></li>
+            <li><a href="#">Neutral Mob.</a></li>
+            <li><a href="#">Assessment Tools</a></li>
+          </ul>
         </div>
         <ul class="exercises-list">
           <li>
