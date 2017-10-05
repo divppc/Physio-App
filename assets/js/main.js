@@ -32,6 +32,12 @@ $(document).ready(function() {
 		$('.side-panel').removeClass('collapsed')
 	});
 
+	//edit card
+	$('.desk .edit').on('click', function (e) {
+		e.preventDefault();
+		$('.desk').toggleClass('edited');
+	})
+
 	//edit function for team member on new team template
 	var editBtn = $('.edit-member');
 	if(editBtn.length !== 0) {
