@@ -88,20 +88,13 @@
             <div class="head-filters">
               <div class="filters">
                 <div class="filter">
-                  <label for="times">Frequency</label>
+                  <select id="frequency" name="frequency">
+                    <option value="1">Times per day</option>
+                    <option value="2">Times per week</option>
+                    <option value="3">Times per month</option>
+                  </select>
                   <div class="input-select">
-                    <select id="for" name="frequency">
-                      <option value="" selected="selected" disabled="disabled">Select</option>
-                      <option value="1">Times per day</option>
-                      <option value="2">Times per week</option>
-                      <option value="3">Times per month</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="filter">
-                  <label for="times">Times</label>
-                  <div class="input-select">
-                    <select id="for" name="times">
+                    <select id="times" name="times">
                       <option value="" selected="selected" disabled="disabled">Select</option>
                       <option value="1">1</option>
                       <option value="2">2</option>

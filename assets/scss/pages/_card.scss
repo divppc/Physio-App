@@ -102,7 +102,7 @@ section.card {
 
 		.filters {
 			display: flex;
-			align-items: center;
+			align-items: flex-end;
 		}
 
 		.filter {
@@ -1140,4 +1140,9 @@ section.card {
 		top: -4px;
 		box-shadow: 0 0 3px rgb(111, 208, 167);
 	}
+}
+
+#frequency {
+	border: 0;
+	padding: 0;
 }

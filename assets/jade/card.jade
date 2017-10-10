@@ -86,17 +86,12 @@ html(lang="en")
 						.head-filters
 							.filters
 								.filter
-									label(for="times") Frequency
+									select#frequency(name="frequency")
+										option(value="1") Times per day
+										option(value="2") Times per week
+										option(value="3") Times per month
 									.input-select
-										select#for(name="frequency")
-											option(value="" selected disabled) Select
-											option(value="1") Times per day
-											option(value="2") Times per week
-											option(value="3") Times per month
-								.filter
-									label(for="times") Times
-									.input-select
-										select#for(name="times")
+										select#times(name="times")
 											option(value="" selected disabled) Select
 											option(value="1") 1
 											option(value="2") 2
