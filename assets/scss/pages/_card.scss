@@ -861,9 +861,44 @@ section.card {
 		  background-color: rgb(255, 255, 255);
 		  border: solid 1px rgb(209, 220, 228);
 		  padding: 18px 0;
+		  position: relative;
 
   		&:not(:last-child) {
   			margin-bottom: 16px;
+  		}
+
+  		&:after {
+  			display: block;
+		    content: '+';
+		    width: 24px;
+		    height: 24px;
+		    text-align: center;
+		    line-height: 24px;
+		    border-radius: 50%;
+		    font-size: 16px;
+		    cursor: pointer;
+		    background-image: -webkit-linear-gradient(79deg, #79D4BC, #97DDAD);
+		    background-image: -o-linear-gradient(79deg, #79D4BC, #97DDAD);
+		    background-image: linear-gradient(11deg, #79D4BC, #97DDAD);
+		    position: absolute;
+		    top: 50%;
+		    color: #fff;
+		    opacity: 0;
+		    -webkit-transition: 0.3s;
+		    -o-transition: 0.3s;
+		    transition: 0.3s;
+		    left: 50%;
+		    z-index: 1;
+		    -webkit-transform: translate(-50%, -50%);
+		    -ms-transform: translate(-50%, -50%);
+		    transform: translate(-50%, -50%);
+  		}
+
+  		&:hover {
+
+  			&:after {
+  				opacity: 1;
+  			}
   		}
   	}
 
