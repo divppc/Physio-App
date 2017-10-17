@@ -105,7 +105,12 @@ section.card {
 			align-items: flex-end;
 		}
 
-		.filter {
+		.filter {		
+
+			@media (min-width: $responsive-wide) {
+		  	display: flex;
+				align-items: center;
+		  }
 
 			&:not(:last-child) {
 				margin-right: 16px;
@@ -117,7 +122,13 @@ section.card {
 		  font-weight: 600;
 		  color: rgb(47, 54, 88);
 		  margin-bottom: 10px;
+		  white-space: nowrap;
 		  display: block;
+
+		  @media (min-width: $responsive-wide) {
+		  	margin-right: 10px;
+		  	margin-bottom: 0;
+		  }
 		}
 
 		.input-number {
@@ -126,6 +137,7 @@ section.card {
 
 		.input-select {
 			width: 175px;
+			flex-shrink: 0;
 		}
 
 		.input-date {
@@ -1178,6 +1190,5 @@ section.card {
 }
 
 #frequency {
-	border: 0;
-	padding: 0;
+	margin-right: 10px;
 }
