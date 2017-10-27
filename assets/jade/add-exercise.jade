@@ -113,38 +113,58 @@ html(lang="en")
 									.checkbox-list
 										input(type="checkbox" id="showSides" value="1" checked)
 										label(for="showSides") Display the left/right/both selector
-							.program-setting.active
-								.range-holder
-									span Reps
-									.range-line#range1
-									input(type="text" id="range1-output")
-								.range-holder
-									span Time
-									.range-line#range2
-									input(type="text" id="range2-output")
-								.radio-holder
-									.radio
-										input(type="radio" name="program-type" id="type1" checked)
-										label(for="type1") Left Side
-									.radio
-										input(type="radio" name="program-type" id="type2")
-										label(for="type2") Alternating
-									.radio
-										input(type="radio" name="program-type" id="type3")
-										label(for="type3") Right Side
-									.radio
-										input(type="radio" name="program-type" id="type4")
-										label(for="type4") Both
-								.range-holder
-									span Sets
-									.range-line#range3
-									input(type="text" id="range3-output")
-								.range-holder
-									span Rest
-									.range-line#range4
-									input(type="text" id="range4-output")
-							.save-exercise
-								input(type="submit" value="Save" class="btn-gradient")
+								.checkbox-group.exercise-type
+									span This exercise is:
+									ul.checkbox-list
+										li
+											input(type="radio" id="rep-based" value="rep-based" name="exercise-type")
+											label(for="rep-based") Rep based
+										li
+											input(type="radio" id="time-based" value="time-based" name="exercise-type")
+											label(for="time-based") Time based
+							.program-settings
+								.field
+									.item
+										label(for="hold-time") Hold Time
+										.range-holder
+											#card-hold-time.card-range-slider
+									.item
+										label(for="sec") sec
+										input(type="text" id="sec" value="20")
+								.field
+									.item
+										label(for="reps") Reps
+										.range-holder
+											#card-reps.card-range-slider
+									.item
+										label(for="reps-count")
+										input(type="text" id="reps-count" value="1")
+								.field
+									.item
+										label(for="select-side") Select Side
+										.input-select
+											select#select-side(name="select-side")
+												option(value="" selected disabled) Select
+												option(value="1") 1
+												option(value="2") 2
+												option(value="3") 3
+								.field
+									.item
+										label(for="sets") Sets
+										.input-number
+											input(type="number" value="1" min="1")
+											.controls
+												a(href="#" class="more")
+												a(href="#" class="less")
+									.item
+										label(for="rest") rest
+											a(href="#" class="info")
+												img(src="assets/images/tip.svg", alt="")
+										.input-number
+											input(type="number" value="1" min="1")
+											.controls
+												a(href="#" class="more")
+												a(href="#" class="less")
 				.file-uploads
 					.fileupload-buttonbar
 						.col-lg-7

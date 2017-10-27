@@ -17,6 +17,131 @@ section.add-exercise {
 		width: 100%;
 	}
 
+	.program-settings {
+		margin: 20px 0 0 0;
+		width: 100%;
+
+		&:after {
+			display: none;
+		}
+
+		input,
+		select {
+	    display: block;
+	    height: 43px;
+	    -webkit-appearance: none;
+	    -moz-appearance: none;
+	    appearance: none;
+	    width: 100%;
+	    border-radius: 3px;
+	    background-color: white;
+	    border: solid 1px #d1dce4;
+	    font-size: 14px;
+	    color: #2f4366;
+	    outline: none;
+		}
+
+		select {
+			padding: 0 45px 0 24px;
+	    -webkit-appearance: none;
+	    -moz-appearance: none;
+	    appearance: none;
+	    position: relative;
+	    z-index: 1;
+	    background: #fff;
+		}
+
+		label {
+			min-width: 0px;
+		}
+
+		input::-webkit-outer-spin-button,
+		input::-webkit-inner-spin-button {
+	    -webkit-appearance: none;
+	    margin: 0;
+		}
+
+
+		.range-holder {
+			width: 465px;
+		}
+
+		.input-number {
+			position: relative;
+
+			&:before {
+				display: block;
+		    content: '';
+		    width: 1px;
+		    height: 100%;
+		    background: #dadee3;
+		    position: absolute;
+		    top: 0;
+		    right: 40px;
+			}
+
+			input {
+				padding: 0 24px;
+			}
+		}
+
+		.controls {
+			position: absolute;
+	    top: 14px;
+	    z-index: 2;
+	    right: 15px;
+	    display: -webkit-box;
+	    display: -webkit-flex;
+	    display: -ms-flexbox;
+	    display: flex;
+	    -webkit-box-orient: vertical;
+	    -webkit-box-direction: normal;
+	    -webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	    flex-direction: column;
+
+	    a {
+  	    display: block;
+		    width: 10px;
+		    height: 7px;
+		    background: url(assets/images/icons.png) no-repeat 0px -595px;
+
+		    &.more {
+		    	transform: rotate(180deg);
+    			margin-bottom: 5px;
+		    }
+	    }
+		}
+
+		.input-select {
+			position: relative;
+
+			&:before {
+		    display: block;
+		    content: '';
+		    width: 1px;
+		    height: 100%;
+		    background: #dadee3;
+		    position: absolute;
+		    top: 0;
+		    z-index: 2;
+		    right: 40px;
+			}
+
+			&:after {
+		    display: block;
+		    content: '';
+		    width: 12px;
+		    height: 7px;
+		    position: absolute;
+		    top: 18px;
+		    z-index: 2;
+		    right: 14px;
+		    background: url(assets/images/icons.png) no-repeat 0px -595px;
+			}
+		}
+	}
+
 	.name {
 		margin-bottom: 30px;
 
@@ -96,6 +221,17 @@ section.add-exercise {
 
 		&.parts {
 			margin: 20px 0;
+		}
+
+		&.exercise-type {
+			margin: 20px 0;
+
+			li {
+
+				&:not(:last-child) {
+					margin-right: 10px;
+				}
+			}
 		}
 
 		&:last-child {

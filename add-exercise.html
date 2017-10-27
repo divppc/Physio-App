@@ -129,45 +129,73 @@
                     <label for="showSides">Display the left/right/both selector</label>
                   </div>
                 </div>
-              </div>
-              <div class="program-setting active">
-                <div class="range-holder"><span>Reps</span>
-                  <div id="range1" class="range-line"></div>
-                  <input type="text" id="range1-output"/>
-                </div>
-                <div class="range-holder"><span>Time</span>
-                  <div id="range2" class="range-line"></div>
-                  <input type="text" id="range2-output"/>
-                </div>
-                <div class="radio-holder">
-                  <div class="radio">
-                    <input type="radio" name="program-type" id="type1" checked="checked"/>
-                    <label for="type1">Left Side</label>
-                  </div>
-                  <div class="radio">
-                    <input type="radio" name="program-type" id="type2"/>
-                    <label for="type2">Alternating</label>
-                  </div>
-                  <div class="radio">
-                    <input type="radio" name="program-type" id="type3"/>
-                    <label for="type3">Right Side</label>
-                  </div>
-                  <div class="radio">
-                    <input type="radio" name="program-type" id="type4"/>
-                    <label for="type4">Both</label>
-                  </div>
-                </div>
-                <div class="range-holder"><span>Sets</span>
-                  <div id="range3" class="range-line"></div>
-                  <input type="text" id="range3-output"/>
-                </div>
-                <div class="range-holder"><span>Rest</span>
-                  <div id="range4" class="range-line"></div>
-                  <input type="text" id="range4-output"/>
+                <div class="checkbox-group exercise-type"><span>This exercise is:</span>
+                  <ul class="checkbox-list">
+                    <li>
+                      <input type="radio" id="rep-based" value="rep-based" name="exercise-type"/>
+                      <label for="rep-based">Rep based</label>
+                    </li>
+                    <li>
+                      <input type="radio" id="time-based" value="time-based" name="exercise-type"/>
+                      <label for="time-based">Time based</label>
+                    </li>
+                  </ul>
                 </div>
               </div>
-              <div class="save-exercise">
-                <input type="submit" value="Save" class="btn-gradient"/>
+              <div class="program-settings">
+                <div class="field">
+                  <div class="item">
+                    <label for="hold-time">Hold Time</label>
+                    <div class="range-holder">
+                      <div id="card-hold-time" class="card-range-slider"></div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <label for="sec">sec</label>
+                    <input type="text" id="sec" value="20"/>
+                  </div>
+                </div>
+                <div class="field">
+                  <div class="item">
+                    <label for="reps">Reps</label>
+                    <div class="range-holder">
+                      <div id="card-reps" class="card-range-slider"></div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <label for="reps-count"></label>
+                    <input type="text" id="reps-count" value="1"/>
+                  </div>
+                </div>
+                <div class="field">
+                  <div class="item">
+                    <label for="select-side">Select Side</label>
+                    <div class="input-select">
+                      <select id="select-side" name="select-side">
+                        <option value="" selected="selected" disabled="disabled">Select</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="field">
+                  <div class="item">
+                    <label for="sets">Sets</label>
+                    <div class="input-number">
+                      <input type="number" value="1" min="1"/>
+                      <div class="controls"><a href="#" class="more"></a><a href="#" class="less"></a></div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <label for="rest">rest<a href="#" class="info"><img src="assets/images/tip.svg" alt=""/></a></label>
+                    <div class="input-number">
+                      <input type="number" value="1" min="1"/>
+                      <div class="controls"><a href="#" class="more"></a><a href="#" class="less"></a></div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </form>
