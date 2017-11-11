@@ -20,3 +20,5 @@ Physio Dashboard
 18) Invite user http://physio.div.agency/invite.html<br />
 19) Active programs http://physio.div.agency/active-programs.html<br />
 20) Profile page http://physio.div.agency/personal-profile.html<br />
+20) Letter1 http://physio.div.agency/letter1.html<br />
+20) Letter2 http://physio.div.agency/letter2.html<br />

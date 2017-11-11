@@ -1,0 +1,148 @@
+section.letter {
+	padding: 50px 0;
+
+	h1 {
+		text-align: center;
+		font-size: 24px;
+		text-transform: uppercase;
+		font-weight: 500;
+
+		&~p {
+			text-align: center;
+			margin: 20px 0;
+		}
+
+		&~span {
+			font-weight: 600;
+			display: block;
+		}
+	}
+
+	i {
+		font-style: normal;
+		text-decoration: underline;
+	}
+
+	input[type="radio"] {
+		display: none;
+
+		&+label {
+			position: relative;
+			margin: 0 auto;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+
+			&:before {
+				display: block;
+				content: '';
+				border-radius: 50%;
+				width: 16px;
+			  height: 16px;
+			  flex-shrink: 0;
+			  cursor: pointer;
+	      border: solid 2px #9ba9bc;
+	      background: #fff;
+	      box-sizing: border-box;
+			}
+		}
+
+		&:checked {
+
+			&+label {
+				cursor: pointer;
+
+				&:before {
+					background: linear-gradient(to bottom, #52C7CC, #95DDAE);
+		    	background-size: 172%;
+		    	border-color: transparent;
+		    	background-position: 0 -21px;
+				}
+
+				// &:after {
+				// 	width: 6px;
+			 //    height: 6px;
+			 //    display: block;
+			 //    flex-shrink: 0;
+			 //    content: '';
+			 //    border: 2px solid #fff;
+			 //    position: absolute;
+			 //    top: 50%;
+			 //    transform: translate(-50%, -50%);
+			 //    cursor: pointer;
+			 //    border-radius: 50%;
+			 //    left: 50%;
+			 //    background: transparent;
+				// }
+			}
+		}
+	}
+
+	.letter-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 4px;
+    min-width: 1140px;
+    margin: 20px 0;
+
+    thead {
+    	border-radius: 3px;
+    	background-color: #e0e6ef;
+
+    	th {
+		    font-size: 14px;
+		    font-weight: 600;
+		    text-transform: uppercase;
+		    color: #2f3658;
+		    padding: 17px 0 16px 0;
+
+		    &:not(:last-child) {
+		    	border-right: 1px solid #fff;
+		    }
+    	}
+    }
+
+		tbody {
+
+			tr {
+				background: #fff;
+			}
+			
+			td {				
+
+				&:first-child,
+				&:nth-child(2) {
+					padding: 5px 10px;
+				}
+
+				&:nth-child(2) {
+
+					&~td {
+						width: 100px;
+					}
+				}
+
+				&:not(:first-child):not(:nth-child(2)) {
+					text-align: center;
+				}
+
+				&:not(:last-child){
+					border-right: 1px solid #f1f4f8
+				}
+			}
+		}
+	}
+
+	.table-results {
+		margin-bottom: 20px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		font-weight: 600;
+	}
+
+	.table-disclaimer {
+		font-style: italic;
+		font-size: 12px;
+	}
+}

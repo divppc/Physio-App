@@ -303,52 +303,6 @@ section.team {
 		}
 	}
 
-	.pagination {
-		display: flex;
-		align-items: center;
-		justify-content: flex-end;
-		margin: 16px 0;
-
-		ul {
-			display: flex;
-			align-items: center;
-
-			li {
-
-				&:not(:last-child) {
-					margin-right: 8px;
-				}
-			}
-
-			a {
-				display: block;
-				width: 40px;
-			  height: 40px;
-			  border-radius: 3px;
-			  border: solid 1px rgb(207, 216, 220);
-			  font-size: 14px;
-			  font-weight: 600;
-			  text-align: center;
-			  line-height: 40px;
-			  color: rgb(121, 143, 150);
-
-			  &:hover,
-			  &.active {
-			  	background: #fff;
-			  	color: rgb(111, 208, 167);
-			  }
-
-			  &.next {
-			  	background: url('assets/images/arrow-right.svg') no-repeat center;
-
-			  	&:hover {
-				  	background: url('assets/images/arrow-right.svg') no-repeat center, #fff;
-				  }
-			  }
-			}
-		}
-	}
-
 	.new-member {
 		border-radius: 3px;
   	border: solid 1px rgb(207, 216, 220);

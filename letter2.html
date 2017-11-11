@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/3.0.2/normalize.css"/>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="assets/css/nouislider.css"/>
+    <title>My Physio Dashboard | THE LOWER EXTREMITY FUNCTIONAL SCALE </title>
+  </head>
+  <body>
+    <header>
+      <div class="main-line">
+        <div class="container">
+          <div class="header-panel">
+            <div class="logo"><a href="/">MyPhysio</a></div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="letter">
+      <div class="container">
+        <h1>THE UPPER EXTREMITY FUNCTIONAL INDEX (UEFI) </h1>
+        <p>We are interested in knowing whether you are having any difficulty at all with the activities listed below <i>because of your upper limb</i>. Problem for which you are currently seeking attention. Please provide an answer for <b>each</b> activity.</p><span>Today, <i>do you</i> or <i>would you</i> have any difficulty at all with: </span>
+        <table class="letter-table">
+          <thead>
+            <tr>
+              <th colspan="2">Activities</th>
+              <th>Extreme Difficulty or Unable to Perform Activity</th>
+              <th>Quite a Bit of Difficulty </th>
+              <th>Moderate Difficulty </th>
+              <th>A Little Bit of Difficulty</th>
+              <th>No Difficulty</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td width="5%">1</td>
+              <td width="45%">Any of your usual work, housework, or school activities</td>
+              <td>
+                <input type="radio" id="activities-1-0" checked="checked" name="activities-1"/>
+                <label for="activities-1-0"></label>
+              </td>
+              <td>
+                <input type="radio" id="activities-1-1" name="activities-1"/>
+                <label for="activities-1-1"></label>
+              </td>
+              <td>
+                <input type="radio" id="activities-1-2" name="activities-1"/>
+                <label for="activities-1-2"></label>
+              </td>
+              <td>
+                <input type="radio" id="activities-1-3" name="activities-1"/>
+                <label for="activities-1-3"></label>
+              </td>
+              <td>
+                <input type="radio" id="activities-1-4" name="activities-1"/>
+                <label for="activities-1-4"></label>
+              </td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Your usual hobbies, re creational or sporting activities. </td>
+              <td>
+                <input type="radio" id="activities-2-0" checked="checked" name="activities-2"/>
+                <label for="activities-2-0">								</label>
+              </td>
+              <td>
+                <input type="radio" id="activities-2-1" name="activities-2"/>
+                <label for="activities-2-1">							</label>
+              </td>
+              <td>
+                <input type="radio" id="activities-2-2" name="activities-2"/>
+                <label for="activities-2-2">							</label>
+              </td>
+              <td>
+                <input type="radio" id="activities-2-3" name="activities-2"/>
+                <label for="activities-2-3">							</label>
+              </td>
+              <td>
+                <input type="radio" id="activities-2-4" name="activities-2"/>
+                <label for="activities-2-4">							</label>
+              </td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Getting into or out of the bath.  </td>
+              <td>
+                <input type="radio" id="activities-3-0" checked="checked" name="activities-3"/>
+                <label for="activities-3-0"></label>
+              </td>
+              <td>
+                <input type="radio" id="activities-3-1" name="activities-3"/>
+                <label for="activities-3-1"></label>
+              </td>
+              <td>
+                <input type="radio" id="activities-3-2" name="activities-3"/>
+                <label for="activities-3-2"></label>
+              </td>
+              <td>
+                <input type="radio" id="activities-3-3" name="activities-3"/>
+                <label for="activities-3-3"></label>
+              </td>
+              <td>
+                <input type="radio" id="activities-3-4" name="activities-3"/>
+                <label for="activities-3-4"></label>
+              </td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Walking between rooms.  </td>
+              <td>
+                <input type="radio" id="activities-4-0" checked="checked" name="activities-4"/>
+                <label for="activities-4-0"></label>
+              </td>
+              <td>
+                <input type="radio" id="activities-4-1" name="activities-4"/>
+                <label for="activities-4-1"></label>
+              </td>
+              <td>
+                <input type="radio" id="activities-4-2" name="activities-4"/>
+                <label for="activities-4-2"></label>
+              </td>
+              <td>
+                <input type="radio" id="activities-4-3" name="activities-4"/>
+                <label for="activities-4-3"></label>
+              </td>
+              <td>
+                <input type="radio" id="activities-4-4" name="activities-4"/>
+                <label for="activities-4-4"></label>
+              </td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>Putting on your shoes or socks.   </td>
+              <td>
+                <input type="radio" id="activities-5-0" checked="checked" name="activities-5"/>
+                <label for="activities-5-0"></label>
+              </td>
+              <td>
+                <input type="radio" id="activities-5-1" name="activities-5"/>
+                <label for="activities-5-1"></label>
+              </td>
+              <td>
+                <input type="radio" id="activities-5-2" name="activities-5"/>
+                <label for="activities-5-2"></label>
+              </td>
+              <td>
+                <input type="radio" id="activities-5-3" name="activities-5"/>
+                <label for="activities-5-3"></label>
+              </td>
+              <td>
+                <input type="radio" id="activities-5-4" name="activities-5"/>
+                <label for="activities-5-4"></label>
+              </td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td>Squatting.    </td>
+              <td>
+                <input type="radio" id="activities-6-0" checked="checked" name="activities-6"/>
+                <label for="activities-6-0"></label>
+              </td>
+              <td>
+                <input type="radio" id="activities-6-1" name="activities-6"/>
+                <label for="activities-6-1"></label>
+              </td>
+              <td>
+                <input type="radio" id="activities-6-2" name="activities-6"/>
+                <label for="activities-6-2"></label>
+              </td>
+              <td>
+                <input type="radio" id="activities-6-3" name="activities-6"/>
+                <label for="activities-6-3"></label>
+              </td>
+              <td>
+                <input type="radio" id="activities-6-4" name="activities-6"/>
+                <label for="activities-6-4"></label>
+              </td>
+            </tr>
+            <tr>
+              <td>7</td>
+              <td>Lifting an object, like a bag of groceries from the floor.     </td>
+              <td>
+                <input type="radio" id="activities-7-0" checked="checked" name="activities-7"/>
+                <label for="activities-7-0"></label>
+              </td>
+              <td>
+                <input type="radio" id="activities-7-1" name="activities-7"/>
+                <label for="activities-7-1"></label>
+              </td>
+              <td>
+                <input type="radio" id="activities-7-2" name="activities-7"/>
+                <label for="activities-7-2"></label>
+              </td>
+              <td>
+                <input type="radio" id="activities-7-3" name="activities-7"/>
+                <label for="activities-7-3"></label>
+              </td>
+              <td>
+                <input type="radio" id="activities-7-4" name="activities-7"/>
+                <label for="activities-7-4"></label>
+              </td>
+            </tr>
+            <tr>
+              <td>8</td>
+              <td>Performing light activities around your home.      </td>
+              <td>
+                <input type="radio" id="activities-8-0" checked="checked" name="activities-8"/>
+                <label for="activities-8-0"></label>
+              </td>
+              <td>
+                <input type="radio" id="activities-8-1" name="activities-8"/>
+                <label for="activities-8-1"></label>
+              </td>
+              <td>
+                <input type="radio" id="activities-8-2" name="activities-8"/>
+                <label for="activities-8-2"></label>
+              </td>
+              <td>
+                <input type="radio" id="activities-8-3" name="activities-8"/>
+                <label for="activities-8-3"></label>
+              </td>
+              <td>
+                <input type="radio" id="activities-8-4" name="activities-8"/>
+                <label for="activities-8-4"></label>
+              </td>
+            </tr>
+            <tr>
+              <td>9</td>
+              <td>Performing heavy activities around your home.     </td>
+              <td>
+                <input type="radio" id="activities-9-0" checked="checked" name="activities-9"/>
+                <label for="activities-9-0"></label>
+              </td>
+              <td>
+                <input type="radio" id="activities-9-1" name="activities-9"/>
+                <label for="activities-9-1"></label>
+              </td>
+              <td>
+                <input type="radio" id="activities-9-2" name="activities-9"/>
+                <label for="activities-9-2"></label>
+              </td>
+              <td>
+                <input type="radio" id="activities-9-3" name="activities-9"/>
+                <label for="activities-9-3"></label>
+              </td>
+              <td>
+                <input type="radio" id="activities-9-4" name="activities-9"/>
+                <label for="activities-9-4"></label>
+              </td>
+            </tr>
+            <tr>
+              <td>10</td>
+              <td>Getting into or out of a car     </td>
+              <td>
+                <input type="radio" id="activities-10-0" checked="checked" name="activities-10"/>
+                <label for="activities-10-0"></label>
+              </td>
+              <td>
+                <input type="radio" id="activities-10-1" name="activities-10"/>
+                <label for="activities-10-1"></label>
+              </td>
+              <td>
+                <input type="radio" id="activities-10-2" name="activities-10"/>
+                <label for="activities-10-2"></label>
+              </td>
+              <td>
+                <input type="radio" id="activities-10-3" name="activities-10"/>
+                <label for="activities-10-3"></label>
+              </td>
+              <td>
+                <input type="radio" id="activities-10-4" name="activities-10"/>
+                <label for="activities-10-4"></label>
+              </td>
+            </tr>
+            <tr>
+              <td>11</td>
+              <td>Walking 2 blocks.     </td>
+              <td>
+                <input type="radio" id="activities-11-0" checked="checked" name="activities-11"/>
+                <label for="activities-11-0"></label>
+              </td>
+              <td>
+                <input type="radio" id="activities-11-1" name="activities-11"/>
+                <label for="activities-11-1"></label>
+              </td>
+              <td>
+                <input type="radio" id="activities-11-2" name="activities-11"/>
+                <label for="activities-11-2"></label>
+              </td>
+              <td>
+                <input type="radio" id="activities-11-3" name="activities-11"/>
+                <label for="activities-11-3"></label>
+              </td>
+              <td>
+                <input type="radio" id="activities-11-4" name="activities-11"/>
+                <label for="activities-11-4"></label>
+              </td>
+            </tr>
+            <tr>
+              <td>12</td>
+              <td>Walking a mile     </td>
+              <td>
+                <input type="radio" id="activities-12-0" checked="checked" name="activities-12"/>
+                <label for="activities-12-0"></label>
+              </td>
+              <td>
+                <input type="radio" id="activities-12-1" name="activities-12"/>
+                <label for="activities-12-1"></label>
+              </td>
+              <td>
+                <input type="radio" id="activities-12-2" name="activities-12"/>
+                <label for="activities-12-2"></label>
+              </td>
+              <td>
+                <input type="radio" id="activities-12-3" name="activities-12"/>
+                <label for="activities-12-3"></label>
+              </td>
+              <td>
+                <input type="radio" id="activities-12-4" name="activities-12"/>
+                <label for="activities-12-4"></label>
+              </td>
+            </tr>
+            <tr>
+              <td>13</td>
+              <td>Going up or down 10 stairs (about 1 flight of stairs).     </td>
+              <td>
+                <input type="radio" id="activities-13-0" checked="checked" name="activities-13"/>
+                <label for="activities-13-0"></label>
+              </td>
+              <td>
+                <input type="radio" id="activities-13-1" name="activities-13"/>
+                <label for="activities-13-1"></label>
+              </td>
+              <td>
+                <input type="radio" id="activities-13-2" name="activities-13"/>
+                <label for="activities-13-2"></label>
+              </td>
+              <td>
+                <input type="radio" id="activities-13-3" name="activities-13"/>
+                <label for="activities-13-3"></label>
+              </td>
+              <td>
+                <input type="radio" id="activities-13-4" name="activities-13"/>
+                <label for="activities-13-4"></label>
+              </td>
+            </tr>
+            <tr>
+              <td>14</td>
+              <td>Standing for 1 hour.     </td>
+              <td>
+                <input type="radio" id="activities-14-0" checked="checked" name="activities-14"/>
+                <label for="activities-14-0"></label>
+              </td>
+              <td>
+                <input type="radio" id="activities-14-1" name="activities-14"/>
+                <label for="activities-14-1"></label>
+              </td>
+              <td>
+                <input type="radio" id="activities-14-2" name="activities-14"/>
+                <label for="activities-14-2"></label>
+              </td>
+              <td>
+                <input type="radio" id="activities-14-3" name="activities-14"/>
+                <label for="activities-14-3"></label>
+              </td>
+              <td>
+                <input type="radio" id="activities-14-4" name="activities-14"/>
+                <label for="activities-14-4"></label>
+              </td>
+            </tr>
+            <tr>
+              <td>15</td>
+              <td>Sitting for 1 hour.    </td>
+              <td>
+                <input type="radio" id="activities-15-0" checked="checked" name="activities-15"/>
+                <label for="activities-15-0"></label>
+              </td>
+              <td>
+                <input type="radio" id="activities-15-1" name="activities-15"/>
+                <label for="activities-15-1"></label>
+              </td>
+              <td>
+                <input type="radio" id="activities-15-2" name="activities-15"/>
+                <label for="activities-15-2"></label>
+              </td>
+              <td>
+                <input type="radio" id="activities-15-3" name="activities-15"/>
+                <label for="activities-15-3"></label>
+              </td>
+              <td>
+                <input type="radio" id="activities-15-4" name="activities-15"/>
+                <label for="activities-15-4"></label>
+              </td>
+            </tr>
+            <tr>
+              <td>16</td>
+              <td>Running on even ground.     </td>
+              <td>
+                <input type="radio" id="activities-16-0" checked="checked" name="activities-16"/>
+                <label for="activities-16-0"></label>
+              </td>
+              <td>
+                <input type="radio" id="activities-16-1" name="activities-16"/>
+                <label for="activities-16-1"></label>
+              </td>
+              <td>
+                <input type="radio" id="activities-16-2" name="activities-16"/>
+                <label for="activities-16-2"></label>
+              </td>
+              <td>
+                <input type="radio" id="activities-16-3" name="activities-16"/>
+                <label for="activities-16-3"></label>
+              </td>
+              <td>
+                <input type="radio" id="activities-16-4" name="activities-16"/>
+                <label for="activities-16-4"></label>
+              </td>
+            </tr>
+            <tr>
+              <td>17</td>
+              <td>Running on uneven ground.      </td>
+              <td>
+                <input type="radio" id="activities-17-0" checked="checked" name="activities-17"/>
+                <label for="activities-17-0"></label>
+              </td>
+              <td>
+                <input type="radio" id="activities-17-1" name="activities-17"/>
+                <label for="activities-17-1"></label>
+              </td>
+              <td>
+                <input type="radio" id="activities-17-2" name="activities-17"/>
+                <label for="activities-17-2"></label>
+              </td>
+              <td>
+                <input type="radio" id="activities-17-3" name="activities-17"/>
+                <label for="activities-17-3"></label>
+              </td>
+              <td>
+                <input type="radio" id="activities-17-4" name="activities-17"/>
+                <label for="activities-17-4"></label>
+              </td>
+            </tr>
+            <tr>
+              <td>18</td>
+              <td>Making sharp turns while running fast.       </td>
+              <td>
+                <input type="radio" id="activities-18-0" checked="checked" name="activities-18"/>
+                <label for="activities-18-0"></label>
+              </td>
+              <td>
+                <input type="radio" id="activities-18-1" name="activities-18"/>
+                <label for="activities-18-1"></label>
+              </td>
+              <td>
+                <input type="radio" id="activities-18-2" name="activities-18"/>
+                <label for="activities-18-2"></label>
+              </td>
+              <td>
+                <input type="radio" id="activities-18-3" name="activities-18"/>
+                <label for="activities-18-3"></label>
+              </td>
+              <td>
+                <input type="radio" id="activities-18-4" name="activities-18"/>
+                <label for="activities-18-4"></label>
+              </td>
+            </tr>
+            <tr>
+              <td>19</td>
+              <td>Hopping       </td>
+              <td>
+                <input type="radio" id="activities-19-0" checked="checked" name="activities-19"/>
+                <label for="activities-19-0"></label>
+              </td>
+              <td>
+                <input type="radio" id="activities-19-1" name="activities-19"/>
+                <label for="activities-19-1"></label>
+              </td>
+              <td>
+                <input type="radio" id="activities-19-2" name="activities-19"/>
+                <label for="activities-19-2"></label>
+              </td>
+              <td>
+                <input type="radio" id="activities-19-3" name="activities-19"/>
+                <label for="activities-19-3"></label>
+              </td>
+              <td>
+                <input type="radio" id="activities-19-4" name="activities-19"/>
+                <label for="activities-19-4"></label>
+              </td>
+            </tr>
+            <tr>
+              <td>20</td>
+              <td>Rolling over in bed.        </td>
+              <td>
+                <input type="radio" id="activities-20-0" checked="checked" name="activities-20"/>
+                <label for="activities-20-0"></label>
+              </td>
+              <td>
+                <input type="radio" id="activities-20-1" name="activities-20"/>
+                <label for="activities-20-1"></label>
+              </td>
+              <td>
+                <input type="radio" id="activities-20-2" name="activities-20"/>
+                <label for="activities-20-2"></label>
+              </td>
+              <td>
+                <input type="radio" id="activities-20-3" name="activities-20"/>
+                <label for="activities-20-3"></label>
+              </td>
+              <td>
+                <input type="radio" id="activities-20-4" name="activities-20"/>
+                <label for="activities-20-4"></label>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="pagination">
+          <ul>
+            <li><a href="#" class="active">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#" class="next"></a></li>
+          </ul>
+        </div>
+        <div class="table-results"><span>Minimum Level of Detectable Change (90% Confidence): 9 points</span>
+          <div class="score"><span>Score ___/80</span></div>
+        </div>
+        <div class="table-disclaimer">Source: Stratford PW, Binkley, JM, Stratford DM (2001): Development and initial validation of the upper extremity functional index. Physiotherapy Canada. 53(4):259-267. </div>
+      </div>
+    </section>
+  </body>
+</html>
