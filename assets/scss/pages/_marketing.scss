@@ -1,6 +1,15 @@
 /*MARKETING*/
 section.marketing {
 	padding-bottom: 120px;
+
+	.control-panel {
+		display: flex;
+		align-items: center;
+
+		form {
+			margin-right: 20px;
+		}
+	}
 }
 
 .marketing-automation {
