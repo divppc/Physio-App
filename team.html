@@ -24,7 +24,16 @@
         <div class="user">
           <div class="user-photo avatar"><img src="http://pipsum.com/100x100" alt=""/></div>
           <div class="user-name">Serhii Hubarenko</div>
-          <div class="user-mail">lelaquin@gmail.com	</div>
+          <div class="user-mail">lelaquin@gmail.com</div>
+          <div class="rate">
+            <ul>
+              <li class="active"></li>
+              <li class="active"></li>
+              <li class="active"></li>
+              <li class="active"></li>
+              <li></li>
+            </ul>
+          </div>
           <div class="control-buttons">
             <div class="add-mobile">
               <input type="text" value="" placeholder="Add mobile" title="Edit"/>
@@ -335,6 +344,52 @@
         </div>
       </div>
     </section>
+    <div class="common-modal">
+      <div class="modal-title">Modal</div>
+      <form action="#">
+        <div class="row">
+          <label for="modal-textbox">Textbox</label>
+          <input type="text" id="modal-textbox"/>
+        </div>
+        <div class="row">
+          <label for="modal-textarea">Textarea</label>
+          <textarea id="modal-textarea" name="modal-textarea"></textarea>
+        </div>
+        <div class="row">
+          <label for="modal-select">Select</label>
+          <div class="input-select">
+            <select id="modal-select" name="modal-select">
+              <option value="" selected="selected" disabled="disabled">Select</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+            </select>
+          </div>
+        </div>
+        <div class="row">
+          <input type="checkbox" id="checkbox"/>
+          <label for="checkbox">Checkbox</label>
+        </div>
+        <div class="row">
+          <div class="radio-value">
+            <input type="radio" id="radio1" name="radio"/>
+            <label for="radio1">Radio</label>
+          </div>
+          <div class="radio-value">
+            <input type="radio" id="radio2" name="radio"/>
+            <label for="radio2">Radio</label>
+          </div>
+          <div class="radio-value">
+            <input type="radio" id="radio3" name="radio"/>
+            <label for="radio3">Radio</label>
+          </div>
+        </div>
+        <div class="modal-btns">
+          <button type="submit" class="btn-gradient">Save</button>
+          <button class="btn-gradient">Cancel</button>
+        </div>
+      </form>
+    </div>
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
     <script src="assets/js/easypiechart.min.js"></script>
     <script src="assets/js/nouislider.min.js"></script>

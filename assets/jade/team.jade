@@ -26,7 +26,14 @@ html(lang="en")
 					.user-photo.avatar
 						img(src="http://pipsum.com/100x100", alt="")
 					.user-name Serhii Hubarenko
-					.user-mail lelaquin@gmail.com	
+					.user-mail lelaquin@gmail.com
+					.rate
+						ul
+							li.active
+							li.active
+							li.active
+							li.active
+							li
 					.control-buttons
 						.add-mobile
 							input(type="text" value="" placeholder="Add mobile" title="Edit")			
@@ -269,6 +276,39 @@ html(lang="en")
 												option(value="3") Physio
 									.field
 										button(type="submit") Add
+		.common-modal
+			.modal-title Modal
+			form(action="#")
+				.row
+					label(for="modal-textbox") Textbox
+					input(type="text" id="modal-textbox")
+				.row
+					label(for="modal-textarea") Textarea
+					textarea#modal-textarea(name="modal-textarea")
+				.row
+					label(for="modal-select") Select
+					.input-select
+						select#modal-select(name="modal-select")
+							option(value="" selected disabled) Select
+							option(value="1") 1
+							option(value="2") 2
+							option(value="3") 3
+				.row
+					input(type="checkbox" id="checkbox")
+					label(for="checkbox") Checkbox
+				.row
+					.radio-value
+						input(type="radio" id="radio1" name="radio")
+						label(for="radio1") Radio
+					.radio-value
+						input(type="radio" id="radio2" name="radio")
+						label(for="radio2") Radio
+					.radio-value
+						input(type="radio" id="radio3" name="radio")
+						label(for="radio3") Radio
+				.modal-btns
+					button(type="submit").btn-gradient Save
+					button.btn-gradient Cancel
 		script(src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous")
 		script(src="assets/js/easypiechart.min.js")
 		script(src="assets/js/nouislider.min.js")
