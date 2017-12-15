@@ -18,7 +18,7 @@ $(document).ready(function() {
 	});
 
 	$('.user-side .collapse-panel').on('click', function() {
-		$('.user-side').removeClass('collapsed');
+		$('.user-side').toggleClass('collapsed');
 	});
 
 	//colapse right sidebar side
@@ -30,6 +30,18 @@ $(document).ready(function() {
 	$('.collapse-sidebar').on('click', function () {
 		$(this).addClass('hidden');
 		$('.side-panel').removeClass('collapsed')
+	});
+
+	//modal article preview
+	$('.article-preview').on('click', function() {
+		$('body').addClass('modal-open');
+		$('.modal.article-preview-modal').addClass('active');
+	});
+
+	//close modal
+	$('.modal-footer .close-modal').on('click', function() {
+		$('body').removeClass('modal-open');
+		$('.modal').removeClass('active');
 	});
 
 	//edit card

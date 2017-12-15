@@ -841,6 +841,13 @@ body {
 		height: 50vh;
 		overflow: auto;
 
+		p {
+
+			&:not(:last-child) {
+				margin-bottom: 20px;
+			}
+		}
+
 		ul {
 			display: flex;
 			flex-wrap: wrap;
@@ -1155,11 +1162,13 @@ body {
 .play-btn {
 	display: block;
 	width: 75px;
-	height: 65px;
+	height: 75px;
 	margin: 0 auto;
 	position: absolute;
 	top: 50%;
+	overflow: hidden;
+	border-radius: 9px;
 	left: 50%;
-	background: url("assets/images/icons.png") no-repeat 0px -285px;
+	background: url("assets/images/play-button.png") no-repeat center / cover;
 	transform: translate(-50%, -50%);
 }

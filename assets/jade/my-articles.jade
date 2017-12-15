@@ -56,6 +56,7 @@ html(lang="en")
 								button(type="submit") Add Articles
 				.articles-container
 					article
+						.article-preview
 						.action-buttons
 							a(href="#" class="delete" title="Delete")
 						a(href="#")
@@ -115,5 +116,16 @@ html(lang="en")
 						a(href="#")
 							img(src="http://pipsum.com/400x200", alt="")
 							h2 What Is Whiplash?
+		.modal.article-preview-modal
+			.modal-title Article preview
+			.modal-body
+				p.
+					 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, blanditiis. Numquam, praesentium, rem! Fugit tempore atque, doloremque ad. Quas, vitae?
+				p.
+					 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae ad delectus quam. Illo iste odit perferendis dolorum tempora ad consectetur fugiat quae ea, adipisci praesentium ratione reprehenderit numquam, aut non blanditiis, cupiditate maxime maiores facilis ex deserunt, laboriosam veniam nulla. Necessitatibus velit mollitia dignissimos explicabo veniam dolores rem libero perspiciatis.
+				p.
+					 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, blanditiis. Numquam, praesentium, rem! Fugit tempore atque, doloremque ad. Quas, vitae?
+			.modal-footer
+				button.close-modal.btn-gradient Close
 		script(src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous")
 		script(src="assets/js/main.js")

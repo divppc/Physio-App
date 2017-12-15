@@ -25,6 +25,11 @@ section.articles {
 				.action-buttons {
 					opacity: 1;
 				}
+
+				.article-preview {
+					opacity: 1;
+					visibility: visible;
+				}
 			}
 
 			&:not(:nth-child(5n+5)) {
@@ -54,6 +59,21 @@ section.articles {
 						color: #000;
 					}
 				}
+			}
+
+			.article-preview {
+				position: absolute;
+				display: block;
+				content: '';
+				width: 100%;
+				height: 131px;
+				cursor: pointer;
+				opacity: 0;
+				visibility: hidden;
+				transition: 0.3s;
+				background: url('assets/images/preview.png') no-repeat center / contain;
+				top: 0;
+				left: 0;
 			}
 		}
 

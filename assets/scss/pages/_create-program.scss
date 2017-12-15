@@ -1,6 +1,7 @@
 /*CREATE PROGRAM*/
 .user-side {
 	width: 16%;
+	position: relative;
 	border-radius: 1px;
   background-color: rgb(255, 255, 255);
   box-shadow: 0 2px 50px 0 rgba(205, 213, 218, 0.5);
@@ -82,8 +83,11 @@
 		}
 
 		.collapse-panel {
-			opacity: 1;
-			visibility: visible;
+
+			&:after {
+				transform: none;
+				top: 472px;
+			}
 		}	
   }
 
@@ -91,11 +95,11 @@
   	background: #f1f4f8;
   	right: -15px;
   	border-right: solid 1px #d1dce4;
-  	opacity: 0;
-		visibility: hidden;
 
   	&:after {
   		background: url('assets/images/collapse-dark.svg') no-repeat center;
+  		transform: rotate(180deg);
+  		top: 452px;
   	}
 
   	&:hover {
