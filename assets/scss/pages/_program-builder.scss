@@ -41,30 +41,6 @@ section.program {
   			margin-right: 12px;
   		}
 		}
-
-		.remove-tag {
-			width: 20px;
-	    height: 20px;
-	    border-radius: 50%;
-	    text-align: center;
-	    opacity: 0;
-	    transition: 0.3s;
-	    font-style: normal;
-	    display: block;
-	    line-height: 20px;
-	    font-size: 18px;
-	    -webkit-transform: rotate(45deg);
-	    -ms-transform: rotate(45deg);
-	    transform: rotate(45deg);
-	    color: #fff;
-	    background: #f04c5e;
-	    cursor: pointer;
-	    margin-left: 10px;
-
-	    &:hover {
-	    	background: #ee3449;
-	    }
-		}
 	}
 
 	.program-main {
@@ -1171,4 +1147,28 @@ body {
 	left: 50%;
 	background: url("assets/images/play-button.png") no-repeat center / cover;
 	transform: translate(-50%, -50%);
+}
+
+.remove-tag {
+	width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  text-align: center;
+  opacity: 0;
+  transition: 0.3s;
+  font-style: normal;
+  display: block;
+  line-height: 20px;
+  font-size: 18px;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  color: #fff;
+  background: #f04c5e;
+  cursor: pointer;
+  margin-left: 10px;
+
+  &:hover {
+  	background: #ee3449;
+  }
 }
