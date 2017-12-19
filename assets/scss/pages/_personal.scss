@@ -138,14 +138,14 @@ section.personal {
 				margin-right: 196px;
 			}
 		}
-	}
 
-	label {
-		display: block;
-		font-size: 14px;
-	  font-weight: 600;
-	  margin-bottom: 5px;
-	  color: rgb(156, 175, 195);
+		label {
+			display: block;
+			font-size: 14px;
+		  font-weight: 600;
+		  margin-bottom: 5px;
+		  color: rgb(156, 175, 195);
+		}
 	}
 
 	input {
@@ -232,6 +232,14 @@ section.personal {
 
 		.tag-form {
 			margin-bottom: 20px;
+		}
+
+		label {
+			display: block;
+			font-size: 14px;
+		  font-weight: 600;
+		  margin-bottom: 5px;
+		  color: rgb(156, 175, 195);
 		}
 
 		.tags-list {
