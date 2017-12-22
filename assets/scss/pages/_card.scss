@@ -26,6 +26,10 @@ section.card {
 				}
 			}
 		}
+
+		.rate {
+			margin: 10px 0 30px 0;
+		}
 	}
 
 	.card-body {
@@ -77,26 +81,6 @@ section.card {
 	  font-weight: 600;
 	  color: rgb(47, 67, 102);
 	  margin-bottom: 6px;
-	}
-
-	.rate {
-		display: flex;
-		align-items: center;
-
-		li {
-			display: block;
-	    width: 12.5px;
-	    height: 12px;
-	    background: url(assets/images/icons.png) no-repeat 0px -443px;
-
-			&:not(:last-child) {
-				margin-right: 6px;
-			}
-
-			&.active {
-				background: url(assets/images/icons.png) no-repeat -13px -443px;
-			}
-		}
 	}
 
 	.head-filters {
@@ -548,6 +532,7 @@ section.card {
 
     &:after {
 	    background: url(assets/images/collapse-white.svg) no-repeat center;
+	    top: 452px;
     }
 	}
 
@@ -867,9 +852,18 @@ section.card {
 		  &:not(:last-child) {
 		  	margin-bottom: 16px;
 		  }
+
+		  &:hover {
+		  	.add-tool {
+			  	opacity: 1;
+			  	visibility: visible;
+			  }
+		  }		  
   	}
 
   	.add-tool {
+  		opacity: 0;
+  		visibility: hidden;
 
   		&:after {
   			display: block;
@@ -1210,4 +1204,27 @@ section.card {
 		display: block;
 		margin-left: 9px;
 	}
+}
+
+button.side-search {
+  font-size: 16px;
+  font-weight: 500;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 4px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 7px 15px;
+  border-radius: 3px;
+  margin: 20px 0;
+  background-color: #6fd0a7;
+	transition: 0.3s;
+
+	&:hover {
+		background-color: darken(#6fd0a7, 5%);
+	}
+
 }

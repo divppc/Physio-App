@@ -25,11 +25,14 @@ html(lang="en")
 					.user-photo.avatar
 						img(src="http://pipsum.com/100x100", alt="")
 					.user-name Serhii Hubarenko
-					.user-mail lelaquin@gmail.com	
-					.control-buttons
-						.add-mobile
-							input(type="text" value="" placeholder="Add mobile" title="Edit")			
-						a(href="#" class="add-tag-btn") Add tag
+					.user-mail lelaquin@gmail.com
+					.rate
+						ul
+							li.active
+							li.active
+							li.active
+							li.active
+							li
 					ul.nav-panel
 						li
 							a(href="#" class="programs active")
@@ -85,12 +88,6 @@ html(lang="en")
 								span 7%
 							.program-data
 								.program-name Program for Junior
-								ul.rate
-									li.active
-									li.active
-									li.active
-									li
-									li
 						.head-filters
 							.filters
 								.filter
@@ -295,10 +292,10 @@ html(lang="en")
 						.tool-name Motivational Quotes
 						a(href="#" class="add-tool" title="Add")
 			.tab#exercises-tab
-				.subtitle Exercises
-				form.search-form
-					input(type="text" placeholder="Search" required)
-					button(type="submit" title="Submit")
+				//- .subtitle Exercises
+				//- form.search-form
+				//- 	input(type="text" placeholder="Search" required)
+				//- 	button(type="submit" title="Submit")
 				.exercises-types
 					.section-subheading Exercises types
 						a(href="#" class="view-toggle active") 
@@ -343,6 +340,7 @@ html(lang="en")
 							a(href="#") Neutral Mob.
 						li
 							a(href="#") Assessment Tools
+				button.side-search Search
 				ul.exercises-list
 					li
 						a(href="#")
