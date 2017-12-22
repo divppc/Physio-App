@@ -169,15 +169,6 @@ html(lang="en")
 											.controls
 												a(href="#" class="more")
 												a(href="#" class="less")
-							//- .note
-							//- 	.note-head
-							//- 		.note-name Test Note
-							//- 		.control-btns
-							//- 			a(href="#" class="edit")
-							//- 			a(href="#" class="remove")
-							//- 	.note-body
-							//- 		p.
-							//- 			First of all, acid reflux is not a disease.  It is an acquired condition which can be completely healed by eating properly. I wonder if people had acid reflux, gerd and heartburn a thousand years ago. I sincerely doubt it. I believe it is a symptom of the quality of the food we eat today, our eating habits
 					ul.desk-list
 						li.list-item
 							.control-btns
@@ -292,14 +283,13 @@ html(lang="en")
 						.tool-name Motivational Quotes
 						a(href="#" class="add-tool" title="Add")
 			.tab#exercises-tab
-				//- .subtitle Exercises
-				//- form.search-form
-				//- 	input(type="text" placeholder="Search" required)
-				//- 	button(type="submit" title="Submit")
-				.exercises-types
-					.section-subheading Exercises types
-						a(href="#" class="view-toggle active") 
-					ul.list-of-buttons.active
+				.exercises-types.filter-section
+					.section-subheading Exercises types 
+						ul.choosen-tags
+							li
+								a(href="#") All
+						a(href="#" class="see-more") See more...
+					ul.list-of-buttons
 						li
 							a(href="#" class="active") All
 						li
@@ -318,10 +308,13 @@ html(lang="en")
 							a(href="#") Neutral Mob.
 						li
 							a(href="#") Assessment Tools
-				.exercises-parts
-					.section-subheading Exercises parts
-						a(href="#" class="view-toggle active") 
-					ul.list-of-buttons.active
+				.exercises-parts.filter-section
+					.section-subheading Exercises parts 
+						ul.choosen-tags
+							li
+								a(href="#") All
+						a(href="#" class="see-more") See more...
+					ul.list-of-buttons
 						li
 							a(href="#" class="active") All
 						li

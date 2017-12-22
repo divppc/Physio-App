@@ -109,11 +109,41 @@ $(document).ready(function() {
 	}
 
 	// exercise parts and types display
-	$('.section-subheading .view-toggle').on('click', function(e) {
+
+
+	$('.list-of-buttons a').on('click', function(e) {
 		e.preventDefault();
-		$(this).toggleClass('active');
-		$(this).parent().siblings('.list-of-buttons').toggleClass('active');
+		var choosenTag = $(this).html();
+		var container = $(this).closest('.filter-section').find('.choosen-tags');
+		var tags = $(".choosen-tags li");
+
+		if(!$(this).hasClass('active')) {
+			$(this).addClass('active');
+			var content = $('<li><a href="#">'+choosenTag+'</a></li>');
+			container.append(content);
+		} else {
+			$(this).removeClass('active');
+			for (var i = 0, len = tags.length; i < len; i++) {
+				if($(tags[i]).children('a').html() == choosenTag) {
+					$(tags[i]).remove();
+				}
+			}
+		}
 	});
+
+
+	//see full exercices list
+	$(".see-more").on('click', function(e) {
+		e.preventDefault();
+		$(this).addClass('hidden');
+		$(this).parent().siblings('.list-of-buttons').addClass('active');
+	});
+
+	$(".side-search").on('click', function() {
+		$('.see-more').removeClass('hidden');
+		$('.list-of-buttons').removeClass('active');
+	});
+
 
 	//tabs
 	$("#tabs").tabs();
