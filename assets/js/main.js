@@ -142,6 +142,7 @@ $(document).ready(function() {
 	$(".side-search").on('click', function() {
 		$('.see-more').removeClass('hidden');
 		$('.list-of-buttons').removeClass('active');
+		$('.list-of-buttons a').removeClass('active');
 	});
 
 
