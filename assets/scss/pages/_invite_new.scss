@@ -6,7 +6,6 @@
 
 		.contacts {
 			height: 100%;
-			justify-content: flex-end;
 		}
 
 		.list {
@@ -99,20 +98,22 @@
 	}
 
 	.invite-container {
-		width: calc((100% - 51.75%) * 2);
+		width: 100%;
+		justify-content: space-between;
+		display: flex;
 
-		.step1 {
-			padding: 36px 0 35px 0;
-			border-bottom: solid 1px rgb(209, 220, 228);
-			display: none;
-			transition: 0.3s;
-
-			&.active {
-				display: block;
-			}
+		.step1,
+		.step2 {
+			width: 49%;
+			padding: 24px 10px 0;
 		}
 
-		.step2 {
+		.step1 {
+			border-bottom: solid 1px rgb(209, 220, 228);
+			transition: 0.3s;
+		}
+
+		.add-client-container {
 			display: none;
 
 			&.active {

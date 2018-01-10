@@ -151,20 +151,12 @@ $(document).ready(function() {
 	//toggle between unser invite steps
 	var nextStep = $('.add_user_btn'),
 			prevStep = $('.back-btn'),
-			step1 = $('.invite-container .step1'),
-			step2 = $('.invite-container .step2');
+			formContainer = $('.add-client-container');
 
 	$(nextStep).on('click', function(e) {
 		e.preventDefault();
-		step1.removeClass('active');
-		step2.addClass('active');
+		formContainer.toggleClass('active');
 	});
-
-	$(prevStep).on('click', function(e) {
-		e.preventDefault();
-		step2.removeClass('active');
-		step1.addClass('active');
-	})
 
 	var programsSlider = $(".programs-slider");
 

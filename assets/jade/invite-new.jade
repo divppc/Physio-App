@@ -21,7 +21,6 @@ html(lang="en")
 					.contacts
 						.invite-container
 							.step1.active
-								a(href="#" class="add_user_btn") Create new client
 								.list
 									ul
 										li.member
@@ -62,22 +61,24 @@ html(lang="en")
 													a(href="#" class="create") Create
 													a(href="#" class="mobile-alert active" title="Mobile notifications")
 							.step2
-								.invite-head
-									h3 New Client
-									a(href="#" class="back-btn") Back
-								form(action="#").add-users
-									.users-form
-										.member-photo.avatar.default-avatar
-										.fields
-											.form-field
-												span First Name
-												input(type="email" placeholder="First Name" required)
-											.form-field
-												span Last Name
-												input(type="email" placeholder="Last Name")
-									.submit
-										button(type="submit")
-											span Create
+								a(href="#" class="add_user_btn") Create new client
+								.add-client-container
+									.invite-head
+										h3 New Client
+										//- a(href="#" class="back-btn") Back
+									form(action="#").add-users
+										.users-form
+											.member-photo.avatar.default-avatar
+											.fields
+												.form-field
+													span First Name
+													input(type="email" placeholder="First Name" required)
+												.form-field
+													span Last Name
+													input(type="email" placeholder="Last Name")
+										.submit
+											button(type="submit")
+												span Create
 		script(src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous")
 		script(src="assets/js/nouislider.min.js")
 		script(src="assets/js/jquery-ui.min.js")
