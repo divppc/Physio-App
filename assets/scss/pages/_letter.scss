@@ -145,4 +145,9 @@ section.letter {
 		font-style: italic;
 		font-size: 12px;
 	}
+
+	button[type="submit"] {
+		margin-top: 20px;
+		display: block;
+	}
 }
