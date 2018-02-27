@@ -982,7 +982,7 @@ body {
 		justify-content: center;
 		border-radius: 50%;
 
-		&:first-child {
+		&:not(:last-child) {
 			margin-bottom: 14px;
 		}
 
@@ -1009,6 +1009,24 @@ body {
 		&:before {
 			background-position: 0 -358px;
 			height: 16px;
+		}
+	}
+
+	.edit {
+		background: #72cfa5;
+
+		&:before {
+			background-position: 0 -840px;
+			height: 13px;
+		}
+	}
+
+	.view {
+		background: #72cfa5;
+
+		&:before {
+			background-position: 0 -830px;
+			height: 10px;
 		}
 	}
 }
